@@ -26,12 +26,12 @@ else:
 
 			try:
 				curs.execute(query)
+				mycon.commit()
 			except Exception as e:
 				print(e)
 				print(name, hpg)
 
 
-	mycon.commit()
 	print("All records added to the database")
 	curs.close()
 	mycon.close()

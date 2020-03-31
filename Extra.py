@@ -1,15 +1,9 @@
-from bs4 import BeautifulSoup
-import re
-import lxml
-import os
-import sys
-import urllib.request as ur
-import urllib.parse as up
-
+from modules import *
+from utilities import *
 
 class Extra(BeautifulSoup):
-    def __init__(self, hpage, curpage):
-        self.home_page=hpage
-        self.cur_page=curpage
-        self.urls=[hpage]
-        self.tsites=list()
+        home_page=''
+        cur_page=''
+        urls=list()
+        tsites=list()
+

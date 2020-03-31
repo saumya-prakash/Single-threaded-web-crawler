@@ -1,7 +1,7 @@
 from Extra import *
-#come
+
 class LogoTitle(Extra):
-	
+
 	__sr = re.compile(".*logo.*", re.IGNORECASE)
 	
 	def __par_a(self, s):
@@ -86,17 +86,20 @@ class LogoTitle(Extra):
 		
 	
 
-url = 'http://nielit.gov.in/patna/  '
+url = 'http://nielit.gov.in/patna/'
 print(url)
+
+
 
 ht=ur.urlopen(url)     # takes the most time
 
+soup=LogoTitle(ht, 'lxml')
 
-soup = LogoTitle(ht, 'lxml')
-soup.home_page = url
-soup.cur_page = soup.home_page	
+soup.home_page=url
+soup.cur_page=url
+soup.urls.append(url)
 
-soup.get_logo()		
+print(soup.home_page, soup.cur_page, soup.urls, soup.tsites)
+
+soup.get_logo()
 soup.get_title()
-
-		
