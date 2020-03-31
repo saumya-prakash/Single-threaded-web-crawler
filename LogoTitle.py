@@ -43,8 +43,8 @@ class LogoTitle(Extra):
 		if t is None:                # link to home page heuristic
 			t = self.find(self.__par_a)
 	
-		if t is None:        # searching all images for 'logo' keyword
-			t = self.__iall()
+		#if t is None:        # searching all images for 'logo' keyword
+		#	t = self.__iall()
 		
 		#if t is None:                   # first image heuristic -> very dangerous
 		#	t = self.find('img')

@@ -8,6 +8,8 @@ import urllib.parse as up
 
 
 class Extra(BeautifulSoup):
-	home_page=''
-	cur_page=''
-	pass
+    def __init__(self, hpage, curpage):
+        self.home_page=hpage
+        self.cur_page=curpage
+        self.urls=[hpage]
+        self.tsites=list()
