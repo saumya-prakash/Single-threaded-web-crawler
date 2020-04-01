@@ -9,7 +9,7 @@ class Crawler(Extra):
         while i<len(self.urls):
             try:
                 self.cur_page = self.urls[i]
-                soup=BeautifulSoup(ur.urlopen(self.urls[i]), 'lxml')
+                soup=BeautifulSoup(load_page(self.urls[i]), 'lxml')
 
                 for t in soup.find_all('a'):
                     path = t['href']
@@ -19,20 +19,24 @@ class Crawler(Extra):
                     if u is not None:
                         if u not in self.urls:
                             self.urls.append(u)
-                            print(u)
-                i+=1
-
 
             except Exception as e:
                 print(e, self.urls[i])
-                print(len(self.urls))
+
+            except KeyboardInterrupt:
+                print("\nNo. of URLs =", len(web.urls))
+                sys.exit()
+
+            finally:
                 i+=1
 
 
-a='https://www.bitmesra.ac.in/BIT_Mesra?cid=8&pid=H'
+a='https://www.google.co.in'
 
-web=Crawler(ur.urlopen(a), 'lxml')
+web=Crawler(features='lxml')
 web.home_page=a
 web.urls.append(a)
 
 web.crawl()
+
+print("\nNo. of URLs =",len(web.urls))

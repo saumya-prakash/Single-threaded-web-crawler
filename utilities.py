@@ -1,6 +1,17 @@
 from modules import *
 
-def url_normalize(cur_page, path):
+def load_page(url):
+
+    headers={'User-Agent':'''Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:74.0) Gecko/20100101 Firefox/74.0''',
+             'Accept':'''text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8''',
+             'Connection':'''keep-alive'''}
+
+    req = ur.Request(url=url, headers=headers)
+
+    return ur.urlopen(req)
+
+
+def url_normalize(cur_page, path):       #Quoting/Encoding/Decoding URLs left
 
     cur_page=cur_page.strip()
     path=path.strip()
@@ -46,8 +57,15 @@ def url_normalize(cur_page, path):
 
             if b[2][0]!='/':
                 b[2] = '/'+b[2]
+        b[0]=b[1]=''
 
-        return a + b[2]
+        i=len(a)-1               #Testing for 'repeated' paths
+        while i>=0 and a[i]!='/':
+            i-=1
+        if i>=0 and a[i:]==b[2]:
+            return None
+
+        return a + up.urlunparse(b)
 
 
 
@@ -73,5 +91,5 @@ def target_test(url):
     pass
 
 
-
+#https://gogle.com/index, index/po
 

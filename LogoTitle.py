@@ -91,9 +91,9 @@ print(url)
 
 
 
-ht=ur.urlopen(url)     # takes the most time
+     #Loading a page takes most of the time
 
-soup=LogoTitle(ht, 'lxml')
+soup=LogoTitle(load_page(url), 'lxml')
 
 soup.home_page=url
 soup.cur_page=url
