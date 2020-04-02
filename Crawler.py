@@ -19,9 +19,10 @@ class Crawler(Extra):
                     if u is not None:
                         if u not in self.urls:
                             self.urls.append(u)
+                            print(u)
 
             except Exception as e:
-                print(e, self.urls[i])
+                print(e)
 
             except KeyboardInterrupt:
                 print("\nNo. of URLs =", len(web.urls))
@@ -31,7 +32,7 @@ class Crawler(Extra):
                 i+=1
 
 
-a='https://www.google.co.in'
+a='http://jdwcpatna.com'
 
 web=Crawler(features='lxml')
 web.home_page=a

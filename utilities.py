@@ -17,7 +17,6 @@ def url_normalize(cur_page, path):       #Quoting/Encoding/Decoding URLs left
     path=path.strip()
 
     a=list(up.urlparse(cur_page))
-
     b=list(up.urlparse(path))
 
     if b[2]=='':
@@ -30,7 +29,6 @@ def url_normalize(cur_page, path):       #Quoting/Encoding/Decoding URLs left
         if s1==s2:     #sub-domain
             if b[0]=='':
                 b[0]='http://'
-
             return up.urlunparse(b)
 
         else:        #external site
@@ -38,34 +36,42 @@ def url_normalize(cur_page, path):       #Quoting/Encoding/Decoding URLs left
 
 
     if b[1]=='' or b[1]==a[1]:  #link belonging to the same domain
-        a=up.urlunparse(a)
-        if a[-1]=='/':     #Processing 'a'
-            a=a[:-1]
 
-        if b[2][:3]=='../':
+        if b[2][0]=='/':    #search in 'root' directory
 
-            b[2]=b[2][2:]
+            a[2]=b[2]
+            return up.urlunparse(a)
 
-            i=-1
-            while a[i]!='/':
-                i-=1
-            a=a[:i]
+        if b[2][0:2] == './' or (b[2][0] not in ['/', '.']):  # search in the same directory
+            a[2] = remove_fname(a[2])
 
-        else:
-            if b[2][:2]=='./':
-                b[2]=b[2][1:]
+            if b[2][0] == '.':
+                b[2] = b[2][1:]
 
-            if b[2][0]!='/':
-                b[2] = '/'+b[2]
-        b[0]=b[1]=''
+            if b[2][0] != '/':
+                b[2] = '/' + b[2]
 
-        i=len(a)-1               #Testing for 'repeated' paths
-        while i>=0 and a[i]!='/':
-            i-=1
-        if i>=0 and a[i:]==b[2]:
-            return None
+            a[2] += b[2]
 
-        return a + up.urlunparse(b)
+            return up.urlunparse(a)
+
+
+        if b[2][:3]=='../' or b[2][:5]=='./../':    #search in previous directory
+            a[2]=remove_fname(remove_fname(a[2]))
+
+            if b[2][:3]=='../':
+                b[2]=b[2][2:]
+
+            else:
+                b[2]=b[2][4:]
+
+            a[2]+=b[2]
+            return up.urlunparse(a)
+
+
+        print("****",path,"****")
+        return None
+
 
 
 
@@ -87,9 +93,23 @@ def extract_domain(s):
         return s[j+1:]
 
 
+def remove_fname(s):
+    if s=='':
+        return ''
+
+    i=len(s)-1
+
+    while i>=0 and s[i]!='/':
+        i-=1
+
+    if i==-1:
+        return ''
+
+    else:
+        return s[:i]
+
+
 def target_test(url):
     pass
 
-
-#https://gogle.com/index, index/po
 
