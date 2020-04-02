@@ -22,7 +22,7 @@ class Crawler(Extra):
                             print(u)
 
             except Exception as e:
-                print(e)
+                print(e, self.urls[i])
 
             except KeyboardInterrupt:
                 print("\nNo. of URLs =", len(web.urls))

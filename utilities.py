@@ -22,6 +22,8 @@ def url_normalize(cur_page, path):       #Quoting/Encoding/Decoding URLs left
     if b[2]=='':
         return None
 
+    b[2] = up.quote(b[2], safe=';/?:@&=+$,')
+
     if b[1]!='' and b[1]!=a[1]:   #sub-domain or external site
         s1=extract_domain(a[1])
         s2=extract_domain(b[1])
