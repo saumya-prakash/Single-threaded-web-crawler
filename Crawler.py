@@ -1,11 +1,12 @@
 from Extra import *
 
+
+
 class Crawler(Extra):
 
     def crawl(self):
 
         i=0
-
         while i<len(self.urls):
             try:
                 self.cur_page = self.urls[i]
@@ -25,6 +26,7 @@ class Crawler(Extra):
                 print(e, self.urls[i])
 
             except KeyboardInterrupt:
+                print(self.urls[i:])
                 print("\nNo. of URLs =", len(web.urls))
                 sys.exit()
 
@@ -32,7 +34,8 @@ class Crawler(Extra):
                 i+=1
 
 
-a='http://jdwcpatna.com'
+a='https://www.google.co.in'
+
 
 web=Crawler(features='lxml')
 web.home_page=a
