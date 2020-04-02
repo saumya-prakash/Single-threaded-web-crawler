@@ -39,10 +39,12 @@ def url_normalize(cur_page, path):       #Quoting/Encoding/Decoding URLs left
 
     if b[1]=='' or b[1]==a[1]:  #link belonging to the same domain
 
+        b[0]=a[0]
+        b[1]=a[1]
+
         if b[2][0]=='/':    #search in 'root' directory
 
-            a[2]=b[2]
-            return up.urlunparse(a)
+            return up.urlunparse(b)
 
         if b[2][0:2] == './' or (b[2][0] not in ['/', '.']):  # search in the same directory
             a[2] = remove_fname(a[2])
@@ -53,9 +55,9 @@ def url_normalize(cur_page, path):       #Quoting/Encoding/Decoding URLs left
             if b[2][0] != '/':
                 b[2] = '/' + b[2]
 
-            a[2] += b[2]
+            b[2] = a[2] + b[2]
 
-            return up.urlunparse(a)
+            return up.urlunparse(b)
 
 
         if b[2][:3]=='../' or b[2][:5]=='./../':    #search in previous directory
@@ -67,8 +69,8 @@ def url_normalize(cur_page, path):       #Quoting/Encoding/Decoding URLs left
             else:
                 b[2]=b[2][4:]
 
-            a[2]+=b[2]
-            return up.urlunparse(a)
+            b[2] = a[2] + b[2]
+            return up.urlunparse(b)
 
 
         print("****",path,"****")
