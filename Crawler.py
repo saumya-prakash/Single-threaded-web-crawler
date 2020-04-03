@@ -1,16 +1,22 @@
 from Extra import *
 
 
-
 class Crawler(Extra):
 
     def crawl(self):
 
         i=0
         while i<len(self.urls):
-            try:     #Don't open a image, pdf hyperlink
-                if self.urls[i][-4:] in ['.jpg', '.png', '.gif', '.pdf', '.bmp'] or self.urls[i][-5:] == '.jpeg':
+            try:
+                #Don't open a image, pdf, etc. hyperlink
+
+                ignored1=['.sh']
+                ignored2=['.jpg', '.png', '.gif', '.pdf', '.bmp', '.eps', '.deb', '.rpm', '.exe', '.bat']
+                ignored3=['.jpeg']
+
+                if self.urls[i] in ignored1 or self.urls[i][-4:] in ignored2 or self.urls[i][-5:] in ignored3:
                     continue
+
                 self.cur_page = self.urls[i]
 
                 soup=BeautifulSoup(load_page(self.urls[i]), 'lxml')
@@ -29,8 +35,6 @@ class Crawler(Extra):
                             self.urls.append(u)
                             print(u)
 
-                time.sleep(0.5)
-
 
             except Exception as e:
                 print(e, self.urls[i])
@@ -44,7 +48,7 @@ class Crawler(Extra):
                 i+=1
 
 
-a='http://www.nitp.ac.in/php/home.php'
+a='http://jdwcpatna.com'
 
 
 web=Crawler(features='lxml')
