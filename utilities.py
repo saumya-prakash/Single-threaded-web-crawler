@@ -22,22 +22,30 @@ def url_normalize(cur_page, path):       #Quoting/Encoding/Decoding URLs left
     if b[2]=='':
         return None
 
-    b[2] = up.quote(b[2], safe=';/?:@&=+$,')
+
+    ignored=';/?:@&=+$.,'
+    b[2] = up.quote(b[2], safe=ignored)
+    b[3] = up.quote(b[3], safe=ignored)
+    b[4] = up.quote(b[4], safe=ignored)
+    b[5] = up.quote(b[5], safe=ignored)
 
     if b[1]!='' and b[1]!=a[1]:   #sub-domain or external site
-        s1=extract_domain(a[1])
-        s2=extract_domain(b[1])
-
-        if s1==s2:     #sub-domain
-            if b[0]=='':
-                b[0]='http://'
-            return up.urlunparse(b)
-
-        else:        #external site
-            return None
-
+        # s1=extract_domain(a[1])
+        # s2=extract_domain(b[1])
+        #
+        # if s1==s2:     #sub-domain
+        #     if b[0]=='':
+        #         b[0]='http://'
+        #     return up.urlunparse(b)
+        #
+        # else:        #external site
+        #     return None
+        return None
 
     if b[1]=='' or b[1]==a[1]:  #link belonging to the same domain
+
+        if b[1]==a[1]:
+            return up.urlunparse(b)
 
         b[0]=a[0]
         b[1]=a[1]
