@@ -1,5 +1,7 @@
 from Extra import *
 
+par=[-1]
+pat=['']
 
 class Crawler(Extra):
 
@@ -11,8 +13,8 @@ class Crawler(Extra):
                 #Don't open a image, pdf, etc. hyperlink
 
                 ignored1=['.sh']
-                ignored2=['.jpg', '.png', '.gif', '.pdf', '.bmp', '.eps', '.deb', '.rpm', '.exe', '.bat']
-                ignored3=['.jpeg']
+                ignored2=['.jpg', '.png', '.gif', '.pdf', '.bmp', '.eps', '.deb', '.rpm', '.exe', '.bat', '.mp4']
+                ignored3=['.jpeg', '.docx', '.bash']
 
                 if self.urls[i] in ignored1 or self.urls[i][-4:] in ignored2 or self.urls[i][-5:] in ignored3:
                     continue
@@ -34,10 +36,13 @@ class Crawler(Extra):
                         if u not in self.urls:
                             self.urls.append(u)
                             print(u)
+                            par.append(i)
+                            pat.append(path)
 
+                time.sleep(0.5)
 
             except Exception as e:
-                print(e, self.urls[i])
+                print(e, self.urls[i], "**", self.urls[par[i]], pat[i])
 
             except KeyboardInterrupt:
                 print(self.urls[i:])
@@ -48,7 +53,7 @@ class Crawler(Extra):
                 i+=1
 
 
-a='http://jdwcpatna.com'
+a='http://www.nitp.ac.in/academics.php?pp=admission'
 
 
 web=Crawler(features='lxml')

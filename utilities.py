@@ -67,6 +67,20 @@ def url_normalize(cur_page, path):       #Quoting/Encoding/Decoding URLs left
 
             return up.urlunparse(b)
 
+        if b[2][:6]=='../../' or b[2][:8]=='./../../':  #search in two directories up
+
+            a[2]=remove_fname(remove_fname(remove_fname(a[2])))
+
+            if b[2][:6]=='../../':
+                b[2] = b[2][5:]
+
+            else:
+                b[2] = b[2][7:]
+
+            b[2] = a[2]+b[2]
+
+            return up.urlunparse(b)
+
 
         if b[2][:3]=='../' or b[2][:5]=='./../':    #search in previous directory
             a[2]=remove_fname(remove_fname(a[2]))
