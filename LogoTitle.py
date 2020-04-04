@@ -38,7 +38,7 @@ class LogoTitle(Extra):
 
 	def get_logo(self):
 		
-		t = self.find('img', attrs={'src': self.__sr})  # first image with 'logo' keyword 
+		t = self.find('img', attrs={'src': LogoTitle.__sr})  # first image with 'logo' keyword
 		
 		if t is None:                # link to home page heuristic
 			t = self.find(self.__par_a)

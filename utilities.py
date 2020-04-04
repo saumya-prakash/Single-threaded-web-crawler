@@ -19,9 +19,8 @@ def url_normalize(cur_page, path):       #Quoting/Encoding/Decoding URLs left
     a=list(up.urlparse(cur_page))
     b=list(up.urlparse(path))
 
-    if b[2]=='':
+    if b[2]=='' and b[3]=='' and b[4]=='':     #fragment not checked->used for targeted linking only
         return None
-
 
     ignored=';/?:@&=+$.,'
     b[2] = up.quote(b[2], safe=ignored)
@@ -51,8 +50,8 @@ def url_normalize(cur_page, path):       #Quoting/Encoding/Decoding URLs left
         b[1]=a[1]
 
         if b[2][0]=='/':    #search in 'root' directory
-
             return up.urlunparse(b)
+
 
         if b[2][0:2] == './' or (b[2][0] not in ['/', '.']):  # search in the same directory
             a[2] = remove_fname(a[2])
@@ -67,7 +66,7 @@ def url_normalize(cur_page, path):       #Quoting/Encoding/Decoding URLs left
 
             return up.urlunparse(b)
 
-        if b[2][:6]=='../../' or b[2][:8]=='./../../':  #search in two directories up
+        if b[2][:6]=='../../' or b[2][:8]=='./../../':  #search in two directory levels up
 
             a[2]=remove_fname(remove_fname(remove_fname(a[2])))
 
@@ -95,7 +94,7 @@ def url_normalize(cur_page, path):       #Quoting/Encoding/Decoding URLs left
             return up.urlunparse(b)
 
 
-        print("****",path,"****")
+        print("****", cur_page, path,"****")
         return None
 
 
