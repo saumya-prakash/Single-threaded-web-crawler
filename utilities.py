@@ -2,7 +2,7 @@ from modules import *
 
 def load_page(url):
 
-    headers={'User-Agent':'''Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:74.0) Gecko/20100101 Firefox/74.0''',
+    headers={'User-Agent':'''Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:75.0) Gecko/20100101 Firefox/75.0''',
              'Accept':'''text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8''',
              'Connection':'''keep-alive'''}
 
@@ -11,15 +11,17 @@ def load_page(url):
     return ur.urlopen(req)
 
 
-def url_normalize(cur_page, path):       #Quoting/Encoding/Decoding URLs left
+def url_normalize(cur_page, path):
 
     cur_page=cur_page.strip()
     path=path.strip()
 
-    a=list(up.urlparse(cur_page))
-    b=list(up.urlparse(path))
+    b=list(up.urlparse(path))    #'b' parsed into components
 
-    if b[2]=='' and b[3]=='' and b[4]=='':     #fragment not checked->used for targeted linking only
+    if b[0] not in ['', 'http', 'https']:          #mailto: handling; javascript:void() handling
+        return None
+
+    if b[2]=='' and b[3]=='' and b[4]=='' and b[5]=='':     #fragment checked, as it may show something useful
         return None
 
     ignored=';/?:@&=+$.,'
@@ -27,6 +29,8 @@ def url_normalize(cur_page, path):       #Quoting/Encoding/Decoding URLs left
     b[3] = up.quote(b[3], safe=ignored)
     b[4] = up.quote(b[4], safe=ignored)
     b[5] = up.quote(b[5], safe=ignored)
+
+    a = list(up.urlparse(cur_page))   #'a' parsed into components
 
     if b[1]!='' and b[1]!=a[1]:   #sub-domain or external site
         # s1=extract_domain(a[1])
@@ -43,7 +47,9 @@ def url_normalize(cur_page, path):       #Quoting/Encoding/Decoding URLs left
 
     if b[1]=='' or b[1]==a[1]:  #link belonging to the same domain
 
-        if b[1]==a[1]:
+        if b[1]==a[1]:       #complete link aready present
+            if b[0]=='':
+                b[0]=a[0]
             return up.urlunparse(b)
 
         b[0]=a[0]
@@ -52,19 +58,6 @@ def url_normalize(cur_page, path):       #Quoting/Encoding/Decoding URLs left
         if b[2][0]=='/':    #search in 'root' directory
             return up.urlunparse(b)
 
-
-        if b[2][0:2] == './' or (b[2][0] not in ['/', '.']):  # search in the same directory
-            a[2] = remove_fname(a[2])
-
-            if b[2][0] == '.':
-                b[2] = b[2][1:]
-
-            if b[2][0] != '/':
-                b[2] = '/' + b[2]
-
-            b[2] = a[2] + b[2]
-
-            return up.urlunparse(b)
 
         if b[2][:6]=='../../' or b[2][:8]=='./../../':  #search in two directory levels up
 
@@ -94,7 +87,20 @@ def url_normalize(cur_page, path):       #Quoting/Encoding/Decoding URLs left
             return up.urlunparse(b)
 
 
-        print("****", cur_page, path,"****")
+        if b[2][0:2] == './' or (b[2][0] not in ['/', '.']):  # search in the same directory
+            a[2] = remove_fname(a[2])
+
+            if b[2][0] == '.':
+                b[2] = b[2][1:]
+
+            if b[2][0] != '/':
+                b[2] = '/' + b[2]
+
+            b[2] = a[2] + b[2]
+
+            return up.urlunparse(b)
+
+        print("****", cur_page, path,"****")  #case not found
         return None
 
 
@@ -122,6 +128,7 @@ def remove_fname(s):
     if s=='':
         return ''
 
+    
     i=len(s)-1
 
     while i>=0 and s[i]!='/':
@@ -138,3 +145,4 @@ def target_test(url):
     pass
 
 
+print(url_normalize("http://schoolofglobaleducation.com/#1", "aboutus.html"))

@@ -6,13 +6,13 @@ pat=['']
 class Crawler(Extra):
 
     __ignored1 = ['.sh']
-    __ignored2 = ['.jpg', '.png', '.gif', '.pdf', '.bmp', '.eps', '.deb', '.rpm', '.exe', '.bat', '.mp4', '.doc', '.ppt']
+    __ignored2 = ['.jpg', '.JPG', '.png', '.gif', '.pdf', '.PDF', '.bmp', '.eps', '.deb', '.rpm', '.exe', '.bat', '.mp4', '.doc', '.ppt']
     __ignored3 = ['.jpeg', '.docx', '.bash', '.pptx']
     #
     # __ignored=list()
 
 
-    def crawl(self):
+    def crawl(self):     #calendar to be avoided
 
         i=0
         while i<len(self.urls):
@@ -21,7 +21,7 @@ class Crawler(Extra):
 
                 print(self.urls[i], "->", self.urls[par[i]], pat[i])
 
-                if self.urls[i] in Crawler.__ignored1 or self.urls[i][-4:] in Crawler.__ignored2 or self.urls[i][-5:] in Crawler.__ignored3:
+                if self.urls[i][-3:] in Crawler.__ignored1 or self.urls[i][-4:] in Crawler.__ignored2 or self.urls[i][-5:] in Crawler.__ignored3:
                     continue
 
                 self.cur_page = self.urls[i]
@@ -42,7 +42,7 @@ class Crawler(Extra):
                             par.append(i)
                             pat.append(path)
 
-                time.sleep(0.3)
+                time.sleep(0.2)
 
             except Exception as e:
                 print(e, self.urls[i], "**", self.urls[par[i]], pat[i])
@@ -65,4 +65,4 @@ web.urls.append(a)
 
 web.crawl()
 
-print("\nNo. of URLs =",len(web.urls))
+#print("\nNo. of URLs =",len(web.urls))
