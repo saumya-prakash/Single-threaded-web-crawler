@@ -33,16 +33,18 @@ class Crawler(Extra):
                     if t.has_attr('href')==False:
                         continue
                     path = t['href']
-                    u = url_normalize(self.cur_page, path)
+                    try:
+                        u = url_normalize(self.cur_page, path)
+                    except Exception as e:
+                        print(e, self.urls[i], path)
 
                     if u is not None:
                         if u not in self.urls:
                             self.urls.append(u)
-                            #print(u)
                             par.append(i)
                             pat.append(path)
 
-                time.sleep(0.2)
+                time.sleep(0.1)
 
             except Exception as e:
                 print(e, self.urls[i], "**", self.urls[par[i]], pat[i])
@@ -65,4 +67,4 @@ web.urls.append(a)
 
 web.crawl()
 
-#print("\nNo. of URLs =",len(web.urls))
+print("\nNo. of URLs =",len(web.urls))

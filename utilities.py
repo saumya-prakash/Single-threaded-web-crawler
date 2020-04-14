@@ -13,24 +13,34 @@ def load_page(url):
 
 def url_normalize(cur_page, path):
 
-    cur_page=cur_page.strip()
-    path=path.strip()
+    cur_page=cur_page.strip() #may have spaces at the end
+    path=path.strip()   #necessary
+
+    path=encode_space(path)
 
     b=list(up.urlparse(path))    #'b' parsed into components
 
-    if b[0] not in ['', 'http', 'https']:          #mailto: handling; javascript:void() handling
+    if b[0] not in ['', 'http', 'https']:          #Some other scheme present, like, mailto, javascript, etc.
         return None
 
-    if b[2]=='' and b[3]=='' and b[4]=='' and b[5]=='':     #fragment checked, as it may show something useful
-        return None
+    a = list(up.urlparse(cur_page))  # 'a' parsed into components
 
-    ignored=';/?:@&=+$.,'
-    b[2] = up.quote(b[2], safe=ignored)
-    b[3] = up.quote(b[3], safe=ignored)
-    b[4] = up.quote(b[4], safe=ignored)
-    b[5] = up.quote(b[5], safe=ignored)
+    if b[2]=='' and b[3]=='' and b[4]=='':      #b[1] to be checked???
+        if b[5]=='':    #Everything is empty; probably an internal link to the same page
+            return None
+        else:           #Some internal link; may reveal something new
+            a[5]=b[5]
+            return up.urlunparse(a)
 
-    a = list(up.urlparse(cur_page))   #'a' parsed into components
+
+
+    # ignored=';/?:@&=+$.,'
+    # b[2] = up.quote(b[2], safe=ignored)
+    # b[3] = up.quote(b[3], safe=ignored)
+    # b[4] = up.quote(b[4], safe=ignored)
+    # b[5] = up.quote(b[5], safe=ignored)
+
+
 
     if b[1]!='' and b[1]!=a[1]:   #sub-domain or external site
         # s1=extract_domain(a[1])
@@ -45,45 +55,40 @@ def url_normalize(cur_page, path):
         #     return None
         return None
 
-    if b[1]=='' or b[1]==a[1]:  #link belonging to the same domain
+    else:      # b[1]=='' or b[1]==a[1]:  #link belonging to the same domain
 
         if b[1]==a[1]:       #complete link aready present
-            if b[0]=='':
+            if b[0]=='':     #set the scheme of 'a' in 'b' (they belong to the same domain
                 b[0]=a[0]
-            return up.urlunparse(b)
+            return up.urlunparse(b).strip()
 
         b[0]=a[0]
         b[1]=a[1]
 
-        if b[2][0]=='/':    #search in 'root' directory
+        if b[2][0]=='/':    #search in the 'root' directory
             return up.urlunparse(b)
 
+        if a[2][-1]=='/':      #removing the last '/' if present -> to be REVIEWED
+            a[2]=a[2][:-1]
 
-        if b[2][:6]=='../../' or b[2][:8]=='./../../':  #search in two directory levels up
 
-            a[2]=remove_fname(remove_fname(remove_fname(a[2])))
+        if b[2][:3]=='../' or b[2][:5]=='./../':   #general function for moving up the directory levels
+            i=0
 
-            if b[2][:6]=='../../':
-                b[2] = b[2][5:]
+            n = len(b[2])
+            if b[2][:2]=='./':
+                i+=2
 
-            else:
-                b[2] = b[2][7:]
+            a[2] = remove_fname(a[2])
+
+            while i+2<=n and b[2][i:i+2]=='..':
+                a[2] = remove_fname(a[2])
+                i+=3
+
+            b[2]='/' + b[2][i:]
 
             b[2] = a[2]+b[2]
 
-            return up.urlunparse(b)
-
-
-        if b[2][:3]=='../' or b[2][:5]=='./../':    #search in previous directory
-            a[2]=remove_fname(remove_fname(a[2]))
-
-            if b[2][:3]=='../':
-                b[2]=b[2][2:]
-
-            else:
-                b[2]=b[2][4:]
-
-            b[2] = a[2] + b[2]
             return up.urlunparse(b)
 
 
@@ -128,7 +133,6 @@ def remove_fname(s):
     if s=='':
         return ''
 
-    
     i=len(s)-1
 
     while i>=0 and s[i]!='/':
@@ -141,8 +145,17 @@ def remove_fname(s):
         return s[:i]
 
 
+def encode_space(s):
+    res=''
+    for i in s:
+        if i==' ':
+            res = res+'%20'
+        else:
+            res=res+i
+    return res
+
+
 def target_test(url):
     pass
 
-
-print(url_normalize("http://schoolofglobaleducation.com/#1", "aboutus.html"))
+print(url_normalize('https://www.dmi.ac.in/a/b/c/d/e/q.txt', 'https://www.dmi.ac.in/sa'))
