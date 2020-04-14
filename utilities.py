@@ -13,7 +13,7 @@ def load_page(url):
 
 def url_normalize(cur_page, path):
 
-    cur_page=cur_page.strip() #may have spaces at the end
+    #cur_page=cur_page.strip() #may have spaces at the end, but not necessary now
     path=path.strip()   #necessary
 
     path=encode_space(path)
@@ -60,7 +60,7 @@ def url_normalize(cur_page, path):
         if b[1]==a[1]:       #complete link aready present
             if b[0]=='':     #set the scheme of 'a' in 'b' (they belong to the same domain
                 b[0]=a[0]
-            return up.urlunparse(b).strip()
+            return encode_space(up.urlunparse(b).strip())
 
         b[0]=a[0]
         b[1]=a[1]
@@ -158,4 +158,4 @@ def encode_space(s):
 def target_test(url):
     pass
 
-print(url_normalize('https://www.dmi.ac.in/a/b/c/d/e/q.txt', 'https://www.dmi.ac.in/sa'))
+# print(url_normalize('https://www.dmi.ac.in/a/b/c/d/e/q.txt', 'https://www.dmi.ac.in/sa'))

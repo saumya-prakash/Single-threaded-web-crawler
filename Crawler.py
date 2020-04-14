@@ -7,7 +7,7 @@ class Crawler(Extra):
 
     __ignored1 = ['.sh']
     __ignored2 = ['.jpg', '.JPG', '.png', '.gif', '.pdf', '.PDF', '.bmp', '.eps', '.deb', '.rpm', '.exe', '.bat', '.mp4', '.doc', '.ppt']
-    __ignored3 = ['.jpeg', '.docx', '.bash', '.pptx']
+    __ignored3 = ['.jpeg', '.JPEG', '.docx', '.bash', '.pptx']
     #
     # __ignored=list()
 
@@ -23,6 +23,11 @@ class Crawler(Extra):
 
                 if self.urls[i][-3:] in Crawler.__ignored1 or self.urls[i][-4:] in Crawler.__ignored2 or self.urls[i][-5:] in Crawler.__ignored3:
                     continue
+                tmp=up.urlparse(self.urls[i])[2]
+                if tmp!='':
+                    if tmp[-3:] in Crawler.__ignored1 or tmp[-4:] in Crawler.__ignored2 or tmp[-5:] in Crawler.__ignored3:
+                        continue
+
 
                 self.cur_page = self.urls[i]
 
@@ -43,8 +48,7 @@ class Crawler(Extra):
                             self.urls.append(u)
                             par.append(i)
                             pat.append(path)
-
-                time.sleep(0.1)
+                # time.sleep(0.1)
 
             except Exception as e:
                 print(e, self.urls[i], "**", self.urls[par[i]], pat[i])
@@ -58,7 +62,7 @@ class Crawler(Extra):
                 i+=1
 
 
-a=''
+
 a=input("Enter URL address: ")
 
 web=Crawler(features='lxml')
