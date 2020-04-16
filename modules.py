@@ -1,4 +1,4 @@
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, SoupStrainer
 import urllib.request as ur
 import urllib.parse as up
 import urllib.error as ue

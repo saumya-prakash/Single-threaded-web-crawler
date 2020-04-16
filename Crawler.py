@@ -11,7 +11,6 @@ class Crawler(Extra):
     #
     # __ignored=list()
 
-
     def crawl(self):     #calendar to be avoided
 
         i=0
@@ -28,16 +27,16 @@ class Crawler(Extra):
                     if tmp[-3:] in Crawler.__ignored1 or tmp[-4:] in Crawler.__ignored2 or tmp[-5:] in Crawler.__ignored3:
                         continue
 
-
                 self.cur_page = self.urls[i]
 
-                soup=BeautifulSoup(load_page(self.urls[i]), 'lxml')
+                soup=BeautifulSoup(load_page(self.cur_page), 'lxml', parse_only=SoupStrainer('a', attrs={'href':True}))
 
                 for t in soup.find_all('a'):
 
-                    if t.has_attr('href')==False:
-                        continue
+                    # if t.has_attr('href')==False:
+                    #     continue
                     path = t['href']
+
                     try:
                         u = url_normalize(self.cur_page, path)
                     except Exception as e:

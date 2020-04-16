@@ -68,7 +68,7 @@ def url_normalize(cur_page, path):
         if b[2][0]=='/':    #search in the 'root' directory
             return up.urlunparse(b)
 
-        if a[2][-1]=='/':      #removing the last '/' if present -> to be REVIEWED
+        if a[2]!='' and a[2][-1]=='/':      #removing the last '/' if present -> to be REVIEWED
             a[2]=a[2][:-1]
 
 
@@ -158,4 +158,4 @@ def encode_space(s):
 def target_test(url):
     pass
 
-# print(url_normalize('https://www.dmi.ac.in/a/b/c/d/e/q.txt', 'https://www.dmi.ac.in/sa'))
+#print(url_normalize('http://www.igims.org', 'topics.aspx?mid=Mi0ssion'))
