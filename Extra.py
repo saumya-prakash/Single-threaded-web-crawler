@@ -6,4 +6,6 @@ class Extra(BeautifulSoup):
         cur_page=''
         urls=list()
         tsites=list()
+        index=-1    #for continuing crawling from a particular page
+        __status=list()   #for differentiating between INTERNAL links and EXTERNAL links
 
