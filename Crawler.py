@@ -5,9 +5,9 @@ from Extra import *
 
 class Crawler():
 
-    __ignored1 = ['.sh']
-    __ignored2 = ['.jpg', '.JPG', '.png', '.gif', '.pdf', '.PDF', '.bmp', '.eps', '.deb', '.rpm', '.exe', '.bat', '.mp3', '.mp4', '.doc', '.ppt']
-    __ignored3 = ['.jpeg', '.JPEG', '.docx', '.bash', '.pptx']
+    __ignored1 = {'.sh'}
+    __ignored2 = {'.jpg', '.JPG', '.png', '.gif', '.pdf', '.PDF', '.bmp', '.eps', '.deb', '.rpm', '.exe', '.bat', '.mp3', '.mp4', '.doc', '.ppt', '.xls', '.csv'}
+    __ignored3 = {'.jpeg', '.JPEG', '.docx', '.bash', '.pptx', '.xlsx', '.json'}
     #
     # __ignored=list()
 
@@ -36,15 +36,12 @@ class Crawler():
         self.__status=list()
         self.__par=[0]  #For tracing back
         self.__pat=['']
-        self.__n=0
 
         Crawler.__set_hp(self, home_page)
 
 
         if self.home_page != '':
-            self.__n = len(self.scheme_dom)
-
-            self.urls.append(self.home_page[self.__n:])
+            self.urls.append(self.home_page[len(self.scheme_dom):])
             self.index=0
 
 
@@ -55,6 +52,7 @@ class Crawler():
             return
 
         i=self.index
+        n=len(self.scheme_dom)
 
         while i<len(self.urls):
             try:
@@ -64,8 +62,8 @@ class Crawler():
 
                 for a in self.crawl_page(delay):
                     if a is not None:
-                        if a[0][self.__n:] not in self.urls:
-                            self.urls.append(a[0][self.__n:])
+                        if a[0][n:] not in self.urls:
+                            self.urls.append(a[0][n:])
                             self.__par.append(i)
                             self.__pat.append(a[1])
 
