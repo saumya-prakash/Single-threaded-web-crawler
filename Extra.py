@@ -1,5 +1,5 @@
 from modules import *
-from utilities import *
+from url_utilities import *
 
 class Extra(BeautifulSoup):
         home_page=''

@@ -59,8 +59,8 @@ def url_normalize(cur_page, path):
     else:      # b[1]=='' or b[1]==a[1]:  #link belonging to the same domain
 
         if b[1]==a[1]:       #complete link aready present
-            if b[0]=='':     #set the scheme of 'a' in 'b' (they belong to the same domain
-                b[0]=a[0]
+            #if b[0]=='':     #set the scheme of 'a' in 'b' (they belong to the same domain
+            b[0]=a[0]      #Ensure scheme of 'a' and 'b' are same
             return encode_space(up.urlunparse(b).strip())
 
         b[0]=a[0]
