@@ -2,7 +2,7 @@ from Extra import *
 
 class LogoTitle(Extra):
 
-	__sr = re.compile(".*logo.*", re.IGNORECASE)
+	__sr = "logo"
 	
 	def __par_a(self, s):
 		a = (s.name=='img') and (s.parent.name=='a')
@@ -29,7 +29,7 @@ class LogoTitle(Extra):
 				if isinstance(a[b], list):       # when the attribute takes multiple values
 					a[b] = ' '.join(a[b])
 				
-				if bool(re.match(self.__sr, a[b])):   # str(a[b]) -> attr vlue may be in a list
+				if bool(re.search(LogoTitle.__sr, a[b], re.IGNORECASE)):   # str(a[b]) -> attr vlue may be in a list
 					return a
 		
 		return None
@@ -38,7 +38,7 @@ class LogoTitle(Extra):
 
 	def get_logo(self):
 		
-		t = self.find('img', attrs={'src': LogoTitle.__sr})  # first image with 'logo' keyword
+		t = self.find('img', attrs={'src': re.compile(LogoTitle.__sr, re.IGNORECASE)})  # first image with 'logo' keyword
 		
 		if t is None:                # link to home page heuristic
 			t = self.find(self.__par_a)
@@ -91,7 +91,7 @@ print(url)
 
 
 
-     #Loading a page takes most of the time
+#Loading a page takes most of the time
 
 soup=LogoTitle(load_page(url), 'lxml')
 

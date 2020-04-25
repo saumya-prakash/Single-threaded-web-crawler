@@ -1,10 +1,12 @@
 from modules import *
 
-def load_page(url):       #handling redirects left
+def load_page(url):
 
     headers={'User-Agent':'''Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:75.0) Gecko/20100101 Firefox/75.0''',
-             'Accept':'''text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8''',
+             'Accept':'''*/*''',
              'Connection':'''keep-alive'''}
+
+    #text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
 
     req = ur.Request(url=url, headers=headers)
 
@@ -32,14 +34,6 @@ def url_normalize(cur_page, path):
         #     a[5]=b[5]
         #     return up.urlunparse(a)
         return None           #internal link with complete path name (to the same page) to be excluded
-
-
-
-    # ignored=';/?:@&=+$.,'
-    # b[2] = up.quote(b[2], safe=ignored)
-    # b[3] = up.quote(b[3], safe=ignored)
-    # b[4] = up.quote(b[4], safe=ignored)
-    # b[5] = up.quote(b[5], safe=ignored)
 
 
 

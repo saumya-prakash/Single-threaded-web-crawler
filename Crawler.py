@@ -5,8 +5,8 @@ from Extra import *
 
 class Crawler():
 
-    __ignored1 = {'.sh'}
-    __ignored2 = {'.jpg', '.JPG', '.png', '.gif', '.pdf', '.PDF', '.bmp', '.eps', '.deb', '.rpm', '.exe', '.bat', '.mp3', '.mp4', '.doc', '.ppt', '.xls', '.csv'}
+    __ignored1 = {'.sh'}     #Use if mimetypes module seems inevitable
+    __ignored2 = {'.m4a', '.rar', '.jpg', '.JPG', '.png', '.gif', '.pdf', '.PDF', '.bmp', '.eps', '.deb', '.rpm', '.exe', '.bat', '.mp3', '.mp4', '.doc', '.ppt', '.xls', '.csv'}
     __ignored3 = {'.jpeg', '.JPEG', '.docx', '.bash', '.pptx', '.xlsx', '.json'}
     #
     # __ignored=list()
@@ -31,13 +31,12 @@ class Crawler():
         self.home_page=''
         self.cur_page=''
         self.urls=list()
-        self.tsites=list()
         self.index=-1     #For differentiating between external and internal links
         self.__status=list()
         self.__par=[0]  #For tracing back
         self.__pat=['']
 
-        Crawler.__set_hp(self, home_page)
+        self.__set_hp(home_page)
 
 
         if self.home_page != '':
@@ -46,7 +45,8 @@ class Crawler():
 
 
 
-    def crawl(self, delay=0.0):     #calendar to be avoided
+    def crawl(self, delay=0.0):     #CALENDAR to be avoided
+
         if self.home_page=='':
             print("Nothing to CRAWL")
             return
@@ -107,7 +107,7 @@ class Crawler():
                 self.index=i
                 print("No. of urls =", len(self.urls))
                 print("No. of urls crawled =", i+1)
-                sys.exit()
+                return
 
 
             finally:
@@ -120,6 +120,7 @@ class Crawler():
     def crawl_page(self, delay=0.0):   #Crawls a single page (self.cur_page) and return a list of urls found in that page
         try:
             url = self.cur_page
+
             if url[-3:] in Crawler.__ignored1 or url[-4:] in Crawler.__ignored2 or url[-5:] in Crawler.__ignored3:
                 return None
             tmp = up.urlparse(url)[2]  # Don't open a image, pdf, etc. hyperlink
@@ -128,6 +129,7 @@ class Crawler():
                     return None
 
             ht=load_page(url)
+
         except Exception as e:
             print(e)
 
@@ -154,7 +156,6 @@ class Crawler():
             time.sleep(delay)
 
 
-
     def get_root(self, u):
         i=0
         for i in range(self.urls):
@@ -165,12 +166,4 @@ class Crawler():
 
 
 
-a=input("Enter URL address: ")
 
-web=Crawler(a)
-
-web.crawl()
-
-
-print("\nNo. of URLs =", web.index)
-print("No. of pages crawled =", web.index)
