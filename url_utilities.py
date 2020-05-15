@@ -4,7 +4,7 @@ def load_page(url):
 
     headers={'User-Agent':'''Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:75.0) Gecko/20100101 Firefox/75.0''',
              'Accept':'''*/*''',
-             'Connection':'''keep-alive'''}
+             'Connection':'''close'''}
 
     #text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
 
@@ -150,7 +150,5 @@ def encode_space(s):
     return res
 
 
-def target_test(url):
-    pass
 
 #print(url_normalize('http://www.igims.org', 'topics.aspx?mid=Mi0ssion'))

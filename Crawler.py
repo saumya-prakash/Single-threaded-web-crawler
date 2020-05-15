@@ -5,11 +5,15 @@ from Extra import *
 
 class Crawler():
 
-    __ignored1 = {'.sh'}     #Use if mimetypes module seems inevitable
-    __ignored2 = {'.m4a', '.rar', '.jpg', '.JPG', '.png', '.gif', '.pdf', '.PDF', '.bmp', '.eps', '.deb', '.rpm', '.exe', '.bat', '.mp3', '.mp4', '.doc', '.ppt', '.xls', '.csv'}
-    __ignored3 = {'.jpeg', '.JPEG', '.docx', '.bash', '.pptx', '.xlsx', '.json'}
-    #
-    # __ignored=list()
+    __ignored1 = {'.sh'}     #Use of mimetypes module seems inevitable
+    __ignored2 = {'.csv'}
+    __ignored3 = {'.bash'}
+
+    __ignored=set()
+    __ignored.union(__ignored1)
+    __ignored.union(__ignored2)
+    __ignored.union(__ignored3)
+
 
     def __set_hp(self, hp):
         if hp=='':
@@ -25,22 +29,21 @@ class Crawler():
                 print("Error in setting home page", e)
                 return
 
-
     def __init__(self, home_page):
         self.scheme_dom = ''
         self.home_page=''
         self.cur_page=''
         self.urls=list()
-        self.index=-1     #For differentiating between external and internal links
-        self.__status=list()
-        self.__par=[0]  #For tracing back
-        self.__pat=['']
+        self.index=-1
+        self.__parent=list()  # For tracing back
+        self.__path=list()
 
         self.__set_hp(home_page)
 
-
         if self.home_page != '':
             self.urls.append(self.home_page[len(self.scheme_dom):])
+            self.__path.append('')
+            self.__parent.append(0)
             self.index=0
 
 
@@ -53,52 +56,22 @@ class Crawler():
 
         i=self.index
         n=len(self.scheme_dom)
+        m = len(self.urls)
 
-        while i<len(self.urls):
+        while i < m:
             try:
-                print(self.scheme_dom + self.urls[i], "->", self.scheme_dom + self.urls[self.__par[i]], self.__pat[i])
+                print(self.scheme_dom + self.urls[i], "->", self.scheme_dom + self.urls[self.__parent[i]], self.__path[i])
 
                 self.cur_page= self.scheme_dom + self.urls[i]
 
                 for a in self.crawl_page(delay):
                     if a is not None:
                         if a[0][n:] not in self.urls:
+                            m += 1
                             self.urls.append(a[0][n:])
-                            self.__par.append(i)
-                            self.__pat.append(a[1])
+                            self.__path.append(a[1])
+                            self.__parent.append(i)
 
-
-                # if self.urls[i][-3:] in Crawler.__ignored1 or self.urls[i][-4:] in Crawler.__ignored2 or self.urls[i][-5:] in Crawler.__ignored3:
-                #     continue
-                # tmp=up.urlparse(self.urls[i])[2]      #Don't open a image, pdf, etc. hyperlink
-                # if tmp!='':
-                #     if tmp[-3:] in Crawler.__ignored1 or tmp[-4:] in Crawler.__ignored2 or tmp[-5:] in Crawler.__ignored3:
-                #         continue
-                #
-                # ht=load_page(self.urls[i])
-                # #self.urls[i] = ht.geturl()   #If a redirect follows, link in the list not updated as it may result in infinite loop
-                #
-                # if up.urlparse(ht.geturl())[1] != up.urlparse(self.home_page)[1]:   #Redirect to some external link
-                #     continue
-                #
-                # self.cur_page=ht.geturl()
-                #
-                # soup=BeautifulSoup(ht, 'lxml', parse_only=SoupStrainer('a', attrs={'href':True}))
-                #
-                # for t in soup.find_all('a'):
-                #
-                #     path = t['href']
-                #     try:
-                #         u = url_normalize(self.cur_page, path)
-                #     except Exception as e:
-                #         print(e, self.cur_page, path)
-                #     else:
-                #         if u is not None:
-                #             if u not in self.urls:
-                #                 self.urls.append(u)
-                #                 self.__par.append(i)
-                #                 self.__pat.append(path)
-                # time.sleep(delay)
 
             except Exception as e:
                 print(e, self.urls[i], "**")
@@ -109,24 +82,22 @@ class Crawler():
                 print("No. of urls crawled =", i+1)
                 return
 
-
             finally:
                 i+=1
 
-        self.index=i
+        self.index=i               # End of function crawl()
 
 
 
-    def crawl_page(self, delay=0.0):   #Crawls a single page (self.cur_page) and return a list of urls found in that page
+    def crawl_page(self, delay=0.0):   #Crawls a single page (self.cur_page) and yield a list of (url, path) found on that page
         try:
             url = self.cur_page
 
-            if url[-3:] in Crawler.__ignored1 or url[-4:] in Crawler.__ignored2 or url[-5:] in Crawler.__ignored3:
+            if self.file_check(url)==False:
                 return None
-            tmp = up.urlparse(url)[2]  # Don't open a image, pdf, etc. hyperlink
-            if tmp != '':
-                if url[-3:] in Crawler.__ignored1 or url[-4:] in Crawler.__ignored2 or url[-5:] in Crawler.__ignored3:
-                    return None
+
+            if self.file_check(up.urlparse(url)[2])==False:       # checking the path part of the URL
+                return None
 
             ht=load_page(url)
 
@@ -160,10 +131,19 @@ class Crawler():
         i=0
         for i in range(self.urls):
             if self.urls[i]==u:
-                return (self.urls[self.__par[i]], self.__pat[i])
+                return (self.urls[self.__parent[i]], self.__path[i])
 
         return None
 
+    def file_check(s):
+        a = mimetypes.guess_type(s)
 
+        if a[0] is None:
+            for i in Crawler.__ignored:
+                if s.endswith(i):
+                    return False
 
+        elif a[0][0] in {'a', 'c', 'i', 'i', 'm', 'v', 'x'}:
+            return False
 
+        return True

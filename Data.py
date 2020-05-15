@@ -10,17 +10,16 @@ class Data(Crawler):
     def get_tsites(self, a, b=[]):
 
         for link in self.urls:
-            for i in a:
+
+            for i in b:   #Negative filter
                 if bool(i.search(link)):
-                    if len(b)==0:
+                    break
+            else:
+                for j in a:
+                    if bool(j.search(link)):
                         self.tsites.append(link)
                         break
-                    else:    #Negative filter
-                        for j in b:
-                            if j.search(link):
-                                break
-                        else:
-                            self.tsites.append(link)
+
 
 
 
@@ -28,17 +27,17 @@ class Data(Crawler):
         pass
 
 
-
-
     def get_logo(self):
 
-        soup = BeautifulSoup(load_page(self.home_page), features='lxml', parse_only=SoupStrainer('a', 'img'))
+        ht=load_page(self.home_page)
 
+        soup = BeautifulSoup(ht, features='lxml', parse_only=SoupStrainer('img', attrs={'src':re.compile('logo', re.IGNORECASE)}))
         t = soup.find('img', attrs={'src':re.compile('logo', re.IGNORECASE)})   #image with 'logo' in the source
 
         if t is None:
             # u=url_normalize(self.home_page, t['src'])
             # ur.urlretrieve(u, "logo")
+            soup = BeautifulSoup(ht, features='lxml', parse_only=SoupStrainer('a'))
             t=soup.find(self.__img_hpage)              #image with link to the home page
 
 
@@ -71,6 +70,7 @@ s.append(re.compile('job', re.IGNORECASE))
 s.append(re.compile('career', re.IGNORECASE))
 s.append(re.compile('opportunit', re.IGNORECASE))
 # s.append(re.compile('notice', re.IGNORECASE))   #Very generous filter
+# s.append(re.compile('announcement', re.IGNORECASE))
 s.append(re.compile('recruit(?!er(s)?)', re.IGNORECASE))
 s.append(re.compile('position', re.IGNORECASE))
 s.append(re.compile('role', re.IGNORECASE))
@@ -79,7 +79,8 @@ s.append(re.compile('interview', re.IGNORECASE))
 
 p.append(re.compile('result', re.IGNORECASE))
 
+
 web.get_tsites(s, p)
 
 for i in web.tsites:
-    print(web.scheme_dom+i)
+    print(i)
