@@ -151,4 +151,4 @@ def encode_space(s):
 
 
 
-#print(url_normalize('http://www.igims.org', 'topics.aspx?mid=Mi0ssion'))
+#print(url_normalize('http://www.nielit.gov.in/', 'http://nielit.gov.in/sites/all/themes/berry/images/NIELIT-Logo.png'))

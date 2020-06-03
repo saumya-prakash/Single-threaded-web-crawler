@@ -1,11 +1,9 @@
 from Extra import *
 
-# par=[0]   #Will later be included in the class itself
-# pat=['']
 
 class Crawler():
 
-    __ignored1 = {'.sh'}     #Use of mimetypes module seems inevitable
+    __ignored1 = {'.sh'}
     __ignored2 = {'.csv'}
     __ignored3 = {'.bash'}
 
@@ -64,7 +62,7 @@ class Crawler():
 
                 self.cur_page= self.scheme_dom + self.urls[i]
 
-                for a in self.crawl_page(delay):
+                for a in self.crawl_page(self.cur_page, delay):
                     if a is not None:
                         if a[0][n:] not in self.urls:
                             m += 1
@@ -78,8 +76,6 @@ class Crawler():
 
             except KeyboardInterrupt:
                 self.index=i
-                print("No. of urls =", len(self.urls))
-                print("No. of urls crawled =", i+1)
                 return
 
             finally:
@@ -89,9 +85,9 @@ class Crawler():
 
 
 
-    def crawl_page(self, delay=0.0):   #Crawls a single page (self.cur_page) and yield a list of (url, path) found on that page
+    def crawl_page(self, url, delay=0.0):   #Crawls a single page 'url' and yield a list of (url, path) found on that page
         try:
-            url = self.cur_page
+            self.cur_page = url
 
             if self.file_check(url)==False:
                 return None
@@ -135,7 +131,7 @@ class Crawler():
 
         return None
 
-    def file_check(s):
+    def file_check(self, s):
         a = mimetypes.guess_type(s)
 
         if a[0] is None:

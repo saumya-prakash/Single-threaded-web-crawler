@@ -23,23 +23,71 @@ class Data(Crawler):
 
 
 
-    def __img_hpage(self, s):
-        pass
+    def __img_hpage(self, tag):
+        if tag.name != 'a':
+            return False
+
+        if tag.has_attr('href') == False:     # <a> tag has no href attribute
+            return False
+
+        a = None
+        a = tag.find('img')
+        if a is None:       # no <img> tag inside the given <a> tag
+            return False
+
+        path = tag['href']
+        u = url_normalize(self.home_page, path)
+
+        if u != self.home_page:
+            return False
+
+        return True
+
 
 
     def get_logo(self):
 
         ht=load_page(self.home_page)
 
-        soup = BeautifulSoup(ht, features='lxml', parse_only=SoupStrainer('img', attrs={'src':re.compile('logo', re.IGNORECASE)}))
-        t = soup.find('img', attrs={'src':re.compile('logo', re.IGNORECASE)})   #image with 'logo' in the source
+        soup = BeautifulSoup(ht, features='lxml', parse_only=SoupStrainer('img'))
+
+        a = ['src', 'alt', 'title', 'id']
+        t = None
+
+        for key in a:       # searching for appropriate <img> tag with 'logo' keyword
+            t = soup.find('img', attrs={key : re.compile('logo', re.IGNORECASE)})
+            if t is not None:
+                break
+
+        if t is None:                # link to the home-page heuristic
+            soup2 = BeautifulSoup(ht, features='lxml', parse_only=SoupStrainer('a'))
+            t = soup2.find(self.__img_hpage)
+
+        if t is None:           # searching for appropriate <img> tag with 'banner' keyword
+            for key in a:
+                t = soup.find('img', attrs={key : re.compile('banner', re.IGNORECASE)})
+                if t is not None:
+                    break
 
         if t is None:
-            # u=url_normalize(self.home_page, t['src'])
-            # ur.urlretrieve(u, "logo")
-            soup = BeautifulSoup(ht, features='lxml', parse_only=SoupStrainer('a'))
-            t=soup.find(self.__img_hpage)              #image with link to the home page
+            print("Logo couldn't be found.")
+            return
 
+        if t.name == 'img':
+            u = url_normalize(self.home_page, t['src'])
+
+        else:
+            t = t.find('img')
+            u = url_normalize(self.home_page, t['src'])
+
+        ur.urlretrieve(u, 'logo')
+        print("logo downloaded")
+
+
+    def download_data(self):
+        for i in self.tsites:
+            for link in self.crawl(self.scheme_dom + i, 0):      # examining each found link and downloading it if it is a pdf, image, etc.
+                pass
 
 
 
@@ -48,15 +96,10 @@ a=input("Enter URL address: ")
 b=float(input("Input delay: "))
 
 web=Data(a)
-web.crawl(b)
 
-# while True:
-#     web.crawl(b)
-#     if web.index == len(web.urls):
-#         break
-#     c=input("Continue crawling? ")
-#     if c=='n':
-#         break
+web.get_logo()
+
+# web.crawl(b)
 
 print("\nNo. of URLs =", len(web.urls))
 print("No. of pages crawled =", web.index)
@@ -84,3 +127,6 @@ web.get_tsites(s, p)
 
 for i in web.tsites:
     print(i)
+
+
+
