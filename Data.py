@@ -1,5 +1,5 @@
-from Extra import *
-from Crawler import Crawler
+# from Extra import
+from Crawler import *
 
 class Data(Crawler):
 
@@ -19,8 +19,6 @@ class Data(Crawler):
                     if bool(j.search(link)):
                         self.tsites.append(link)
                         break
-
-
 
 
     def __img_hpage(self, tag):
@@ -44,14 +42,13 @@ class Data(Crawler):
         return True
 
 
-
     def get_logo(self):
 
-        ht=load_page(self.home_page)
+        ht = load_page(self.home_page)
 
         soup = BeautifulSoup(ht, features='lxml', parse_only=SoupStrainer('img'))
 
-        a = ['src', 'alt', 'title', 'id']
+        a = ['src', 'alt', 'title', 'id', 'class']
         t = None
 
         for key in a:       # searching for appropriate <img> tag with 'logo' keyword
@@ -80,53 +77,86 @@ class Data(Crawler):
             t = t.find('img')
             u = url_normalize(self.home_page, t['src'])
 
-        ur.urlretrieve(u, 'logo')
+        if u is None:
+            u = t['src']
+
+        ht = load_page(u)      # to bypass 'forbidden' error
+
+        with open("logo", "wb") as file:
+            file.write(ht.read())
         print("logo downloaded")
 
+    def __get_from_table(self, tag):
+        if tag is None:
+            return
 
-    def download_data(self):
-        for i in self.tsites:
-            for link in self.crawl(self.scheme_dom + i, 0):      # examining each found link and downloading it if it is a pdf, image, etc.
-                pass
+        for row in tag.find_all('tr'):       # examining every row
+            pass
 
+    def __get_from_form(self, tag):
+        if tag is None:
+            return
 
-
-
-a=input("Enter URL address: ")
-b=float(input("Input delay: "))
-
-web=Data(a)
-
-web.get_logo()
-
-# web.crawl(b)
-
-print("\nNo. of URLs =", len(web.urls))
-print("No. of pages crawled =", web.index)
+        pass
 
 
-s=[]
-p=[]
+    def download_data(self, url):
+        soup = BeautifulSoup(load_page(url), features='lxml')
 
-s.append(re.compile('vacanc', re.IGNORECASE))
-s.append(re.compile('job', re.IGNORECASE))
-s.append(re.compile('career', re.IGNORECASE))
-s.append(re.compile('opportunit', re.IGNORECASE))
-# s.append(re.compile('notice', re.IGNORECASE))   #Very generous filter
-# s.append(re.compile('announcement', re.IGNORECASE))
-s.append(re.compile('recruit(?!er(s)?)', re.IGNORECASE))
-s.append(re.compile('position', re.IGNORECASE))
-s.append(re.compile('role', re.IGNORECASE))
-s.append(re.compile('walk( )?(-)?( )?in', re.IGNORECASE))
-s.append(re.compile('interview', re.IGNORECASE))
+        tag=None
+        tag = soup.find('table')   # searching for <table> tag
+        self.__get_from_table(tag)
 
-p.append(re.compile('result', re.IGNORECASE))
+        tag = None
+        tag = soup.find('form')      # searching for <form> tag
+        self.__get_from_form(self, tag)
 
 
-web.get_tsites(s, p)
 
-for i in web.tsites:
-    print(i)
+
+
+
+
+
+
+if __name__ == '__main__':
+
+
+    a=input("Enter URL address: ")
+    b=float(input("Input delay: "))
+
+    web=Data(a)
+
+    web.get_logo()
+
+    # web.crawl(b)
+
+    print("\nNo. of URLs =", len(web.urls))
+    print("No. of pages crawled =", web.index)
+
+
+    s=[]
+    p=[]
+
+    s.append(re.compile('vacanc', re.IGNORECASE))
+    s.append(re.compile('job', re.IGNORECASE))
+    s.append(re.compile('career', re.IGNORECASE))
+    s.append(re.compile('opportunit', re.IGNORECASE))
+    # s.append(re.compile('notice', re.IGNORECASE))   #Very generous filter
+    # s.append(re.compile('announcement', re.IGNORECASE))
+    s.append(re.compile('recruit(?!er(s)?)', re.IGNORECASE))
+    s.append(re.compile('position', re.IGNORECASE))
+    s.append(re.compile('role', re.IGNORECASE))
+    s.append(re.compile('walk( )?(-)?( )?in', re.IGNORECASE))
+    s.append(re.compile('interview', re.IGNORECASE))
+
+    p.append(re.compile('result', re.IGNORECASE))
+
+
+    web.get_tsites(s, p)
+
+    for i in web.tsites:
+        print(i)
 
 
 
