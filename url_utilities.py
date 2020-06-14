@@ -2,7 +2,7 @@ from modules import *
 
 def load_page(url):
 
-    headers={'User-Agent':'''Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:75.0) Gecko/20100101 Firefox/75.0''',
+    headers={'User-Agent':'''Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:77.0) Gecko/20100101 Firefox/77.0''',
              'Accept':'''*/*''',
              'Connection':'''close'''}
 
@@ -150,5 +150,21 @@ def encode_space(s):
     return res
 
 
+def cmp_date(l_modified, days_passed):
+
+    if l_modified is None:
+        return False
+
+    a = date.today()
+
+    l_modified = list(l_modified[0].split(' '))
+    month = {'Jan':1, 'Feb':2, 'Mar':3, 'Apr':4, 'May':5, 'Jun':6, 'Jul':7, 'Aug':8, 'Sep':9, 'Oct':10, 'Nov':11, 'Dec':12}
+
+    b = date(int(l_modified[3]), int(month[l_modified[2]]), int(l_modified[1]))
+
+    if (a-b).days <= days_passed:
+        return True
+
+    return False
 
 #print(url_normalize('http://www.nielit.gov.in/', 'http://nielit.gov.in/sites/all/themes/berry/images/NIELIT-Logo.png'))

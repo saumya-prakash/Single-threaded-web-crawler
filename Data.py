@@ -1,4 +1,3 @@
-# from Extra import
 from Crawler import *
 
 class Data(Crawler):
@@ -82,18 +81,49 @@ class Data(Crawler):
 
         ht = load_page(u)      # to bypass 'forbidden' error
 
-        with open("logo", "wb") as file:
+        with open("aaa_logo", "wb") as file:
             file.write(ht.read())
         print("logo downloaded")
 
-    def __get_from_table(self, tag):
+    def __get_from_table(self, tag, cur_url):
         if tag is None:
             return
 
         for row in tag.find_all('tr'):       # examining every row
-            pass
+            a = row.find('a')
 
-    def __get_from_form(self, tag):
+            if a is None or a.has_attr('href') == False:
+                continue
+
+            link = url_normalize(cur_url, a['href'])
+            if link is None:
+                continue
+
+            ht = load_page(link)
+            res_headers = ht.info()
+            l_modified = res_headers.get_all('last-modified')
+
+            if cmp_date(l_modified, 120):     # recent document found -> save it
+                name = ' '.join(a.stripped_strings)
+                k=0
+                while name[k] != '/':         # name of the resource (with '/' removed)
+                    k += 1
+                name = name[0:k]
+
+                print(name)
+
+                if self.check_for_download(a['href']):  # good for downloading
+                    with open(name, "wb") as fi:    # any type of file (simple text or binary) saved through 'wb' mode
+                        fi.write(ht.read())
+
+                else:     # not good for downloading -> some link to other page or other thing
+                    with open('additional_links', 'a') as fi:
+                        fi.write(name+' ')
+                        fi.write(link+'\n')
+
+
+
+    def __get_from_form(self, tag, cur_url):
         if tag is None:
             return
 
@@ -105,14 +135,33 @@ class Data(Crawler):
 
         tag=None
         tag = soup.find('table')   # searching for <table> tag
-        self.__get_from_table(tag)
+        self.__get_from_table(tag, url)
 
         tag = None
         tag = soup.find('form')      # searching for <form> tag
-        self.__get_from_form(self, tag)
+        self.__get_from_form(tag, url)
 
 
+    def check_for_download(self, s):    # if the file can be downloaded (image, pdf, doc, sheet, etc.)
+        a = mimetypes.guess_type(s)
+        a = a[0]
 
+        if a[0:12] == 'application/':
+            appli = ['pdf', 'csv', 'json', 'msword', 'vnd.openxmlformats-officedocument.wordprocessingml.document',
+                     'vnd.ms-excel', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+                     'vnd.oasis.opendocument.text', 'vnd.oasis.opendocument.presentation', 'vnd.oasis.opendocument.spreadsheet']
+            # types = [.pdf .csv .json .doc .docx .xls .xlsx .odt .odp .ods ]
+
+            if a[12:] in appli:
+                return True
+
+        if a=='text/plain':
+            return True
+
+        if a[0:5]=='image':
+            return True
+
+        return False
 
 
 
@@ -127,8 +176,7 @@ if __name__ == '__main__':
 
     web=Data(a)
 
-    web.get_logo()
-
+    # web.get_logo()
     # web.crawl(b)
 
     print("\nNo. of URLs =", len(web.urls))
