@@ -170,36 +170,18 @@ class Data(Crawler):
 
 if __name__ == '__main__':
 
-
     a=input("Enter URL address: ")
     b=float(input("Input delay: "))
 
     web=Data(a)
 
     # web.get_logo()
-    # web.crawl(b)
+    web.crawl(b, 200)     # Only 200 pages crawled
 
     print("\nNo. of URLs =", len(web.urls))
     print("No. of pages crawled =", web.index)
 
-
-    s=[]
-    p=[]
-
-    s.append(re.compile('vacanc', re.IGNORECASE))
-    s.append(re.compile('job', re.IGNORECASE))
-    s.append(re.compile('career', re.IGNORECASE))
-    s.append(re.compile('opportunit', re.IGNORECASE))
-    # s.append(re.compile('notice', re.IGNORECASE))   #Very generous filter
-    # s.append(re.compile('announcement', re.IGNORECASE))
-    s.append(re.compile('recruit(?!er(s)?)', re.IGNORECASE))
-    s.append(re.compile('position', re.IGNORECASE))
-    s.append(re.compile('role', re.IGNORECASE))
-    s.append(re.compile('walk( )?(-)?( )?in', re.IGNORECASE))
-    s.append(re.compile('interview', re.IGNORECASE))
-
-    p.append(re.compile('result', re.IGNORECASE))
-
+    s, p = get_filters()
 
     web.get_tsites(s, p)
 

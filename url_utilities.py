@@ -1,6 +1,6 @@
 from modules import *
 
-def load_page(url):
+def load_page(url):         # SSL certificate_verify_failed error to be resolved, happens sometimes
 
     headers={'User-Agent':'''Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:77.0) Gecko/20100101 Firefox/77.0''',
              'Accept':'''*/*''',
@@ -150,10 +150,13 @@ def encode_space(s):
     return res
 
 
-def cmp_date(l_modified, days_passed):
+def cmp_date(l_modified, days_passed=-1):
 
     if l_modified is None:
         return False
+
+    if days_passed==-1:
+        return True
 
     a = date.today()
 
@@ -166,5 +169,26 @@ def cmp_date(l_modified, days_passed):
         return True
 
     return False
+
+def get_filters():
+    s = []
+    p = []
+
+    s.append(re.compile('vacanc', re.IGNORECASE))
+    s.append(re.compile('job', re.IGNORECASE))
+    s.append(re.compile('career', re.IGNORECASE))
+    s.append(re.compile('opportunit', re.IGNORECASE))
+    # s.append(re.compile('notice', re.IGNORECASE))   #Very generous filter
+    # s.append(re.compile('announcement', re.IGNORECASE))
+    s.append(re.compile('recruit(?!er(s)?)', re.IGNORECASE))
+    s.append(re.compile('position', re.IGNORECASE))
+    s.append(re.compile('role', re.IGNORECASE))
+    s.append(re.compile('walk( )?(-)?( )?in', re.IGNORECASE))
+    s.append(re.compile('interview', re.IGNORECASE))
+
+    p.append(re.compile('result', re.IGNORECASE))
+
+    return (s, p)
+
 
 #print(url_normalize('http://www.nielit.gov.in/', 'http://nielit.gov.in/sites/all/themes/berry/images/NIELIT-Logo.png'))

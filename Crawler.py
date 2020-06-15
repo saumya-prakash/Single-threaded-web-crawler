@@ -46,26 +46,24 @@ class Crawler():
 
 
 
-    def crawl(self, delay=0.0):     #CALENDAR to be avoided
+    def crawl(self, delay=0.0, limiter=-1):     #CALENDAR to be avoided
 
         if self.home_page=='':
             print("Nothing to CRAWL")
             return
 
-        i=self.index
-        n=len(self.scheme_dom)
-        m = len(self.urls)
+        i = self.index
+        n = len(self.scheme_dom)
 
-        while i < m:
+        while i < len(self.urls) and i != limiter:
             try:
-                print(self.scheme_dom + self.urls[i], "->", self.scheme_dom + self.urls[self.__parent[i]], self.__path[i])
+                # print(self.scheme_dom + self.urls[i], "->", self.scheme_dom + self.urls[self.__parent[i]], self.__path[i])
 
                 self.cur_page= self.scheme_dom + self.urls[i]
 
                 for a in self.crawl_page(self.cur_page, delay):
                     if a is not None:
                         if a[0][n:] not in self.urls:
-                            m += 1
                             self.urls.append(a[0][n:])
                             self.__path.append(a[1])
                             self.__parent.append(i)
@@ -73,13 +71,15 @@ class Crawler():
 
             except Exception as e:
                 print(e, self.urls[i], "**")
+                print(self.scheme_dom + self.urls[i], "->", self.scheme_dom + self.urls[self.__parent[i]], self.__path[i])
+
 
             except KeyboardInterrupt:
                 self.index=i
-                return
+                sys.exit()
 
             finally:
-                i+=1
+                i += 1
 
         self.index=i               # End of function crawl()
 
@@ -89,11 +89,11 @@ class Crawler():
         try:
             self.cur_page = url
 
-            if self.file_check(url)==False:
+            if self.url_file_check(url)==False:
                 return None
 
-            if self.file_check(up.urlparse(url)[2])==False:       # checking the path part of the URL
-                return None
+            # if self.url_file_check(up.urlparse(url)[2])==False:       # checking the path part of the URL
+            #     return None
 
             ht=load_page(url)
 
@@ -131,7 +131,26 @@ class Crawler():
 
         return None
 
-    def file_check(self, s):
+    def url_file_check(self, s):
+
+        parts = up.urlparse(s)
+
+        if parts[2] =='' and parts[3] == '' and parts[4] == '' and parts[5] == '':    # only 'link' present with no extra components
+            return True
+
+                                # checking the complete url
+        a = mimetypes.guess_type(s)
+
+        if a[0] is None:
+            for i in Crawler.__ignored:
+                if s.endswith(i):
+                    return False
+
+        elif a[0][0] in {'a', 'c', 'i', 'i', 'm', 'v', 'x'}:
+            return False
+
+        s = parts[2]
+                                # checking the path part of the url
         a = mimetypes.guess_type(s)
 
         if a[0] is None:
@@ -144,3 +163,9 @@ class Crawler():
 
         return True
 
+if __name__ == '__main__':
+
+    a = Crawler('http://imerpatna.com')
+
+    a.crawl()
+    print(a.urls)

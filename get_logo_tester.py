@@ -6,7 +6,7 @@ mycon = sqltor.connect(user='saumya', passwd='2020', host='localhost', database=
 
 curs = mycon.cursor()
 
-query = '''select name, home_page from records;'''
+query = ''' SELECT name, home_page from RECORDS '''
 
 curs.execute(query)
 
