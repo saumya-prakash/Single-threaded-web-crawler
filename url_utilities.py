@@ -1,12 +1,15 @@
 from modules import *
 
-def load_page(url):         # SSL certificate_verify_failed error to be resolved, happens sometimes
+def load_page(url):         # SSL certificate_verify_failed error to be resolved, happens SOMETIMES only
 
     headers={'User-Agent':'''Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:77.0) Gecko/20100101 Firefox/77.0''',
-             'Accept':'''*/*''',
-             'Connection':'''close'''}
+             'Accept':'''text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8''',
+             'Connection':'''keep-alive'''}
 
-    #text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+            # Accept header to be reviewed !!
+
+    # text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8   ->  from FIREFOX
+    # test/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8  ->  googlebot
 
     req = ur.Request(url=url, headers=headers)
 
@@ -18,7 +21,9 @@ def url_normalize(cur_page, path):
     #cur_page=cur_page.strip() #may have spaces at the end, but not necessary now
     path=path.strip()   #necessary
 
-    path=encode_space(path)
+    # path = path.replace('\\', '/')   # \ used in some Windows servers
+
+    path=encode_url(path)
 
     b=list(up.urlparse(path))    #'b' parsed into components
 
@@ -55,7 +60,7 @@ def url_normalize(cur_page, path):
         if b[1]==a[1]:       #complete link aready present
             #if b[0]=='':     #set the scheme of 'a' in 'b' (they belong to the same domain
             b[0]=a[0]      #Ensure scheme of 'a' and 'b' are same
-            return encode_space(up.urlunparse(b).strip())
+            return encode_url(up.urlunparse(b).strip())
 
         b[0]=a[0]
         b[1]=a[1]
@@ -100,7 +105,8 @@ def url_normalize(cur_page, path):
 
             return up.urlunparse(b)
 
-        print("****", cur_page, path,"****")  #case not found
+        print("**** From url_normalize()", cur_page, path)  #case not found
+
         return None
 
 
@@ -140,13 +146,18 @@ def remove_fname(s):
         return s[:i]
 
 
-def encode_space(s):
+def encode_url(s):
     res=''
     for i in s:
-        if i==' ':
-            res = res+'%20'
+        if i == ' ':      # encoding the space character
+            res = res + '%20'
+
+        elif i == '\u2019':   # encoding the character (’) (decimal value 146; escape sequence \u2019)
+            res = res + '%E2%80%99'
+
         else:
-            res=res+i
+            res = res + i
+
     return res
 
 
@@ -178,17 +189,20 @@ def get_filters():
     s.append(re.compile('job', re.IGNORECASE))
     s.append(re.compile('career', re.IGNORECASE))
     s.append(re.compile('opportunit', re.IGNORECASE))
-    # s.append(re.compile('notice', re.IGNORECASE))   #Very generous filter
+    # s.append(re.compile('notice', re.IGNORECASE))         # Very generous filter
     # s.append(re.compile('announcement', re.IGNORECASE))
-    s.append(re.compile('recruit(?!er(s)?)', re.IGNORECASE))
+    s.append(re.compile('recruit(?!er)', re.IGNORECASE))
     s.append(re.compile('position', re.IGNORECASE))
     s.append(re.compile('role', re.IGNORECASE))
-    s.append(re.compile('walk( )?(-)?( )?in', re.IGNORECASE))
+    s.append(re.compile('walk(%20)?(-)?(%20)?in', re.IGNORECASE))
     s.append(re.compile('interview', re.IGNORECASE))
 
     p.append(re.compile('result', re.IGNORECASE))
 
     return (s, p)
 
+if __name__=='__main__':
 
-#print(url_normalize('http://www.nielit.gov.in/', 'http://nielit.gov.in/sites/all/themes/berry/images/NIELIT-Logo.png'))
+    print()
+    # print(url_normalize('http://nitp.ac.in', '..\uploads\Faculty_Advisor_first_year.pdf'))
+

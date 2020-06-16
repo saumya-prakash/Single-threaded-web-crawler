@@ -57,7 +57,7 @@ class Crawler():
 
         while i < len(self.urls) and i != limiter:
             try:
-                # print(self.scheme_dom + self.urls[i], "->", self.scheme_dom + self.urls[self.__parent[i]], self.__path[i])
+                print(self.scheme_dom + self.urls[i], "->", self.scheme_dom + self.urls[self.__parent[i]], self.__path[i])
 
                 self.cur_page= self.scheme_dom + self.urls[i]
 
@@ -70,8 +70,9 @@ class Crawler():
 
 
             except Exception as e:
-                print(e, self.urls[i], "**")
-                print(self.scheme_dom + self.urls[i], "->", self.scheme_dom + self.urls[self.__parent[i]], self.__path[i])
+                print("**** From Crawler", e)
+                print()
+                # print(self.scheme_dom + self.urls[i], "->", self.scheme_dom + self.urls[self.__parent[i]], self.__path[i])
 
 
             except KeyboardInterrupt:
@@ -149,8 +150,12 @@ class Crawler():
         elif a[0][0] in {'a', 'c', 'i', 'i', 'm', 'v', 'x'}:
             return False
 
+            # checking the path part of the url
+        if parts[2] == '':
+            return True
+
         s = parts[2]
-                                # checking the path part of the url
+
         a = mimetypes.guess_type(s)
 
         if a[0] is None:

@@ -104,11 +104,7 @@ class Data(Crawler):
             l_modified = res_headers.get_all('last-modified')
 
             if cmp_date(l_modified, 120):     # recent document found -> save it
-                name = ' '.join(a.stripped_strings)
-                k=0
-                while name[k] != '/':         # name of the resource (with '/' removed)
-                    k += 1
-                name = name[0:k]
+                name = a.stripped_strings.replace('/', ' ')    # substituting '/' with ' '
 
                 print(name)
 
@@ -143,6 +139,8 @@ class Data(Crawler):
 
 
     def check_for_download(self, s):    # if the file can be downloaded (image, pdf, doc, sheet, etc.)
+
+                                        # checking the complete 'href' attribute
         a = mimetypes.guess_type(s)
         a = a[0]
 
@@ -159,6 +157,31 @@ class Data(Crawler):
             return True
 
         if a[0:5]=='image':
+            return True
+                                # checking the path part of the 'href' attribute
+        s = up.urlparse(s)
+        s = s[2]
+
+        if s=='':
+            return False
+
+        a = mimetypes.guess_type(s)
+        a = a[0]
+
+        if a[0:12] == 'application/':
+            appli = ['pdf', 'csv', 'json', 'msword', 'vnd.openxmlformats-officedocument.wordprocessingml.document',
+                     'vnd.ms-excel', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+                     'vnd.oasis.opendocument.text', 'vnd.oasis.opendocument.presentation',
+                     'vnd.oasis.opendocument.spreadsheet']
+            # types = [.pdf .csv .json .doc .docx .xls .xlsx .odt .odp .ods ]
+
+            if a[12:] in appli:
+                return True
+
+        if a == 'text/plain':
+            return True
+
+        if a[0:5] == 'image':
             return True
 
         return False
