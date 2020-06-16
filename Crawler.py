@@ -46,9 +46,10 @@ class Crawler():
 
 
 
-    def crawl(self, delay=0.0, limiter=-1):     #CALENDAR to be avoided
+    def crawl(self, delay=0.0, limiter=-1):     # CALENDAR to be avoided
+                            # #different counter variable to store no. of pages crawled ?? (wouldn't count the 'non-crawled' pages like pdfs, images, etc.
 
-        if self.home_page=='':
+        if self.home_page == '':
             print("Nothing to CRAWL")
             return
 
@@ -70,7 +71,7 @@ class Crawler():
 
 
             except Exception as e:
-                print("**** From Crawler", e)
+                print("**** From Crawler ->", e)
                 print()
                 # print(self.scheme_dom + self.urls[i], "->", self.scheme_dom + self.urls[self.__parent[i]], self.__path[i])
 

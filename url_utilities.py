@@ -21,28 +21,26 @@ def url_normalize(cur_page, path):
     #cur_page=cur_page.strip() #may have spaces at the end, but not necessary now
     path=path.strip()   #necessary
 
-    # path = path.replace('\\', '/')   # \ used in some Windows servers
-
     path=encode_url(path)
 
-    b=list(up.urlparse(path))    #'b' parsed into components
+    b=list(up.urlparse(path))    # 'b' parsed into components
 
-    if b[0] not in ['', 'http', 'https']:          #Some other scheme present, like, mailto, javascript, etc.
+    if b[0] not in ['', 'http', 'https']:          # Some other scheme present, like, mailto, javascript, etc.
         return None
 
     a = list(up.urlparse(cur_page))  # 'a' parsed into components
 
-    if b[2]=='' and b[3]=='' and b[4]=='':      #b[1] to be checked???
-        # if b[5]=='':    #Everything is empty; probably an internal link to the same page
+    if b[2]=='' and b[3]=='' and b[4]=='':      # b[1] to be checked???
+        # if b[5]=='':    # Everything is empty; probably an internal link to the same page
         #     return None
-        # else:           #Some internal link; may reveal something new
+        # else:           # Some internal link; may reveal something new
         #     a[5]=b[5]
         #     return up.urlunparse(a)
-        return None           #internal link with complete path name (to the same page) to be excluded
+        return None           # internal link with complete path name (to the same page) to be excluded
 
 
 
-    if b[1]!='' and b[1]!=a[1]:   #sub-domain or external site
+    if b[1]!='' and b[1]!=a[1]:   # sub-domain or external site
         # s1=extract_domain(a[1])
         # s2=extract_domain(b[1])
         #
@@ -57,22 +55,22 @@ def url_normalize(cur_page, path):
 
     else:      # b[1]=='' or b[1]==a[1]:  #link belonging to the same domain
 
-        if b[1]==a[1]:       #complete link aready present
-            #if b[0]=='':     #set the scheme of 'a' in 'b' (they belong to the same domain
-            b[0]=a[0]      #Ensure scheme of 'a' and 'b' are same
+        if b[1]==a[1]:       # complete link aready present
+            #if b[0]=='':     # set the scheme of 'a' in 'b' (they belong to the same domain
+            b[0]=a[0]      # Ensure scheme of 'a' and 'b' are same
             return encode_url(up.urlunparse(b).strip())
 
         b[0]=a[0]
         b[1]=a[1]
 
-        if b[2][0]=='/':    #search in the 'root' directory
+        if b[2][0]=='/':    # search in the 'root' directory
             return up.urlunparse(b)
 
-        if a[2]!='' and a[2][-1]=='/':      #removing the last '/' if present -> to be REVIEWED
+        if a[2]!='' and a[2][-1]=='/':      # removing the last '/' if present -> to be REVIEWED
             a[2]=a[2][:-1]
 
 
-        if b[2][:3]=='../' or b[2][:5]=='./../':   #general function for moving up the directory levels
+        if b[2][:3]=='../' or b[2][:5]=='./../':   # general function for moving up the directory levels
             i=0
 
             n = len(b[2])
@@ -92,7 +90,7 @@ def url_normalize(cur_page, path):
             return up.urlunparse(b)
 
 
-        if b[2][0:2] == './' or (b[2][0] not in ['/', '.']):  # search in the same directory
+        if b[2][0:2] == './' or (b[2][0] not in ['/', '.']):      # search in the same directory
             a[2] = remove_fname(a[2])
 
             if b[2][0] == '.':
@@ -105,7 +103,7 @@ def url_normalize(cur_page, path):
 
             return up.urlunparse(b)
 
-        print("**** From url_normalize()", cur_page, path)  #case not found
+        print("**** From url_normalize() ->", cur_page, path)  # case not found
 
         return None
 
@@ -147,10 +145,13 @@ def remove_fname(s):
 
 
 def encode_url(s):
-    res=''
+    res = ''
     for i in s:
         if i == ' ':      # encoding the space character
             res = res + '%20'
+
+        elif i == '\\':   # encoding \ character (used in some Windows servers)
+            res = res + '/'
 
         elif i == '\u2019':   # encoding the character (’) (decimal value 146; escape sequence \u2019)
             res = res + '%E2%80%99'
@@ -166,7 +167,7 @@ def cmp_date(l_modified, days_passed=-1):
     if l_modified is None:
         return False
 
-    if days_passed==-1:
+    if days_passed == -1:
         return True
 
     a = date.today()
@@ -185,24 +186,23 @@ def get_filters():
     s = []
     p = []
 
-    s.append(re.compile('vacanc', re.IGNORECASE))
-    s.append(re.compile('job', re.IGNORECASE))
-    s.append(re.compile('career', re.IGNORECASE))
-    s.append(re.compile('opportunit', re.IGNORECASE))
-    # s.append(re.compile('notice', re.IGNORECASE))         # Very generous filter
-    # s.append(re.compile('announcement', re.IGNORECASE))
-    s.append(re.compile('recruit(?!er)', re.IGNORECASE))
-    s.append(re.compile('position', re.IGNORECASE))
-    s.append(re.compile('role', re.IGNORECASE))
-    s.append(re.compile('walk(%20)?(-)?(%20)?in', re.IGNORECASE))
-    s.append(re.compile('interview', re.IGNORECASE))
+    s.append('vacanc')
+    s.append('job')
+    s.append('career')
+    s.append('opportunit')
+    # s.append('notice')         # Very generous filter
+    # s.append('announcement')
+    s.append('recruit(?!er)')
+    s.append('position')
+    s.append('role')
+    s.append('walk(%20)?(-)?(%20)?in')
+    s.append('interview')
 
-    p.append(re.compile('result', re.IGNORECASE))
+    p.append('result')
 
     return (s, p)
 
 if __name__=='__main__':
 
+    print(url_normalize('http://nitp.ac.in', b'..\uploads\Faculty_Advisor_first_year.pdf'))
     print()
-    # print(url_normalize('http://nitp.ac.in', '..\uploads\Faculty_Advisor_first_year.pdf'))
-

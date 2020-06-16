@@ -1,5 +1,8 @@
 import mysql.connector as sqltor
 
+# NULL in field value is returned as None
+
+
 try:
 	mycon = sqltor.connect(host="localhost", user="saumya", passwd="2020", database="project")
 

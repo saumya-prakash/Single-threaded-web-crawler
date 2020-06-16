@@ -8,14 +8,14 @@ class Data(Crawler):
 
     def get_tsites(self, a, b=[]):
 
-        for link in self.urls:
+        for link in self.urls:      # Examining every link ('half' link) present in the urls[]
 
-            for i in b:   #Negative filter
-                if bool(i.search(link)):
+            for i in b:    # Negative filter
+                if bool( re.search(i, link, re.IGNORECASE) ) == True:
                     break
             else:
                 for j in a:
-                    if bool(j.search(link)):
+                    if bool( re.search(j, link, re.IGNORECASE) ) == True:
                         self.tsites.append(link)
                         break
 
@@ -199,7 +199,7 @@ if __name__ == '__main__':
     web=Data(a)
 
     # web.get_logo()
-    web.crawl(b, 200)     # Only 200 pages crawled
+    web.crawl(b, -1)     # Only 200 pages crawled
 
     print("\nNo. of URLs =", len(web.urls))
     print("No. of pages crawled =", web.index)

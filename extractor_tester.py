@@ -27,7 +27,7 @@ else:
 
         try:
             web = Data(link)
-            web.crawl(0, 25)
+            web.crawl(0, 200)
             s, p = get_filters()
 
             web.get_tsites(s, p)
@@ -38,7 +38,7 @@ else:
             print()
 
         except Exception as e:
-            print("**** From TESTER", e)
+            print("**** From TESTER ->", e)
             print()
 
 
