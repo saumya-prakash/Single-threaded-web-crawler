@@ -24,7 +24,7 @@ class Crawler():
                 self.scheme_dom = up.urlunparse((tmp[0], tmp[1], '', '', '', ''))
 
             except Exception as e:
-                print("Error in setting home page", e)
+                print("Error in setting home page", e, file=sys.stderr)
                 return
 
     def __init__(self, home_page):
@@ -71,9 +71,9 @@ class Crawler():
 
 
             except Exception as e:
-                print("**** From Crawler ->", e)
-                print()
-                # print(self.scheme_dom + self.urls[i], "->", self.scheme_dom + self.urls[self.__parent[i]], self.__path[i])
+                print("**** From Crawler ->", e, file=sys.stderr)
+                print(file=sys.stderr)
+                print(self.scheme_dom + self.urls[i], "->", self.scheme_dom + self.urls[self.__parent[i]], self.__path[i], file=sys.stderr)
 
 
             except KeyboardInterrupt:
@@ -100,7 +100,7 @@ class Crawler():
             ht=load_page(url)
 
         except Exception as e:
-            print(e)
+            print("***From crawl_page() ->", e, file=sys.stderr)
 
         else:
             if up.urlparse(ht.geturl())[1] != up.urlparse(self.home_page)[1]:
@@ -116,8 +116,10 @@ class Crawler():
 
                 try:
                     u = url_normalize(tmp, path)
+
                 except Exception as e:
-                    print(e, tmp, path)
+                    print("****From url_normalize() ->", e, tmp, path, file=sys.stderr)
+
                 else:
                     if u is not None:
                         yield (u, path)
