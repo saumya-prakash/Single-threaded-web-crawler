@@ -81,7 +81,7 @@ class Data(Crawler):
 
         ht = load_page(u)      # to bypass 'forbidden' error
 
-        with open("aaa_logo", "wb") as file:
+        with open("aaa_logo", "wb") as file:     # name kept as such so that it is the first file in the folder
             file.write(ht.read())
         print("logo downloaded")
 
@@ -199,7 +199,7 @@ if __name__ == '__main__':
     web=Data(a)
 
     # web.get_logo()
-    web.crawl(b, -1)     # Only 200 pages crawled
+    web.crawl(b, 100)     # Only 200 pages crawled
 
     print("\nNo. of URLs =", len(web.urls))
     print("No. of pages crawled =", web.index)

@@ -11,7 +11,7 @@ def institution_type(name):
     fields = {
               "school": "school",
               "engineer": "engineering", "technolog": "technology", "polytechni": "polytechnic",
-              "medical": "medical",
+              "medical": "medical", "dent":"dental",
               "research": "research", "scien": "science",
               "college": "college", "universit": "university",
               "arts": "arts", "manag": "management", "social": "social", "humanit": "humanities",

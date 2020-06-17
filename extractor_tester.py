@@ -33,7 +33,7 @@ else:
 
         try:
             web = Data(link)
-            web.crawl(0, 20)
+            web.crawl(0, 10)
             s, p = get_filters()
 
             web.get_tsites(s, p)

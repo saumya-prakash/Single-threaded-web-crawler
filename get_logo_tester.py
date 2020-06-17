@@ -6,11 +6,16 @@ mycon = sqltor.connect(user='saumya', passwd='2020', host='localhost', database=
 
 curs = mycon.cursor()
 
-query = ''' SELECT name, home_page from RECORDS '''
+query = ''' SELECT name, home_page from records WHERE id > 31 '''
 
 curs.execute(query)
 
-for i in curs.fetchall():
+a = curs.fetchall()
+
+curs.close()
+mycon.close()
+
+for i in a:
     name = i[0];
     hp = i[1];
 
@@ -23,7 +28,7 @@ for i in curs.fetchall():
 
     print(name)
     try:
-        if os.path.isfile("./logo") == False:
+        if os.path.isfile("./aaa_logo") == False:
             web = Data(hp)
             web.get_logo()
 
@@ -33,6 +38,3 @@ for i in curs.fetchall():
     print()
     os.chdir(store)
 
-
-curs.close()
-mycon.close()

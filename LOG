@@ -1,0 +1,75 @@
+32 https://www.iitp.ac.in/index.php/en-us/
+33 https://dpmipatna.com/
+34 http://www.maxedutech.com
+***From crawl_page() -> HTTP Error 404: Not Found
+***From crawl_page() -> HTTP Error 404: Not Found
+35 http://patliputraanmandgnm.com/
+36 https://www.patnaparamedical.com
+37 http://mptri.org/
+38 https://www.mahavircancersansthan.com
+39 http://tdiofindia.org/
+40 http://bdcollegepatna.com/
+41 https://www.impactcollege.co.in/
+42 https://www.bncollegepatna.com
+43 https://patnawomenscollege.in/
+44 https://www.lpshahicollege.in
+***From crawl_page() -> HTTP Error 404: Not Found
+***From crawl_page() -> HTTP Error 404: Not Found
+***From crawl_page() -> HTTP Error 404: Not Found
+45 http://patnacollege.org/
+46 http://www.patnasciencecollege.org
+47 https://frameboxx.in/industry-jobs/
+48 https://skillmissionbihar.org/
+49 https://www.sve.tiss.edu
+50 http://earth-tech.co.in/
+51 http://patnacarmel.com/
+52 https://stmichaelspatna.edu.in/
+53 http://xaviercollegepatna.org/
+54 http://schoolofglobaleducation.com/
+55 http://gngs.in/
+56 https://www.accurizemarketresearch.com/
+57 https://www.stkarenshighschool.com
+****From url_normalize() -> string index out of range https://www.stkarenshighschool.com/GuestBook/Guest_Book.aspx ?Page=2&id=
+****From url_normalize() -> string index out of range https://www.stkarenshighschool.com/GuestBook/Guest_Book.aspx ?Page=3&id=
+****From url_normalize() -> string index out of range https://www.stkarenshighschool.com/GuestBook/Guest_Book.aspx ?Page=2&id=
+****From url_normalize() -> string index out of range https://www.stkarenshighschool.com/GuestBook/Guest_Book.aspx ?Page=3&id=
+****From url_normalize() -> string index out of range https://www.stkarenshighschool.com/GuestBook/Guest_Book.aspx ?Page=2&id=
+****From url_normalize() -> string index out of range https://www.stkarenshighschool.com/GuestBook/Guest_Book.aspx ?Page=3&id=
+****From url_normalize() -> string index out of range https://www.stkarenshighschool.com/GuestBook/Guest_Book.aspx ?Page=2&id=
+****From url_normalize() -> string index out of range https://www.stkarenshighschool.com/GuestBook/Guest_Book.aspx ?Page=3&id=
+58 www.stisbihta.com
+Error in setting home page unknown url type: 'www.stisbihta.com'
+59 http://stkarenscollegiateschool.com/
+60 http://stxavierspatna.in/#1
+61 http://stkarensprimaryschool.com/
+62 http://amsskolkata.gov.in/mc/patna/
+63 http://creativelearning.in/
+64 https://patna.idtr.gov.in/
+65 https://www.bidsh.org
+***From crawl_page() -> HTTP Error 500: Internal Server Error
+66 http://www.patnadentalcollege.in
+***From crawl_page() -> HTTP Error 404: Not Found
+***From crawl_page() -> HTTP Error 404: Not Found
+67 http://ambedkardental.co.in/
+Error in setting home page <urlopen error [Errno -2] Name or service not known>
+68 http://www.iispl.org
+69 https://sb-global-institute-of-banking.business.site/
+70 http://www.iipsindia.co.in
+71 http://www.w.iibm.in/
+72 https://dmi.ac.in/
+73 https://aiirm.org/
+74 https://www.abcollege.org/
+75 http://www.ismpatna.ac.in
+***From crawl_page() -> HTTP Error 400: Bad Request
+76 https://www.instituteofspanishstudies.com
+77 http://patnahighschool.blogspot.com/
+78 https://childrensheavenhighschool.com/
+79 https://www.oxbridgeconventhighschool.com
+80 https://www.maplebearsouthasia.com/
+81 https://studentspublicschool-school.business.site/
+82 http://bpsbihta.com/
+83 http://apnpublicschool.com/
+84 https://syonlab.com/
+85 https://svmpatna.co.in/
+***From crawl_page() -> HTTP Error 404: Not Found
+86 http://patnacollegiateschool.com/

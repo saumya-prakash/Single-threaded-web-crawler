@@ -2,6 +2,7 @@ import mysql.connector as sqltor
 
 # NULL in field value is returned as None
 
+# CHAR field is retrieved without the 'padded' characcters, i.e., data is not returned with 'fixed-length'
 
 try:
 	mycon = sqltor.connect(host="localhost", user="saumya", passwd="2020", database="project")
