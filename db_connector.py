@@ -13,15 +13,15 @@ else:
 	print("Connected to the database")
 	curs=mycon.cursor()
 
-	with open("list", "r") as fi:
+	with open("Institutes_Added_to_Check_via_Program (copy)", "r") as fi:
 		for s in fi.readlines():
-			s=s.split(",")
+			s = s.split(",")
 
-			name = s[:len(s)-1]
+			name = s[:-1]
 			name = ",".join(name)
 
-			if s[-1][-1]=='\n':
-				hpg = s[-1][:len(s[-1])-1]
+			if s[-1][-1] == '\n':
+				hpg = s[-1][:-1]
 			else:
 				hpg = s[-1]
 
@@ -34,6 +34,7 @@ else:
 				print(e)
 				print(name, hpg)
 
+			# print(name, hpg)
 
 	print("All records added to the database")
 	curs.close()

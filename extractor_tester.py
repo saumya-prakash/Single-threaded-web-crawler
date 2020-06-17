@@ -12,7 +12,7 @@ except Exception as e:
 else:
     curs = mycon.cursor()
 
-    query = " SELECT id, home_page FROM records  WHERE id != 28 "
+    query = " SELECT id, home_page FROM records  WHERE id > 31 "
     curs.execute(query)
 
     a = curs.fetchall()

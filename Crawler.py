@@ -47,8 +47,8 @@ class Crawler():
 
 
     def crawl(self, delay=0.0, limiter=-1):     # CALENDAR to be avoided
-                            # #different counter variable to store no. of pages crawled ?? (wouldn't count the 'non-crawled' pages like pdfs, images, etc.
-
+                        # different counter variable to store no. of pages crawled ?? (wouldn't count the 'non-crawled' pages like pdfs, images, etc.
+                        # what if a 'half-link' contains only digits, may belong to some special category, like albums (e.g. https://www.sgei.org/2019/03/ )
         if self.home_page == '':
             print("Nothing to CRAWL")
             return

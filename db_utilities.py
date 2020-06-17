@@ -6,12 +6,24 @@ from url_utilities import load_page
 def connect():
     return sqltor.connect(host='localhost', user='saumya', passwd='2020', database='project')
 
+
 def institution_type(name):
-    fields = {"school": "school", "engineer": "engineering", "technolog": "technology", "medical": "medical",
-              "college": "college", "research": "research", "scien": "science", "universit": "university",
+    fields = {
+              "school": "school",
+              "engineer": "engineering", "technolog": "technology", "polytechni": "polytechnic",
+              "medical": "medical",
+              "research": "research", "scien": "science",
+              "college": "college", "universit": "university",
               "arts": "arts", "manag": "management", "social": "social", "humanit": "humanities",
-              "train": "training", "(comput)|(program(m)?)|(cod)": "computer", "design": "designing",
-              "fashion": "fashion", "polytechni": "polytechnic"}
+              "train": "training", "(comput)|(program(m)?)|(cod)": "computer",
+              "design": "designing", "fashion": "fashion", "animat":"animation", "graphic":"graphics",
+              "professio":"professional",
+              "journali":"journalism",
+              "meteorolog":"meteorology",
+              "beaut":"beauty",
+              "langua":"language"
+              # "hotel":"hotel"
+              }
 
     res = ''     # result to be returned
 
@@ -24,7 +36,7 @@ def institution_type(name):
 
 def home_page_normalizer():
     try:
-        mycon = sqltor.connect(host='localhost', user='saumya', passwd='2020', database='project')
+        mycon = connect()
 
     except Exception as e:
         print("Error connecting to database")
@@ -63,5 +75,55 @@ def home_page_normalizer():
         curs.close()
         mycon.close()
 
+
+def protocol_resolver():
+    try:
+        mycon = connect()
+
+    except Exception as e:
+        print("Error connecting to the database ->", e)
+
+    else:
+        curs = mycon.cursor()
+
+        query = ''' SELECT id, home_page FROM records WHERE home_page NOT LIKE \'http%\'  '''
+
+        curs.execute(query)
+
+        for row in curs.fetchall():
+            id = row[0]
+            link = row[1]
+            print(id)
+
+            url = ''
+
+            try:
+                ht = load_page('https://' + link)
+                url = ht.geturl()
+
+            except Exception as e:
+                print(e)
+                try:
+                    ht = load_page('http://' + link)
+                    url = ht.geturl()
+
+                except Exception as f:
+                    print(f)
+
+            if url == '':
+                continue
+
+            query = "  UPDATE records SET home_page = " + "\'" + url + "\' " + "WHERE id = " + str(id);
+            print(query)
+            print()
+            curs.execute(query)
+
+        mycon.commit()
+        curs.close()
+        mycon.close()
+
+
 if __name__ == '__main__':
-    home_page_normalizer()
+    # home_page_normalizer()
+    protocol_resolver()
+    print()
