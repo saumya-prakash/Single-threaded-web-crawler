@@ -33,6 +33,7 @@ class Crawler():
         self.cur_page=''
         self.urls=list()
         self.index=-1
+        self.counter = 0        # for counting number of pages examined
         self.__parent=list()  # For tracing back
         self.__path=list()
 
@@ -56,11 +57,11 @@ class Crawler():
         i = self.index
         n = len(self.scheme_dom)
 
-        while i < len(self.urls) and i != limiter:
+        while i < len(self.urls) and self.counter != limiter:
             try:
                 print(self.scheme_dom + self.urls[i], "->", self.scheme_dom + self.urls[self.__parent[i]], self.__path[i])
 
-                self.cur_page= self.scheme_dom + self.urls[i]
+                self.cur_page = self.scheme_dom + self.urls[i]
 
                 for a in self.crawl_page(self.cur_page, delay):
                     if a is not None:
@@ -71,7 +72,7 @@ class Crawler():
 
 
             except Exception as e:
-                print("**** From Crawler ->", e, file=sys.stderr)
+                print("**** From Crawler.crawl() ->", e, file=sys.stderr)
                 print(file=sys.stderr)
                 print(self.scheme_dom + self.urls[i], "->", self.scheme_dom + self.urls[self.__parent[i]], self.__path[i], file=sys.stderr)
 
@@ -83,7 +84,7 @@ class Crawler():
             finally:
                 i += 1
 
-        self.index=i               # End of function crawl()
+        self.index = i               # End of function crawl()
 
 
 
@@ -107,9 +108,11 @@ class Crawler():
                 print("Redirect to an External link")
                 return None
 
-            soup=BeautifulSoup(ht, features='lxml', parse_only=SoupStrainer('a', attrs={'href':True}))
+            soup = BeautifulSoup(ht, features='lxml', parse_only=SoupStrainer('a', attrs={'href':True}))
 
-            tmp=ht.geturl()
+            tmp = ht.geturl()
+
+            self.counter += 1           # page will be examined, incrementing the counter by 1
 
             for t in soup.find_all('a'):
                 path=t['href']

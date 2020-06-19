@@ -1,23 +1,21 @@
 from Data import *
+from db_utilities import *
 
-import mysql.connector as sqltor
 
-mycon = sqltor.connect(user='saumya', passwd='2020', host='localhost', database='project')
+logo_field_checker()
+
+mycon = connect()
 
 curs = mycon.cursor()
 
-query = ''' SELECT name, home_page from records WHERE id > 31 '''
+query = ''' SELECT id, name, home_page from records WHERE logo = 'n'  '''
 
 curs.execute(query)
 
-a = curs.fetchall()
-
-curs.close()
-mycon.close()
-
-for i in a:
-    name = i[0];
-    hp = i[1];
+for row in curs.fetchall():
+    id = row[0]
+    name = row[1]
+    hp = row[2]
 
     store = "/home/saumya/Desktop/DATA/"
 
@@ -28,13 +26,20 @@ for i in a:
 
     print(name)
     try:
-        if os.path.isfile("./aaa_logo") == False:
-            web = Data(hp)
-            web.get_logo()
+        web = Data(hp)
+        web.get_logo()
 
     except Exception as e:
         print(e)
 
-    print()
-    os.chdir(store)
+    if os.path.isfile("./aaa_logo"):
+        query = " UPDATE records SET logo = \'y\' WHERE ID = " + str(id)
+        curs.execute(query)
+        print(query)
+        mycon.commit()
 
+    print()
+    os.chdir("./../")
+
+curs.close()
+mycon.close()

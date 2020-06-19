@@ -21,8 +21,9 @@ def institution_type(name):
               "journali":"journalism",
               "meteorolog":"meteorology",
               "beaut":"beauty",
-              "langua":"language"
+              "langua":"language",
               # "hotel":"hotel"
+               "women|girl|lad(y|i)":"women"
               }
 
     res = ''     # result to be returned
@@ -123,7 +124,47 @@ def protocol_resolver():
         mycon.close()
 
 
+def logo_field_checker():           # checks if the entry in database in consistent with the actual data
+    try:
+        mycon = connect()
+
+    except Exception as e:
+        print("Error connecting to database ->", e)
+
+    else:
+        curs = mycon.cursor()
+        query = ''' SELECT id, name FROM records  '''
+        curs.execute(query)
+
+        for row in curs.fetchall():
+            id = row[0]
+            name = row[1]
+            res = 'y'    # keeping default as 'y'
+
+            store = "/home/saumya/Desktop/DATA/"
+
+            if os.path.isdir(store+name) == False:
+                res = 'n'
+
+            if res == 'y':
+                os.chdir(store+name)
+                if os.path.isfile("./aaa_logo") == False:        # aaa_logo not present
+                    res = 'n'
+                os.chdir("./../")
+
+
+            query = " UPDATE records SET logo = \'" + res + "\' " + "WHERE id = " + str(id)
+            curs.execute(query)
+            mycon.commit()
+            print(query)
+
+
+        curs.close()
+        mycon.close()
+
+
 if __name__ == '__main__':
     # home_page_normalizer()
-    protocol_resolver()
+    # protocol_resolver()
+    logo_field_checker()
     print()

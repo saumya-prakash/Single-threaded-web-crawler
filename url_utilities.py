@@ -13,7 +13,7 @@ def load_page(url):         # SSL certificate_verify_failed error to be resolved
 
     req = ur.Request(url=url, headers=headers)
 
-    return ur.urlopen(req)
+    return ur.urlopen(req, timeout=60)
 
 
 def url_normalize(cur_page, path):
@@ -55,13 +55,17 @@ def url_normalize(cur_page, path):
 
     else:      # b[1]=='' or b[1]==a[1]:  #link belonging to the same domain
 
-        if b[1]==a[1]:       # complete link aready present
+        if b[1] == a[1]:       # complete link aready present
             #if b[0]=='':     # set the scheme of 'a' in 'b' (they belong to the same domain
             b[0]=a[0]      # Ensure scheme of 'a' and 'b' are same
             return encode_url(up.urlunparse(b).strip())
 
-        b[0]=a[0]
-        b[1]=a[1]
+        b[0] = a[0]
+        b[1] = a[1]
+
+        if b[2] == '':      # path component is empty
+            b[2] = a[2]
+            return up.urlunparse(b)
 
         if b[2][0]=='/':    # search in the 'root' directory
             return up.urlunparse(b)
@@ -181,6 +185,7 @@ def cmp_date(l_modified, days_passed=-1):
         return True
 
     return False
+
 
 def get_filters():
     s = []

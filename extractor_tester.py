@@ -12,20 +12,18 @@ except Exception as e:
 else:
     curs = mycon.cursor()
 
-    query = " SELECT id, home_page FROM records  WHERE id > 31 "
+    query = " SELECT id, home_page FROM records where id = 4"
     curs.execute(query)
 
     a = curs.fetchall()
-
     curs.close()
     mycon.close()
 
     fi = open("LOG", "w")
-
     sys.stderr = fi
 
+    stats = []
     for row in a:
-
         id = row[0]
         link = row[1]
         print(id, link)
@@ -43,8 +41,44 @@ else:
                 print(web.scheme_dom + i)
             print()
 
+            tmp = []    # will be appended to stats
+            tmp.append(id)
+            tmp.append(web.counter)
+            if web.index == len(web.urls):
+                tmp.append('y')
+            else:
+                tmp.append('n')
+
+            tmp2 = []      # 'sites' will be stored in this
+
+            for li in web.tsites:
+                if web.check_for_download(li) == False:
+                    tmp2.append(web.scheme_dom+li)
+
+            tmp.append(tmp2)
+            stats.append(tmp)
+
         except Exception as e:
             print("**** From TESTER ->", e, file=sys.stderr)
-            print(fiel=sys.stderr)
+            print(file=sys.stderr)
 
+    print(stats)
+
+    mycon = connect()
+    curs = mycon.cursor()
+
+    for row in stats:
+        id = row[0]
+        cnt = row[1]
+        comple = row[2]
+
+        query = "UPDATE records SET examined_pages = " + str(cnt) + " , complete_crawl = \'" + comple + "\'  WHERE id = " + str(id)
+        print(query)
+        curs.execute(query)
+        mycon.commit()
+
+        links = row[3]     # for storing in the 'sites' table
+
+    curs.close()
+    mycon.close()
 

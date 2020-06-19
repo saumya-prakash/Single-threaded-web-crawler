@@ -17,7 +17,7 @@ else:
         res = institution_type(name)
 
         if res != '':
-            query = "UPDATE records SET type = \"" + res + "\" WHERE id = "+str(row[0])
+            query = "UPDATE records SET type = \"" + res + "\" WHERE id = " + str(row[0])
             curs.execute(query)
             mycon.commit()
             print(query)
