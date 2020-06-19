@@ -12,7 +12,7 @@ except Exception as e:
 else:
     curs = mycon.cursor()
 
-    query = " SELECT id, home_page FROM records where id = 4"
+    query = " SELECT id, home_page FROM records"
     curs.execute(query)
 
     a = curs.fetchall()
@@ -31,7 +31,7 @@ else:
 
         try:
             web = Data(link)
-            web.crawl(0, 10)
+            web.crawl(0, 30)
             s, p = get_filters()
 
             web.get_tsites(s, p)
@@ -78,6 +78,17 @@ else:
         mycon.commit()
 
         links = row[3]     # for storing in the 'sites' table
+
+        for li in links:
+            query = "INSERT INTO sites (id, link) VALUES (" + str(id) + ", \'" + li + "\' )"
+            print(query)
+            try:
+                curs.execute(query)
+                mycon.commit()
+
+            except Exception as e:
+                print(query)
+                print(e, file=sys.stderr)
 
     curs.close()
     mycon.close()
