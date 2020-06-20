@@ -12,7 +12,7 @@ except Exception as e:
 else:
     curs = mycon.cursor()
 
-    query = " SELECT id, home_page FROM records"
+    query = " SELECT id, home_page FROM records where id = 63"
     curs.execute(query)
 
     a = curs.fetchall()
@@ -31,7 +31,7 @@ else:
 
         try:
             web = Data(link)
-            web.crawl(0, 30)
+            web.crawl(0, 1000)
             s, p = get_filters()
 
             web.get_tsites(s, p)

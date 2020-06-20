@@ -31,7 +31,7 @@ class Crawler():
         self.scheme_dom = ''
         self.home_page=''
         self.cur_page=''
-        self.urls=list()
+        self.urls=list()        # a different, 'parallel' sorted list for fast searching ??
         self.index=-1
         self.counter = 0        # for counting number of pages examined
         self.__parent=list()  # For tracing back
@@ -48,7 +48,6 @@ class Crawler():
 
 
     def crawl(self, delay=0.0, limiter=-1):     # CALENDAR to be avoided
-                        # different counter variable to store no. of pages crawled ?? (wouldn't count the 'non-crawled' pages like pdfs, images, etc.
                         # what if a 'half-link' contains only digits, may belong to some special category, like albums (e.g. https://www.sgei.org/2019/03/ )
         if self.home_page == '':
             print("Nothing to CRAWL")
@@ -92,20 +91,21 @@ class Crawler():
         try:
             self.cur_page = url
 
-            if self.url_file_check(url)==False:
+            if self.url_file_check(url) == False:
                 return None
 
             # if self.url_file_check(up.urlparse(url)[2])==False:       # checking the path part of the URL
             #     return None
 
-            ht=load_page(url)
+            ht = load_page(url)
 
         except Exception as e:
-            print("***From crawl_page() ->", e, file=sys.stderr)
+            print("***From Crawler.crawl_page() ->", e, file=sys.stderr)
+            print("url =", url, file=sys.stderr)
 
         else:
             if up.urlparse(ht.geturl())[1] != up.urlparse(self.home_page)[1]:
-                print("Redirect to an External link")
+                # print("Redirect to an External link")
                 return None
 
             soup = BeautifulSoup(ht, features='lxml', parse_only=SoupStrainer('a', attrs={'href':True}))

@@ -107,7 +107,7 @@ def url_normalize(cur_page, path):
 
             return up.urlunparse(b)
 
-        print("**** From url_normalize() ->", cur_page, path)  # case not found
+        print("**** From url_normalize() ->", cur_page, path, file=sys.stderr)  # case not found
 
         return None
 
@@ -151,17 +151,20 @@ def remove_fname(s):
 def encode_url(s):
     res = ''
     for i in s:
-        if i == ' ':      # encoding the space character
-            res = res + '%20'
 
-        elif i == '\\':   # encoding \ character (used in some Windows servers)
+        if i == '\\':   # encoding \ character (used in some Windows servers)
             res = res + '/'
 
-        elif i == '\u2019':   # encoding the character (’) (decimal value 146; escape sequence \u2019)
-            res = res + '%E2%80%99'
+        # elif i == ' ':      # encoding the space character
+        #     res = res + '%20'
+
+        # elif i == '\u2019':   # encoding the character (’) (decimal value 146; escape sequence \u2019)
+        #     res = res + '%E2%80%99'
 
         else:
             res = res + i
+
+    res = up.quote(res, safe=':;/?@&=+$,#\'')
 
     return res
 
@@ -198,7 +201,7 @@ def get_filters():
     # s.append('notice')         # Very generous filter
     # s.append('announcement')
     s.append('recruit(?!er)')
-    s.append('position')
+    s.append('[^a-zA-Z]position')
     s.append('role')
     s.append('walk(%20)?(-)?(%20)?in')
     s.append('interview')
