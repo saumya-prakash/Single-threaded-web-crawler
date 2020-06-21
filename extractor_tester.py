@@ -12,7 +12,7 @@ except Exception as e:
 else:
     curs = mycon.cursor()
 
-    query = " SELECT id, home_page FROM records where id = 63"
+    query = " SELECT id, home_page FROM records where complete_crawl = \'n\' and id not in (28, 1, 3, 4, 6, 9, 21, 32, 56) "
     curs.execute(query)
 
     a = curs.fetchall()
@@ -90,6 +90,7 @@ else:
                 print(query)
                 print(e, file=sys.stderr)
 
+    fi.close()
     curs.close()
     mycon.close()
 

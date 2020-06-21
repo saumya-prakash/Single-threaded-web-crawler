@@ -1,221 +1,695 @@
-63 http://creativelearning.in/
+5 https://www.patnauniversity.ac.in/
+Error in setting home page <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:852)>
+8 http://www.cimp.ac.in
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = http://www.cimp.ac.in/forgetpassword.php
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = http://www.cimp.ac.in/registrationinstruction.php
+11 https://www.cusb.ac.in
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/about/2016-03-27-14-31-13/budget-2014-15.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/administration/2016-03-23-09-16-16.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/administration/2016-03-23-09-16-16/library-committee.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/administration/2016-03-23-09-16-16/central-purchase-committee.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/administration/2016-03-23-09-16-16/seminar-conference-workshop-committee.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/administration/2016-03-23-09-16-16/university-website-and-internet-committee.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/administration/2016-03-23-09-16-16/internal-complaint-committee.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/administration/2016-03-23-09-16-16/grievance-redressal-committee-for-teaching-staff.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/administration/2016-03-23-09-16-16/grievance-redressal-committee-for-non-teaching-staff.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/administration/2016-03-23-09-16-16/grievance-redressal-committee-for-students.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/administration/officers.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/administration/staff/patna-campus.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/administration/staff/gaya-campus.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/academics/school-of-earth-biological-and-environmental-sciences.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/academics/school-of-earth-biological-and-environmental-sciences/centre-for-biological-sciences.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/academics/school-of-earth-biological-and-environmental-sciences/centre-for-biological-sciences/bioinformatics-programme.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/academics/school-of-earth-biological-and-environmental-sciences/centre-for-biological-sciences/biotechnology-programme.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/academics/school-of-earth-biological-and-environmental-sciences/centre-for-biological-sciences/life-science-programme.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/academics/school-of-earth-biological-and-environmental-sciences/centre-for-environmental-sciences.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/academics/school-of-human-sciences.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/academics/school-of-human-sciences/centre-for-psychological-sciences.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/academics/school-of-languages-and-literature.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/academics/school-of-languages-and-literature/centre-for-foreign-languages.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/academics/school-of-languages-and-literature/centre-for-indian-languages.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/academics/school-of-languages-and-literature/centre-for-indian-languages/hindi.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/academics/school-of-languages-and-literature/centre-for-indian-languages/urdu.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/academics/school-of-mathematics-statistics-and-computer-science.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/academics/school-of-mathematics-statistics-and-computer-science/department-of-computer-science.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/academics/school-of-mathematics-statistics-and-computer-science/department-of-mathematics.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/academics/school-of-mathematics-statistics-and-computer-science/department-of-statistics.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/academics/school-of-media-arts-aesthetics.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/academics/school-of-media-arts-aesthetics/centre-for-mass-communication-and-media.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/academics/school-of-social-sciences-and-policy.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/academics/school-of-social-sciences-and-policy/centre-for-development-studies.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/academics/school-of-social-sciences-and-policy/centre-for-economic-studies-and-policies.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/academics/school-of-social-sciences-and-policy/centre-for-sociological-studies.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/academics/school-of-social-sciences-and-policy/centre-for-political-studies.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/academics/school-of-education.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/academics/school-of-education/center-for-education.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/academics/school-of-law-and-governance.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/academics/school-of-physical-chemical-sciences.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/academics/school-of-physical-chemical-sciences/department-of-chemistry.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/academics/school-of-physical-chemical-sciences/department-of-physics.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/student/2016-03-09-15-31-33/central-library.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/student/2016-03-09-15-31-33/e-journals-and-online-databases.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/student/2016-03-09-15-31-33/print-journals.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/student/2016-03-09-15-31-33/library-services.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/student/important-form.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/student/digital-archives-intranet.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/student/opac-intranet.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/contact-us-1.html
+***From Crawler.crawl_page() -> HTTP Error 404: Component not found.
+url = https://www.cusb.ac.in/hindi/index.php?amp;view=article&amp;id=173&amp;catid=14&amp;Itemid=288
+***From Crawler.crawl_page() -> HTTP Error 404: Component not found.
+url = https://www.cusb.ac.in/hindi/index.php?amp;view=article&amp;id=174&amp;catid=14&amp;Itemid=289
+***From Crawler.crawl_page() -> HTTP Error 404: Component not found.
+url = https://www.cusb.ac.in/hindi/index.php?amp;view=article&amp;id=175&amp;catid=14&amp;Itemid=290
+***From Crawler.crawl_page() -> HTTP Error 404: Category not found
+url = https://www.cusb.ac.in/hindi/index.php/notices-officer-orders-circulars
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/recruitment
+***From Crawler.crawl_page() -> HTTP Error 404: Category not found
+url = https://www.cusb.ac.in/hindi/index.php/photo-gallery
+***From Crawler.crawl_page() -> HTTP Error 404: Category not found
+url = https://www.cusb.ac.in/hindi/index.php/tenders-eoi
+***From Crawler.crawl_page() -> HTTP Error 404: Category not found
+url = https://www.cusb.ac.in/hindi/index.php/cusb-upcoming-campus
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/rti.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/task-force-for-women.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/counselling-and-placement.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/index.php/14-sample-data-articles/513-first-court
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/index.php/pro-vice-chancellor
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/index.php/115-faculty-profile/english/357-ms-richa.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/index.php/117-faculty-profile/law-and-governance/334-dr-ahsan-rashid.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/about-university.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/central-university-act,-2009.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/statues.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/ordinances.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/policy-documents.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/history-and-development.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/salient-features.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/regulations.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/visitor.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/chancellor.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/vice-chancellor.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/registrar.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/finance-office.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/controller-of-examinations.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/officers.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/staff-patna-campus.html
+***From Crawler.crawl_page() -> HTTP Error 404: Article not found
+url = https://www.cusb.ac.in/hindi/index.php/staff-gaya-campus.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.cusb.ac.in/www.youtube.com/playlist?list=PLpPAuE4Gae0gkBmeBrXh7X8HryoKO3Lb5
+16 https://icarrcer.in
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://icarrcer.in/amitavdey_icar@yahoo.co.in
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/%23
+url = https://icarrcer.in/Regional%20Workshop%20on%20AICRP-IFS%20inaugurated%20by%20the%20Hon%E2%80%99ble%20Agricultural%20Minister,%20Bihar%20at%20ICAR%20Research%20Complex%20for%20Eastern%20Region,%20Patna
+19 https://www.ngpp.ac.in
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/what-we-do/%23respond
+url = https://www.ngpp.ac.in/awards-and-accolades/
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/what-we-do/%23
+url = https://www.ngpp.ac.in/privacy/
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/what-we-do/issue-briefs/%23respond
+url = https://www.ngpp.ac.in/news-and-announcements
+20 https://bcebakhtiyarpur.org
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://bcebakhtiyarpur.org/awards-and-accolades/
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://bcebakhtiyarpur.org/privacy/
+22 https://www.pratham.org
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.pratham.org/?page_id=2261
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.pratham.org/2018/12/05/good-green/
+***From Crawler.crawl_page() -> HTTP Error 503: Service Unavailable
+url = https://www.pratham.org/2019/05/04/dr-rukmini-banerji/
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.pratham.org/programs/education/early-years-and-elementary/
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.pratham.org/programs/info@pratham.org
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.pratham.org/covid-19-response/www.ketto.org/mumbaifoodproject
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.pratham.org/2019/05/29/digital@pratham.org
+24 https://www.adriindia.org
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.adriindia.org/images/books/1505997040Bargad_ka_Bhoot
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.adriindia.org/images/books/1505996982Matdan__ka_Adhikar
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.adriindia.org/images/books/1505996815Ser_Bhar_Genhu__
+31 https://www.csdt.co.in
+***From Crawler.crawl_page() -> HTTP Error 400: Bad Request
+url = https://www.csdt.co.in/tel:8986023283
+***From Crawler.crawl_page() -> HTTP Error 400: Bad Request
+url = https://www.csdt.co.in/tel:8051100113
+42 https://www.bncollegepatna.com
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.bncollegepatna.com/academics/index.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.bncollegepatna.com/0612-22677619
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.bncollegepatna.com/naac/0612-22677619
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.bncollegepatna.com/index.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.bncollegepatna.com/staff_admin/biometric/
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.bncollegepatna.com/staff_admin/research_paper/
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.bncollegepatna.com/staff_admin/teaching_materials/
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.bncollegepatna.com/admin/pages/samples/anual_report/
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.bncollegepatna.com/admin/pages/samples/biometric/
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.bncollegepatna.com/admin/pages/samples/notice/
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.bncollegepatna.com/admin/pages/samples/pressrelease/
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.bncollegepatna.com/admin/pages/samples/student_attendance_list/
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.bncollegepatna.com/admin/pages/samples/tenders/
+43 https://patnawomenscollege.in/
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://patnawomenscollege.in/wp-content/uploads/2019/05/seminar-notice.jpg%20target=
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://patnawomenscollege.in/upload/Explore%20Vol.%20VII/a29.pdff
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://patnawomenscollege.in/upload/Explore%20Vol.%20VII/t1.pdf%20target=
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://patnawomenscollege.in/NO%20FOUND
+48 https://skillmissionbihar.org/
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://skillmissionbihar.org/domain-skilling/courses
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://skillmissionbihar.org/domain-skilling/schemes-under-domain-skilling
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://skillmissionbihar.org/domain-skilling/stakeholders-interaction
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://skillmissionbihar.org/domain-skilling/sdc-registration/infrastructure-requirements
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://skillmissionbihar.org/domain-skilling/sdc-registration/sdc-registration-process
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://skillmissionbihar.org/domain-skilling/sdc-registration/user-manual
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://skillmissionbihar.org/domain-skilling/sdc-registration/registration-fee-structure
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://skillmissionbihar.org/%20http://skillmissionbihar.org/domain-skilling/sdc-registration/important-instructions
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://skillmissionbihar.org/kushal-yuva-program/list-of-verified-sdcs
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://skillmissionbihar.org/component/content/2-uncategorised/301-block-change-process?Itemid=270
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://skillmissionbihar.org/component/content/32-kushal-yuva-program/314-candidate-registration-details?Itemid=301
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://skillmissionbihar.org/component/content/2-uncategorised/311-bsdc-allotment-status-phase-3?Itemid=277
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://skillmissionbihar.org/images/PLASTICS_PROCESSING_OPERATOR_INJECTION_MOULDING.docxx
+57 https://www.stkarenshighschool.com
+***From Crawler.crawl_page() -> HTTP Error 500: Internal Server Error
+url = https://www.stkarenshighschool.com/VideoGallery/watchvideos.aspx?AlID=15
+***From Crawler.crawl_page() -> HTTP Error 500: Internal Server Error
+url = https://www.stkarenshighschool.com/VideoGallery/watchvideos.aspx?AlID=14
+***From Crawler.crawl_page() -> HTTP Error 500: Internal Server Error
+url = https://www.stkarenshighschool.com/VideoGallery/watchvideos.aspx?AlID=13
+***From Crawler.crawl_page() -> HTTP Error 500: Internal Server Error
+url = https://www.stkarenshighschool.com/VideoGallery/watchvideos.aspx?AlID=12
+***From Crawler.crawl_page() -> HTTP Error 500: Internal Server Error
+url = https://www.stkarenshighschool.com/VideoGallery/watchvideos.aspx?AlID=11
+***From Crawler.crawl_page() -> HTTP Error 500: Internal Server Error
+url = https://www.stkarenshighschool.com/VideoGallery/watchvideos.aspx?AlID=10
+***From Crawler.crawl_page() -> HTTP Error 500: Internal Server Error
+url = https://www.stkarenshighschool.com/VideoGallery/watchvideos.aspx?AlID=8
+***From Crawler.crawl_page() -> HTTP Error 500: Internal Server Error
+url = https://www.stkarenshighschool.com/VideoGallery/watchvideos.aspx?AlID=7
+***From Crawler.crawl_page() -> HTTP Error 500: Internal Server Error
+url = https://www.stkarenshighschool.com/VideoGallery/watchvideos.aspx?AlID=6
+***From Crawler.crawl_page() -> HTTP Error 500: Internal Server Error
+url = https://www.stkarenshighschool.com/VideoGallery/watchvideos.aspx?AlID=3
+***From Crawler.crawl_page() -> HTTP Error 500: Internal Server Error
+url = https://www.stkarenshighschool.com/VideoGallery/watchvideos.aspx?AlID=4
+***From Crawler.crawl_page() -> HTTP Error 500: Internal Server Error
+url = https://www.stkarenshighschool.com/VideoGallery/watchvideos.aspx?AlID=1
+***From Crawler.crawl_page() -> HTTP Error 500: Internal Server Error
+url = https://www.stkarenshighschool.com/VideoGallery/watchvideos.aspx?AlID=5
+***From Crawler.crawl_page() -> HTTP Error 500: Internal Server Error
+url = https://www.stkarenshighschool.com/VideoGallery/watchvideos.aspx?AlID=2
+***From Crawler.crawl_page() -> <urlopen error _ssl.c:835: The handshake operation timed out>
+url = https://www.stkarenshighschool.com/Photogallery/ImageShow.aspx?ID=NDM0
+58 www.stisbihta.com
+Error in setting home page unknown url type: 'www.stisbihta.com'
+60 http://stxavierspatna.in/#1
+**** From Crawler.crawl() -> timed out
+
+http://stxavierspatna.in/Menu/Achievements/achievement_details.aspx?AID=53&byte=4 -> http://stxavierspatna.in/Menu/Achievements/Achievement.aspx?byte=4 /Menu/Achievements/achievement_details.aspx?AID=53&byte=4
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/what-we-do/issue-briefs/%23
+url = http://stxavierspatna.in/menu/mediagallery/vsms.aspx
+61 http://stkarensprimaryschool.com/
+**** From Crawler.crawl() -> timed out
+
+http://stkarensprimaryschool.com/about_us.aspx -> http://stkarensprimaryschool.com/ /about_us.aspx
+**** From Crawler.crawl() -> [Errno 104] Connection reset by peer
+
+http://stkarensprimaryschool.com/Menu/Achievements/achievement_details.aspx?AID=97 -> http://stkarensprimaryschool.com/ /Menu/Achievements/achievement_details.aspx?AID=97
+**** From Crawler.crawl() -> timed out
+
+http://stkarensprimaryschool.com/Menu/Achievements/achievement_details.aspx?AID=81 -> http://stkarensprimaryschool.com/ /Menu/Achievements/achievement_details.aspx?AID=81
+**** From Crawler.crawl() -> timed out
+
+http://stkarensprimaryschool.com/Menu/Notices/FullNotice.aspx?NId=206&archieve=1 -> http://stkarensprimaryschool.com/menu/Notices/FullNotice.aspx?NId=265&spnqy=Truyhdk!ituks /Menu/Notices/FullNotice.aspx?NId=206&archieve=1
+**** From Crawler.crawl() -> timed out
+
+http://stkarensprimaryschool.com/menu/PhotoGallery/default.aspx?btype=144 -> http://stkarensprimaryschool.com/menu/PhotoGallery/DisplayPhotosFull.aspx?ID=SOspCsUu9cQ= default.aspx?btype=144
+67 http://ambedkardental.co.in/
+Error in setting home page <urlopen error [Errno -2] Name or service not known>
+83 http://apnpublicschool.com/
+Error in setting home page <urlopen error [Errno -2] Name or service not known>
+87 http://www.jdwcpatna.com/
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/what-we-do/issue-briefs/creativism-and-creative-learning/%23respond
+url = http://www.jdwcpatna.com/index
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/what-we-do/issue-briefs/creative-learning/%23respond
+url = http://www.jdwcpatna.com/admission-mba.php
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/what-we-do/issue-briefs/broadstreaming/%23respond
+url = http://www.jdwcpatna.com/admission-mca.php
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/what-we-do/issue-briefs/education-for-democracy/%23respond
+url = http://www.jdwcpatna.com/admission-mba
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/what-we-do/issue-briefs/knowledge-based-activism/%23respond
+url = http://www.jdwcpatna.com/admission-mca
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/what-we-do/issue-briefs/nature-consciousness-2/%23respond
+url = http://www.jdwcpatna.com/download-forms
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/what-we-do/completed-projects/%23
+url = http://www.jdwcpatna.com/courses-professional
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/what-we-do/ongoing-projects/%23respond
+url = http://www.jdwcpatna.com/courses-vocational
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/what-we-do/ongoing-projects/%23
+url = http://www.jdwcpatna.com/courses-under-graduate
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/what-we-do/ongoing-projects/quality-universal-inclusive-elementary-education/%23respond
+url = http://www.jdwcpatna.com/courses-pg
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/what-we-do/ongoing-projects/creative-learning-class/%23respond
+url = http://www.jdwcpatna.com/courses-intermediate
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/what-others-say/%23
+url = http://www.jdwcpatna.com/courses-addon
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/what-others-say/media-coverage/%23respond
+url = http://www.jdwcpatna.com/administration
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/get-involved/%23respond
+url = http://www.jdwcpatna.com/teaching-staff-principal
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/get-involved/%23
+url = http://www.jdwcpatna.com/science-departments
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/get-involved/donate/%23respond
+url = http://www.jdwcpatna.com/science-dept-physics
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/get-involved/donate/%23
+url = http://www.jdwcpatna.com/science-dept-chemistry
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/get-involved/donate/endowments/%23respond
+url = http://www.jdwcpatna.com/science-dept-mathematics
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/get-involved/events/action%257Eagenda/request_format%257Ehtml/
+url = http://www.jdwcpatna.com/science-dept-botany
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/get-involved/events/action%257Eoneday/request_format%257Ehtml/
+url = http://www.jdwcpatna.com/science-dept-zoology
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/get-involved/events/action%257Emonth/request_format%257Ehtml/
+url = http://www.jdwcpatna.com/arts-departments
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/get-involved/events/action%257Eweek/request_format%257Ehtml/
+url = http://www.jdwcpatna.com/arts-dept-english
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/get-involved/events/action%257Eagenda/page_offset%257E-1/request_format%257Ehtml/
+url = http://www.jdwcpatna.com/arts-dept-hindi
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/get-involved/events/action%257Eagenda/page_offset%257E1/request_format%257Ehtml/
+url = http://www.jdwcpatna.com/arts-dept-urdu
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/get-involved/events/%23respond
+url = http://www.jdwcpatna.com/arts-dept-sanskrit
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/get-involved/careers/%2523comment-52
+url = http://www.jdwcpatna.com/arts-dept-history
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/get-involved/careers/%2523comment-64
+url = http://www.jdwcpatna.com/arts-dept-polscience
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/get-involved/careers/%23respond
+url = http://www.jdwcpatna.com/arts-dept-philosophy
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/get-involved/join-the-movement/%23respond
+url = http://www.jdwcpatna.com/arts-dept-economics
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/school-of-creative-learning/%23respond
+url = http://www.jdwcpatna.com/arts-dept-psychology
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/school-of-creative-learning/%23
+url = http://www.jdwcpatna.com/arts-dept-sociology
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/school-of-creative-learning/academic-programme/%23respond
+url = http://www.jdwcpatna.com/arts-dept-homescience
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/school-of-creative-learning/admissions/%23respond
+url = http://www.jdwcpatna.com/arts-dept-music
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/school-of-creative-learning/infrastructure/%23respond
+url = http://www.jdwcpatna.com/arts-dept-bengali
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/organisations/%23respond
+url = http://www.jdwcpatna.com/about
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/organisations/%23
+url = http://www.jdwcpatna.com/contact
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/images-videos/%23respond
+url = http://www.jdwcpatna.com/message-principal
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/resources/%23respond
+url = http://www.jdwcpatna.com/message-pro-course
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/creative-learning-about-us/%23
+url = http://www.jdwcpatna.com/message-head-pro-course
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/creative-learning-about-us/creative-learning-people/%23
+url = http://www.jdwcpatna.com/message-placement-cell
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/creative-learning-about-us/creative-learning-people/heroes/%23respond
+url = http://www.jdwcpatna.com/message-faculty-members
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/creative-learning-about-us/creative-learning-people/administration/%23respond
+url = http://www.jdwcpatna.com/faculty
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/creative-learning-about-us/creative-learning-people/alumni/%23respond
+url = http://www.jdwcpatna.com/gallery-thinkpad
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/creative-learning-about-us/annual-reports/%23respond
+url = http://www.jdwcpatna.com/gallery-brain-storming
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/creative-learning-about-us/faq/%23respond
+url = http://www.jdwcpatna.com/gallery
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/creative-learning-about-us/contact-us/%23respond
+url = http://www.jdwcpatna.com/notice
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/category/%23
+url = http://www.jdwcpatna.com/online-form/admin/
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/category/apcl/scl/%23
+url = http://www.jdwcpatna.com/jdwcpatna/index
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/category/apcl/%23
+url = http://www.jdwcpatna.com/admission-mcamca.php
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/get-involved/donat%250D%250A%2520e/
+url = http://www.jdwcpatna.com/jdwcpatna/facility-service
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/what-others-say/media-coverage%250D%250A%2520/
+url = http://www.jdwcpatna.com/jdwcpatna/about
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/http%0D%0A%20://creativelearning.in/get-involved/careers/
+url = http://www.jdwcpatna.com/jdwcpatna/contact
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/ritu-sinha-jayanti-celebr%250D%250A%2520ated-on-february-22nd-2015/
+url = http://www.jdwcpatna.com/jdwcpatna/online-exam/index
+**** From Crawler.crawl() -> timed out
+
+http://www.jdwcpatna.com/jdwcpatna/admission-addon.php -> http://www.jdwcpatna.com/jdwcpatna/sitemap.php admission-addon.php
+***From Crawler.crawl_page() -> <urlopen error [Errno -2] Name or service not known>
+url = http://www.jdwcpatna.com/jdwcpatna/courses-professional.php
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/ritu-sinha-jayanti-celebrated-on-fe%250D%250A%2520bruary-22nd-2015/
+url = http://www.jdwcpatna.com/jdwcpatna/admission-mba
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/poem-antakshari-held-at-the-school-of-creativ%250D%250A%2520e-learning/
+url = http://www.jdwcpatna.com/jdwcpatna/admission-mca
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/h%0D%0A%20ttp://creativelearning.in/organisations/school-of-creative-learning/
+url = http://www.jdwcpatna.com/jdwcpatna/download-forms
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/organisations/school-of-creat%250D%250A%2520ive-learning/
+url = http://www.jdwcpatna.com/jdwcpatna/courses-professional
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/h%0D%0A%20ttp://creativelearning.in/organisations/ritu-sinha-centre-for-creative-lea%0D%0A%20rning/
+url = http://www.jdwcpatna.com/jdwcpatna/courses-vocational
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/organisations/kanka-gajendra-centre-%250D%250A%2520for-inclusive-learning/
+url = http://www.jdwcpatna.com/jdwcpatna/courses-under-graduate
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/organisations/chandras-institut%250D%250A%2520e-for-creative-empowerment-of-women/
+url = http://www.jdwcpatna.com/jdwcpatna/courses-pg
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/organisations/chandras-institute-for-creative-%250D%250A%2520empowerment-of-women/
+url = http://www.jdwcpatna.com/jdwcpatna/courses-intermediate
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/organisations/chan%250D%250A%2520dras-institute-for-creative-empowerment-of-women/
+url = http://www.jdwcpatna.com/jdwcpatna/courses-addon
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/get-involved/donate%250D%250A%2520/
+url = http://www.jdwcpatna.com/jdwcpatna/administration
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/%0D%0A%20//creativelearning.in/get-involved/careers/
+url = http://www.jdwcpatna.com/jdwcpatna/teaching-staff-principal
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/organisations/%250D%250A%2520school-of-creative-learning/
+url = http://www.jdwcpatna.com/jdwcpatna/science-departments
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/htt%0D%0A%20p://creativelearning.in/organisations/school-of-creative-learning/
+url = http://www.jdwcpatna.com/jdwcpatna/science-dept-physics
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/organisations/school-of-creativ%250D%250A%2520e-learning/
+url = http://www.jdwcpatna.com/jdwcpatna/science-dept-chemistry
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/organisations/ritu-sinha-centre-for-creat%250D%250A%2520ive-learning/
+url = http://www.jdwcpatna.com/jdwcpatna/science-dept-mathematics
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/htt%0D%0A%20p://creativelearning.in/organisations/ritu-sinha-centre-for-creative-learn%0D%0A%20ing/
+url = http://www.jdwcpatna.com/jdwcpatna/science-dept-botany
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/organisations/chandras-institute-f%250D%250A%2520or-creative-empowerment-of-women/
+url = http://www.jdwcpatna.com/jdwcpatna/science-dept-zoology
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/ht%0D%0A%20tp://creativelearning.in/organisations/chandras-institute-for-creative-emp%0D%0A%20owerment-of-women/
+url = http://www.jdwcpatna.com/jdwcpatna/arts-departments
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/organisations/chandra%250D%250A%2520s-institute-for-creative-empowerment-of-women/
+url = http://www.jdwcpatna.com/jdwcpatna/arts-dept-english
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/htt%0D%0A%20p://creativelearning.in/get-involved/careers/
+url = http://www.jdwcpatna.com/jdwcpatna/arts-dept-hindi
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/ritu-%250D%250A%2520sinha-jayanti-celebrated-on-february-22nd-2015/
+url = http://www.jdwcpatna.com/jdwcpatna/arts-dept-urdu
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/ceremony-fo%250D%250A%2520r-unveiling-the-statue-of-kanka-malik-verma-at-the-kanka-gajendra-centre-f%250D%250A%2520or-inclusive-learning/
+url = http://www.jdwcpatna.com/jdwcpatna/arts-dept-sanskrit
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/ceremony-for-unveiling-the-statue-of-kank%250D%250A%2520a-malik-verma-at-the-kanka-gajendra-centre-for-inclusive-learning/
+url = http://www.jdwcpatna.com/jdwcpatna/arts-dept-history
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/poem-antakshar%250D%250A%2520i-held-at-the-school-of-creative-learning/
+url = http://www.jdwcpatna.com/jdwcpatna/arts-dept-polscience
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/poem-antakshari-held-at-the-s%250D%250A%2520chool-of-creative-learning/
+url = http://www.jdwcpatna.com/jdwcpatna/arts-dept-philosophy
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/apcl-receives-certificate-of-a%250D%250A%2520ccredition-from-credibility-alliance/
+url = http://www.jdwcpatna.com/jdwcpatna/arts-dept-economics
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/apcl-receives-certificate-of%250D%250A%2520-accredition-from-credibility-alliance/
+url = http://www.jdwcpatna.com/jdwcpatna/arts-dept-psychology
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/organisations/school%250D%250A%2520-of-creative-learning/
+url = http://www.jdwcpatna.com/jdwcpatna/arts-dept-sociology
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/organisations/ritu-s%250D%250A%2520inha-centre-for-creative-learning/
+url = http://www.jdwcpatna.com/jdwcpatna/arts-dept-homescience
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/organisations/kanka-gajendra-c%250D%250A%2520entre-for-inclusive-learning/
+url = http://www.jdwcpatna.com/jdwcpatna/arts-dept-music
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/organisations/kanka-gajendra-%250D%250A%2520centre-for-inclusive-learning/
+url = http://www.jdwcpatna.com/jdwcpatna/arts-dept-bengali
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/organisations/chand%250D%250A%2520ras-institute-for-creative-empowerment-of-women/
+url = http://www.jdwcpatna.com/jdwcpatna/message-principal
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/creative-learning-about-us/partn%250D%250A%2520ers/
+url = http://www.jdwcpatna.com/jdwcpatna/message-pro-course
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/creative-learning-about-us/pa%250D%250A%2520rtners/
+url = http://www.jdwcpatna.com/jdwcpatna/message-head-pro-course
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/%0D%0A%20/creativelearning.in/get-involved/donate/
+url = http://www.jdwcpatna.com/jdwcpatna/message-placement-cell
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/images-v%250D%250A%2520ideos/
+url = http://www.jdwcpatna.com/jdwcpatna/message-faculty-members
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/ima%250D%250A%2520ges-videos/
+url = http://www.jdwcpatna.com/jdwcpatna/faculty
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/what-others-say/m%250D%250A%2520edia-coverage/
+url = http://www.jdwcpatna.com/jdwcpatna/gallery-thinkpad
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/what-others-say/medi%250D%250A%2520a-coverage/
+url = http://www.jdwcpatna.com/jdwcpatna/gallery-brain-storming
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/ritu-sinha-%250D%250A%2520jayanti-celebrated-on-february-22nd-2015/
+url = http://www.jdwcpatna.com/jdwcpatna/gallery
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/ritu-sinha-jayanti-ce%250D%250A%2520lebrated-on-february-22nd-2015/
+url = http://www.jdwcpatna.com/jdwcpatna/notice
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/ceremony-for-unveiling-the-s%250D%250A%2520tatue-of-kanka-malik-verma-at-the-kanka-gajendra-centre-for-inclusive-lear%250D%250A%2520ning/
+url = http://www.jdwcpatna.com/jdwcpatna/online-form/admin/
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/poem-antakshari-held-at-the-sc%250D%250A%2520hool-of-creative-learning/
+url = http://www.jdwcpatna.com/jdwcpatna/admission-mba.php
 ***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/apcl-receives-certificate-of-accredition-from-%250D%250A%2520credibility-alliance/
-***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/organisations/school-of-creative%250D%250A%2520-learning/
-***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/organisations/ritu-sin%250D%250A%2520ha-centre-for-creative-learning/
-***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/%0D%0A%20//creativelearning.in/organisations/ritu-sinha-centre-for-creative-learnin%0D%0A%20g/
-***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/organisations/ritu-sinha-centre%250D%250A%2520-for-creative-learning/
-***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/organisations/kanka-%250D%250A%2520gajendra-centre-for-inclusive-learning/
-***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/organisations/kanka-gajendra-centre-for-i%250D%250A%2520nclusive-learning/
-***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/organisations/kanka-gajendra-centre-for-%250D%250A%2520inclusive-learning/
-***From Crawler.crawl_page() -> HTTP Error 404: Not Found
-url = http://creativelearning.in/organisations/c%250D%250A%2520handras-institute-for-creative-empowerment-of-women/
+url = http://www.jdwcpatna.com/jdwcpatna/admission-mca.php
+1062 (23000): Duplicate entry 'http://www.cimp.ac.in/home/job' for key 'sites.link'
+1062 (23000): Duplicate entry 'http://www.cimp.ac.in/home/job/2019' for key 'sites.link'
+1062 (23000): Duplicate entry 'http://www.cimp.ac.in/home/jobdetails/advertisement-for-the-posi' for key 'sites.link'
+1062 (23000): Duplicate entry 'http://www.cimp.ac.in/home/jobdetails/advertisement-for-the-posi' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.cusb.ac.in/index.php/recruitment' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.cusb.ac.in/index.php/archived-student-academic-highl' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.cusb.ac.in/hindi/index.php/recruitment' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.cusb.ac.in/index.php/14-sample-data-articles/814-rec' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.cusb.ac.in/index.php/tenders-eoi/953-tender-notice-f' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://icarrcer.in/recruitment-vacancy/' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://icarrcer.in/careers/' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://icarrcer.in/vacancy-details-2/' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://icarrcer.in/category/recruitment-vaccancy/' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://icarrcer.in/2017/12/walk-in-interview-17/' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://icarrcer.in/2017/12/walk-in-interview-17/#respond' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.ngpp.ac.in/prism-johnson-limited-visiting-our-campus' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://bcebakhtiyarpur.org/2019/09/17/regarding-final-year-stud' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.pratham.org/get-involved/job-opportunities/' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.pratham.org/2020/05/29/turning-our-education-crisis-' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.pratham.org/get-involved/job-opportunities' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.pratham.org/2019/08/14/job-description-social-media-' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.pratham.org/2019/07/25/english-digital-content-inter' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.pratham.org/category/job-opportunities/communication' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.pratham.org/category/job-opportunities/data-insight-' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.pratham.org/category/job-opportunities/program-manag' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.pratham.org/category/job-opportunities/program-roles' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.pratham.org/category/internship-opportunities/' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.pratham.org/category/job-opportunities/program-roles' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.adriindia.org/adri/job_detail/ceecc/38' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.adriindia.org/adri/job_detail/chp/37' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.adriindia.org/adri/careers' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.adriindia.org/adri/career' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.adriindia.org/centre/career/adri-patna-ranchi' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.adriindia.org/centre/career/ceppf-patna' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.adriindia.org/centre/career/chp' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.adriindia.org/centre/career/igc' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.adriindia.org/centre/career/ceecc' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.adriindia.org/centre/career/src-patna' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.adriindia.org/centre/career/src-ranchi' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.adriindia.org/centre/career/jss-patna' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.adriindia.org/events/gallery/closing-the-gender-gap-' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.adriindia.org/events/gallery/seminar-on-engaging-wit' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.adriindia.org/events/gallery/health-women-and-develo' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.adriindia.org/events/news_media/closing-the-gender-g' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.adriindia.org/events/news_media/seminar-on-engaging-' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.adriindia.org/adri/job_detail/igc/36' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.adriindia.org/adri/job_detail/igc/35' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.adriindia.org/adri/job_detail/adri-patna-ranchi/34' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.adriindia.org/adri/job_detail/the-igc-bmgf/27' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.adriindia.org/adri/job_detail/the-igc-bmgf/26' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.adriindia.org/adri/job_detail/the-igc-bmgf/21' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.adriindia.org/events/closing-the-gender-gap-health-e' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.adriindia.org/events/seminar-on-engaging-with-privat' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.adriindia.org/events/health-women-and-development-in' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.adriindia.org/events/press_release/closing-the-gende' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.adriindia.org/adri/job_detail/ceecc/10' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.adriindia.org/adri/job_detail/igc/7' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.adriindia.org/adri/job_detail/ceecc/8' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.adriindia.org/adri/job_detail/chp/11' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.adriindia.org/adri/job_detail/chp/14' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.adriindia.org/adri/job_detail/chp/15' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.adriindia.org/adri/job_detail/chp/16' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.adriindia.org/adri/job_detail/chp/17' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.adriindia.org/adri/job_detail/chp/18' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.adriindia.org/adri/job_detail/ceecc/19' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.adriindia.org/adri/job_detail/ceppf-patna/20' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.adriindia.org/adri/job_detail/igc/21' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.adriindia.org/adri/job_detail/chp/22' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.adriindia.org/adri/job_detail/chp/23' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.adriindia.org/adri/job_detail/chp/24' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.adriindia.org/adri/job_detail/adri-patna-ranchi/25' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.adriindia.org/adri/job_detail/igc/26' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.adriindia.org/adri/job_detail/igc/27' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.adriindia.org/adri/job_detail/ceecc/28' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.adriindia.org/adri/job_detail/ceecc/29' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.adriindia.org/adri/job_detail/ceecc/30' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.adriindia.org/adri/job_detail/chp/31' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.adriindia.org/adri/job_detail/chp/32' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.adriindia.org/adri/job_detail/chp/33' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.adriindia.org/centre/career/adri-society' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.csdt.co.in/Job-Oriented-Training.html' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.csdt.co.in/IT_Jobs/Jobs.aspx' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.csdt.co.in/IT_Jobs/CsdtEnquiry.aspx' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.csdt.co.in/IT-Jobs.aspx' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.csdt.co.in/SEO-Job-Training.htm' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.csdt.co.in/IT_Jobs/Default.aspx' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.csdt.co.in/IT_Jobs/Jobdetails.aspx?Uid=Delhi,%20New%' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.csdt.co.in/IT_Jobs/Jobdetails.aspx?Uid=Patna,%20Biha' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.csdt.co.in/IT_Jobs/Jobdetails.aspx?Uid=Bengaluru,%20' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.csdt.co.in/IT_Jobs/Add_Question_Answer.aspx?Uid=Arti' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.csdt.co.in/IT_Jobs/ProgrammingPractice.aspx?Uid=Arti' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.csdt.co.in/IT_Jobs/Add_Question_Answer.aspx?Uid=Java' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.csdt.co.in/IT_Jobs/ProgrammingPractice.aspx?Uid=Java' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.csdt.co.in/IT_Jobs/Add_Question_Answer.aspx?Uid=Pyth' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.csdt.co.in/IT_Jobs/ProgrammingPractice.aspx?Uid=Pyth' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.csdt.co.in/IT_Jobs/Add_Question_Answer.aspx?Uid=.NET' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.csdt.co.in/IT_Jobs/ProgrammingPractice.aspx?Uid=.NET' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.csdt.co.in/IT_Jobs/Add_Question_Answer.aspx?Uid=Data' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.csdt.co.in/IT_Jobs/ProgrammingPractice.aspx?Uid=Data' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.csdt.co.in/IT_Jobs/Add_Question_Answer.aspx?Uid=Data' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.csdt.co.in/IT_Jobs/ProgrammingPractice.aspx?Uid=Data' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.csdt.co.in/IT_Jobs/Add_Question_Answer.aspx?Uid=Stri' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.csdt.co.in/IT_Jobs/ProgrammingPractice.aspx?Uid=Stri' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.csdt.co.in/IT_Jobs/Add_Question_Answer.aspx?Uid=Java' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.csdt.co.in/IT_Jobs/ProgrammingPractice.aspx?Uid=Java' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.csdt.co.in/IT_Jobs/Add_Question_Answer.aspx?Uid=for,' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.csdt.co.in/IT_Jobs/ProgrammingPractice.aspx?Uid=for,' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.csdt.co.in/IT_Jobs/Add_Question_Answer.aspx?Uid=Pyth' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.csdt.co.in/IT_Jobs/ProgrammingPractice.aspx?Uid=Pyth' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.csdt.co.in/IT_Jobs/JobApply.aspx?Uid=csdt' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.csdt.co.in/IT_Jobs/JobApply.aspx?Uid=CSDT%20IT%20Sol' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.csdt.co.in/IT_Jobs/JobApply.aspx?Uid=Tele-Teach%20pv' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.csdt.co.in/IT_Jobs/JobApply.aspx?Uid=Tele-Teach%20Pv' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.csdt.co.in/IT_Jobs/JobApply.aspx?Uid=Ideal%20Propert' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.csdt.co.in/IT_Jobs/JobApply.aspx?Uid=Metricstream%20' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://patnawomenscollege.in/career-oriented-courses/' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://patnawomenscollege.in/campus-recruitement-drive/' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://patnawomenscollege.in/index.php/career-oriented-courses/' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://skillmissionbihar.org/about-us/vision-objectives-roles-r' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://skillmissionbihar.org/domain-skilling/recruit-train-depl' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://skillmissionbihar.org/recruitment' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://skillmissionbihar.org/domain-skilling/domain-based-fresh' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://skillmissionbihar.org/domain-skilling/domain-based-fresh' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://skillmissionbihar.org/domain-skilling/recruit-train-depl' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://skillmissionbihar.org/domain-skilling/recruit-train-depl' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://skillmissionbihar.org/domain-skilling/recruit-train-depl' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://skillmissionbihar.org/domain-skilling/recruit-train-depl' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://skillmissionbihar.org/domain-skilling/recruit-train-depl' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://skillmissionbihar.org/domain-skilling/recruit-train-depl' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://skillmissionbihar.org/domain-skilling/recruit-train-depl' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://skillmissionbihar.org/domain-skilling/recruit-train-depl' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://skillmissionbihar.org/domain-skilling/recruit-train-depl' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://skillmissionbihar.org/domain-skilling/recruit-train-depl' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://skillmissionbihar.org/domain-skilling/recruit-train-depl' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://skillmissionbihar.org/domain-skilling/recruit-train-depl' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://skillmissionbihar.org/domain-skilling/recruit-train-depl' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://skillmissionbihar.org/domain-skilling/recruit-train-depl' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://skillmissionbihar.org/domain-skilling/recruit-train-depl' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://skillmissionbihar.org/domain-skilling/recruit-train-depl' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://skillmissionbihar.org/domain-skilling/recruit-train-depl' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://skillmissionbihar.org/domain-skilling/recruit-train-depl' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://skillmissionbihar.org/domain-skilling/recruit-train-depl' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://skillmissionbihar.org/domain-skilling/recruit-train-depl' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://skillmissionbihar.org/domain-skilling/recruit-train-depl' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://skillmissionbihar.org/domain-skilling/recruit-train-depl' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://skillmissionbihar.org/domain-skilling/recruit-train-depl' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://skillmissionbihar.org/domain-skilling/recruit-train-depl' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://skillmissionbihar.org/domain-skilling/recognition-of-pri' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://skillmissionbihar.org/resources/news-and-events/473-job-' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://skillmissionbihar.org/important-notification/39-notices/' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://skillmissionbihar.org/important-notification/39-notices/' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://skillmissionbihar.org/domain-skilling/domain-based-fresh' for key 'sites.link'
+1062 (23000): Duplicate entry 'http://stkarensprimaryschool.com/menu/Career/career.aspx' for key 'sites.link'

@@ -161,10 +161,14 @@ def encode_url(s):
         # elif i == '\u2019':   # encoding the character (’) (decimal value 146; escape sequence \u2019)
         #     res = res + '%E2%80%99'
 
+        elif i in ('\t', '\v', '\f', '\r'):
+            pass                    # do nothing - just skip the character which is in the form of escape sequence
+
         else:
             res = res + i
 
-    res = up.quote(res, safe=':;/?@&=+$,#\'')
+    res = up.quote(res, safe='`~!@#$%^&*()-_=+[]{};:\'\"\\|,./<>?*')
+
 
     return res
 
@@ -207,6 +211,7 @@ def get_filters():
     s.append('interview')
 
     p.append('result')
+    p.append('select(ed|ion)')
 
     return (s, p)
 

@@ -7,18 +7,18 @@ class Crawler():
     __ignored2 = {'.csv'}
     __ignored3 = {'.bash'}
 
-    __ignored=set()
+    __ignored = set()
     __ignored.union(__ignored1)
     __ignored.union(__ignored2)
     __ignored.union(__ignored3)
 
 
     def __set_hp(self, hp):
-        if hp=='':
+        if hp == '':
             return
         else:
             try:
-                ht=load_page(hp)
+                ht = load_page(hp)
                 self.home_page = ht.geturl()
                 tmp = up.urlparse(self.home_page)
                 self.scheme_dom = up.urlunparse((tmp[0], tmp[1], '', '', '', ''))
@@ -29,25 +29,48 @@ class Crawler():
 
     def __init__(self, home_page):
         self.scheme_dom = ''
-        self.home_page=''
-        self.cur_page=''
-        self.urls=list()        # a different, 'parallel' sorted list for fast searching ??
-        self.index=-1
+        self.home_page = ''
+        self.cur_page = ''
+        self.urls = list()        # a different, 'parallel' sorted list for fast searching ??
+        self.__pos = list()
+        self.__m = 0                # for size of self.urls anbd self.__pos
+        self.index = -1
         self.counter = 0        # for counting number of pages examined
-        self.__parent=list()  # For tracing back
-        self.__path=list()
+        self.__parent = list()  # For tracing back
+        self.__path = list()
 
         self.__set_hp(home_page)
 
         if self.home_page != '':
             self.urls.append(self.home_page[len(self.scheme_dom):])
+            self.__pos.append(0)
+            self.__m += 1
+            self.__modify()
             self.__path.append('')
             self.__parent.append(0)
-            self.index=0
+            self.index = 0
+
+    def __modify(self):
+        j = self.__m - 1
+
+        key = self.urls[self.__pos[j]]
+
+        while j > 0 and self.urls[self.__pos[j-1]] > key:
+            self.__pos[j] = self.__pos[j-1]
+            j -= 1
+
+        self.__pos[j] = self.__m - 1
+
+    def __insert_set(self, u, s, i):
+        self.urls.append(s)
+        self.__pos.append(self.__m)
+        self.__m += 1
+        self.__modify()
+        self.__path.append(u)
+        self.__parent.append(i)
 
 
-
-    def crawl(self, delay=0.0, limiter=-1):     # CALENDAR to be avoided
+    def crawl(self, delay=0.0, limiter=-1):     # CALENDAR to be avoided (found in cimp site)
                         # what if a 'half-link' contains only digits, may belong to some special category, like albums (e.g. https://www.sgei.org/2019/03/ )
         if self.home_page == '':
             print("Nothing to CRAWL")
@@ -56,7 +79,7 @@ class Crawler():
         i = self.index
         n = len(self.scheme_dom)
 
-        while i < len(self.urls) and self.counter != limiter:
+        while i < self.__m and self.counter != limiter:
             try:
                 print(self.scheme_dom + self.urls[i], "->", self.scheme_dom + self.urls[self.__parent[i]], self.__path[i])
 
@@ -64,8 +87,22 @@ class Crawler():
 
                 for a in self.crawl_page(self.cur_page, delay):
                     if a is not None:
-                        if a[0][n:] not in self.urls:
+                        if a[1] == -1:    # some redirected url returned
+                            if a[0] not in self.urls:
+                                self.urls.append(a[0][n:])
+                                self.__pos.append(self.__m)
+                                self.__m += 1
+                                self.__modify()
+                                self.__path.append(self.urls[i])
+                                self.__parent.append(i)
+                            else:       # page has already been examined
+                                break
+
+                        elif a[0][n:] not in self.urls:
                             self.urls.append(a[0][n:])
+                            self.__pos.append(self.__m)
+                            self.__m += 1
+                            self.__modify()
                             self.__path.append(a[1])
                             self.__parent.append(i)
 
@@ -84,6 +121,8 @@ class Crawler():
                 i += 1
 
         self.index = i               # End of function crawl()
+
+        # print(self.__pos)
 
 
 
@@ -112,10 +151,14 @@ class Crawler():
 
             tmp = ht.geturl()
 
+
+            if tmp != url:       # yield tmp amd insert it in the urls[], if possible
+                yield (tmp, -1)
+
             self.counter += 1           # page will be examined, incrementing the counter by 1
 
             for t in soup.find_all('a'):
-                path=t['href']
+                path = t['href']
 
                 try:
                     u = url_normalize(tmp, path)
@@ -131,9 +174,9 @@ class Crawler():
 
 
     def get_root(self, u):
-        i=0
+        i = 0
         for i in range(self.urls):
-            if self.urls[i]==u:
+            if self.urls[i] == u:
                 return (self.urls[self.__parent[i]], self.__path[i])
 
         return None
@@ -142,7 +185,7 @@ class Crawler():
 
         parts = up.urlparse(s)
 
-        if parts[2] =='' and parts[3] == '' and parts[4] == '' and parts[5] == '':    # only 'link' present with no extra components
+        if parts[2] == '' and parts[3] == '' and parts[4] == '' and parts[5] == '':    # only 'link' present with no extra components
             return True
 
                                 # checking the complete url
