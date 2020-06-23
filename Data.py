@@ -204,17 +204,17 @@ if __name__ == '__main__':
     web=Data(a)
 
     # web.get_logo()
-    web.crawl(b, -1)     # Only 200 pages crawled
+    web.crawl(b, 100000)
 
     print("\nNo. of URLs =", len(web.urls))
     print("No. of pages examined =", web.counter)
 
-    s, p = get_filters()
-
-    web.get_tsites(s, p)
-
-    for i in web.tsites:
-        print(i)
+    # s, p = get_filters()
+    #
+    # web.get_tsites(s, p)
+    #
+    # for i in web.tsites:
+    #     print(i)
 
 
 

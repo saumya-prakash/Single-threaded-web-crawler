@@ -30,7 +30,7 @@ def url_normalize(cur_page, path):
 
     a = list(up.urlparse(cur_page))  # 'a' parsed into components
 
-    if b[2]=='' and b[3]=='' and b[4]=='':      # b[1] to be checked???
+    if b[2] == '' and b[3] == '' and b[4] == '':      # b[1] to be checked???
         # if b[5]=='':    # Everything is empty; probably an internal link to the same page
         #     return None
         # else:           # Some internal link; may reveal something new
@@ -40,7 +40,7 @@ def url_normalize(cur_page, path):
 
 
 
-    if b[1]!='' and b[1]!=a[1]:   # sub-domain or external site
+    if b[1] != '' and b[1] != a[1]:   # sub-domain or external site
         # s1=extract_domain(a[1])
         # s2=extract_domain(b[1])
         #
@@ -55,9 +55,12 @@ def url_normalize(cur_page, path):
 
     else:      # b[1]=='' or b[1]==a[1]:  #link belonging to the same domain
 
-        if b[1] == a[1]:       # complete link aready present
+        if b[1] == a[1]:       # complete link already present
             #if b[0]=='':     # set the scheme of 'a' in 'b' (they belong to the same domain
-            b[0]=a[0]      # Ensure scheme of 'a' and 'b' are same
+            b[0] = a[0]      # Ensure scheme of 'a' and 'b' are same
+
+            if a[2] == b[2] and a[3] == b[3] and a[4] == b[4]:      # all components same except possibly the last one
+                return None                                              # internal link to the same page -> excluded
             return encode_url(up.urlunparse(b).strip())
 
         b[0] = a[0]
@@ -67,11 +70,13 @@ def url_normalize(cur_page, path):
             b[2] = a[2]
             return up.urlunparse(b)
 
-        if b[2][0]=='/':    # search in the 'root' directory
+        if b[2][0] == '/':    # search in the 'root' directory
+            if a[2] == b[2] and a[3] == b[3] and a[4] == b[4]:      # all components same except possibly the last one
+                return None
             return up.urlunparse(b)
 
-        if a[2]!='' and a[2][-1]=='/':      # removing the last '/' if present -> to be REVIEWED
-            a[2]=a[2][:-1]
+        if a[2] != '' and a[2][-1] == '/':      # removing the last '/' if present -> to be REVIEWED
+            a[2] = a[2][:-1]
 
 
         if b[2][:3]=='../' or b[2][:5]=='./../':   # general function for moving up the directory levels
@@ -83,7 +88,7 @@ def url_normalize(cur_page, path):
 
             a[2] = remove_fname(a[2])
 
-            while i+2<=n and b[2][i:i+2]=='..':
+            while i+2 <= n and b[2][i:i+2]=='..':
                 a[2] = remove_fname(a[2])
                 i+=3
 
@@ -108,7 +113,6 @@ def url_normalize(cur_page, path):
             return up.urlunparse(b)
 
         print("**** From url_normalize() ->", cur_page, path, file=sys.stderr)  # case not found
-
         return None
 
 
@@ -161,7 +165,7 @@ def encode_url(s):
         # elif i == '\u2019':   # encoding the character (’) (decimal value 146; escape sequence \u2019)
         #     res = res + '%E2%80%99'
 
-        elif i in ('\t', '\v', '\f', '\r'):
+        elif i in ('\t', '\v', '\f', '\r', '\0', '\n', '\b'):
             pass                    # do nothing - just skip the character which is in the form of escape sequence
 
         else:
@@ -212,10 +216,11 @@ def get_filters():
 
     p.append('result')
     p.append('select(ed|ion)')
+    p.append('tender')
 
     return (s, p)
 
 if __name__=='__main__':
 
-    print(url_normalize('http://nitp.ac.in', b'..\uploads\Faculty_Advisor_first_year.pdf'))
+    print(url_normalize('http://nitp.ac.in/home', '/home#respond'))
     print()

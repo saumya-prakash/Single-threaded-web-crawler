@@ -114,8 +114,8 @@ class Crawler():
 
 
             except KeyboardInterrupt:
-                self.index=i
-                sys.exit()
+                self.index = i
+                return
 
             finally:
                 i += 1
@@ -136,7 +136,7 @@ class Crawler():
             # if self.url_file_check(up.urlparse(url)[2])==False:       # checking the path part of the URL
             #     return None
 
-            ht = load_page(url)
+            ht = load_page(url)             # Referrer header can also be set -> no need till now
 
         except Exception as e:
             print("***From Crawler.crawl_page() ->", e, file=sys.stderr)
@@ -181,7 +181,7 @@ class Crawler():
 
         return None
 
-    def url_file_check(self, s):
+    def url_file_check(self, s):            # some image urls end with resolution (121x212)  ???   maybe content-type response header to be used
 
         parts = up.urlparse(s)
 
