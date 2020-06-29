@@ -138,6 +138,11 @@ class Crawler():
 
             ht = load_page(url)             # Referrer header can also be set -> no need till now
 
+            response_info = ht.info()           # Using 'content-type' response header
+            cont_type = response_info.get_content_maintype()
+            if cont_type == 'image' or cont_type == 'application' or cont_type == 'video' or cont_type == 'audio':
+                return None
+
         except Exception as e:
             print("***From Crawler.crawl_page() ->", e, file=sys.stderr)
             print("url =", url, file=sys.stderr)

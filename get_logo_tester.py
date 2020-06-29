@@ -24,7 +24,7 @@ for row in curs.fetchall():
 
     os.chdir(store+name)
 
-    print(name)
+    print(name, hp)
     try:
         web = Data(hp)
         web.get_logo()

@@ -156,7 +156,7 @@ def logo_field_checker():           # checks if the entry in database in consist
             query = " UPDATE records SET logo = \'" + res + "\' " + "WHERE id = " + str(id)
             curs.execute(query)
             mycon.commit()
-            print(query)
+            # print(query)
 
 
         curs.close()

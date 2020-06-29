@@ -138,7 +138,7 @@ class Data(Crawler):
         tag = soup.find('form')      # searching for <form> tag
         self.__get_from_form(tag, url)
 
-
+                                    # check_for_download only checks on the basis of the url ; 'content-type' header should also be used
     def check_for_download(self, s):    # if the file can be downloaded (image, pdf, doc, sheet, etc.)
 
                                         # checking the complete 'href' attribute
@@ -198,23 +198,29 @@ class Data(Crawler):
 
 if __name__ == '__main__':
 
-    a=input("Enter URL address: ")
-    b=float(input("Input delay: "))
+    a = input("Enter URL address: ")
+    b = float(input("Input delay: "))
 
-    web=Data(a)
+    web = Data(a)
+
+    fi = open("/home/saumya/Desktop/single_log", "w")
+    sys.stderr = fi
 
     # web.get_logo()
     web.crawl(b, 100000)
 
+
+
     print("\nNo. of URLs =", len(web.urls))
     print("No. of pages examined =", web.counter)
 
-    # s, p = get_filters()
-    #
-    # web.get_tsites(s, p)
-    #
-    # for i in web.tsites:
-    #     print(i)
+    s, p = get_filters()
 
+    web.get_tsites(s, p)
+
+    for i in web.tsites:
+        print(i)
+
+    fi.close()
 
 
