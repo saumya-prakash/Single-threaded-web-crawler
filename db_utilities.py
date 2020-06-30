@@ -163,6 +163,8 @@ def logo_field_checker():           # checks if the entry in database in consist
         mycon.close()
 
 
+
+
 if __name__ == '__main__':
     # home_page_normalizer()
     # protocol_resolver()

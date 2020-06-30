@@ -8,7 +8,7 @@ mycon = connect()
 
 curs = mycon.cursor()
 
-query = ''' SELECT id, name, home_page from records WHERE logo = 'n'  '''
+query = ''' SELECT id, name, home_page from records WHERE logo_found = 'n'  '''
 
 curs.execute(query)
 
@@ -33,7 +33,7 @@ for row in curs.fetchall():
         print(e)
 
     if os.path.isfile("./aaa_logo"):
-        query = " UPDATE records SET logo = \'y\' WHERE ID = " + str(id)
+        query = " UPDATE records SET logo_found = \'y\' WHERE ID = " + str(id)
         curs.execute(query)
         print(query)
         mycon.commit()
