@@ -67,7 +67,7 @@ class Data(Crawler):
                     break
 
         if t is None:
-            print("Logo couldn't be found.")
+            print("Logo couldn't be found")
             return
 
         if t.name == 'img':

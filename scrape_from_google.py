@@ -1,34 +1,56 @@
-from url_utilities import *
-from db_utilities import *
+import time
+from selenium import webdriver
+from bs4 import BeautifulSoup
+import mysql.connector as sqltor
 
-start = 0
-b = set()
+driver = webdriver.Firefox()
+driver.minimize_window()
+driver.get('https://www.google.com/maps/search/educational+institutions+in+patna/@25.5574686,84.9633204,12z')
 
-while start < 320:
+names = set()
 
+while True:
+    time.sleep(10)
     try:
-        ht = load_page('https://www.google.com/search?client=ubuntu&hs=MLS&sa=X&channel=fs&sz=0&biw=1920&bih=857&q=schools+in+patna&npsic=0&rflfq=1&rlha=0&rllag=25616605,85092215,1401&tbm=lcl&ved=2ahUKEwiLhqeujpjqAhVBX30KHfi6D5oQjGp6BAgMED4&rldoc=1#rlfi=hd:;si:;mv:[[25.669160163970666,85.3535601189149],[25.448635381955807,84.83857598805552]];start:'+str(start))
-        soup = BeautifulSoup(ht.read(), features='lxml', parse_only=SoupStrainer('div', attrs={'class':'uMdZh rl-qs-crs-t mnr-c'}))
-        ht.close()
+        soup = BeautifulSoup(driver.page_source, 'lxml')
+
+        for tag in soup.find_all('div', attrs={'class': 'section-result'}):
+            try:
+                title = tag.find('h3', attrs={'class': 'section-result-title'}).find('span').text
+                website = tag.find('a', attrs={'class': 'section-result-action section-result-action-wide'})
+
+                if website is not None:
+                    website = website['href']
+                    names.add((title, website))
+
+            except Exception as e:
+                print(e)
+
+        a = driver.find_element_by_class_name('n7lv7yjyC35__button-next-icon')
+        a.click()
+
     except Exception as e:
         print(e)
+        break
 
-    else:
-        i = 0
-        a = soup.find_all('div', attrs={'class':'uMdZh rl-qs-crs-t mnr-c'})
-        n = len(a)
+driver.save_screenshot("./last.png")
+driver.close()
 
-        i = n-1
+mycon = sqltor.connect(user='saumya', host='localhost', password='2020', database='project')
+curs = mycon.cursor()
 
-        while i >= 0 and i >= n-20:    # Scraping only the last 20 blocks
-            name = a[i].find('div').find('div').find('div').find('div')
-            b.add(name.get_text())
-            # print(name.get_text())
-            i -= 1
+for row in names:
+    name = row[0]
+    home = row[1]
+    # print(name, home)
+    query = "insert into temp (name, home) values ('%s', '%s')" %(name, home)
+    try:
+        curs.execute(query)
+    except Exception as e:
+        # print(e)
+        pass
 
-    start += 20
-    time.sleep(2)
+mycon.commit()
 
-for i in b:
-    print(i)
-
+curs.close()
+mycon.close()

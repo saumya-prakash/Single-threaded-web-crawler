@@ -153,7 +153,7 @@ def logo_field_checker():           # checks if the entry in database in consist
                 os.chdir("./../")
 
 
-            query = " UPDATE records SET logo = \'" + res + "\' " + "WHERE id = " + str(id)
+            query = " UPDATE records SET logo_found = \'" + res + "\' " + "WHERE id = " + str(id)
             curs.execute(query)
             mycon.commit()
             # print(query)
