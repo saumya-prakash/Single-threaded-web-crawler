@@ -2,15 +2,17 @@ import time
 from selenium import webdriver
 from bs4 import BeautifulSoup
 import mysql.connector as sqltor
+from url_utilities import *
 
 driver = webdriver.Firefox()
 driver.minimize_window()
-driver.get('https://www.google.com/maps/search/educational+institutions+in+patna/@25.5574686,84.9633204,12z')
+driver.get('https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z')
+# search in order - colleges, universities, educational institutions, research institutions, schools, ..., coaching institutions, ...
 
 names = set()
 
 while True:
-    time.sleep(10)
+    time.sleep(60)
     try:
         soup = BeautifulSoup(driver.page_source, 'lxml')
 
@@ -42,7 +44,16 @@ curs = mycon.cursor()
 for row in names:
     name = row[0]
     home = row[1]
-    # print(name, home)
+
+    try:
+        if home.startswith('/'):
+            home = "https://www.google.com" + home
+        ht = load_page(home)
+        home = ht.geturl()
+
+    except Exception as e:
+        print(e, name, home)
+
     query = "insert into temp (name, home) values ('%s', '%s')" %(name, home)
     try:
         curs.execute(query)
