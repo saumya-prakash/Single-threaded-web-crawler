@@ -90,9 +90,9 @@ def url_normalize(cur_page, path):
 
             while i+2 <= n and b[2][i:i+2]=='..':
                 a[2] = remove_fname(a[2])
-                i+=3
+                i += 3
 
-            b[2]='/' + b[2][i:]
+            b[2] = '/' + b[2][i:]
 
             b[2] = a[2]+b[2]
 

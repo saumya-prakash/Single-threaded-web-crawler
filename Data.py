@@ -23,18 +23,6 @@ class Data(Crawler):
 
     def get_logo(self):
 
-        ht = load_page(self.home_page)
-
-        soup = BeautifulSoup(ht, features='lxml', parse_only=SoupStrainer(['img', 'a']))
-
-        a = ['src', 'alt', 'title', 'id', 'class']       # attributes to be checked
-        t = None
-
-        for key in a:       # searching for appropriate <img> tag with 'logo' keyword
-            t = soup.find('img', attrs={key : re.compile('logo', re.IGNORECASE)})
-            if t is not None:
-                break
-
         def img_to_hpage(tag):
             if tag.name != 'a':
                 return False
@@ -55,9 +43,38 @@ class Data(Crawler):
 
             return True
 
+        def src_or_alt(tag):
+            if tag.name != 'img':
+                return False
+
+            if tag.has_attr('src'):
+                if bool(re.search('logo', tag['src'], re.IGNORECASE)) == True:
+                    return True
+
+            if tag.has_attr('alt'):
+                if bool(re.search('logo', tag['alt'], re.IGNORECASE)) == True:
+                    return True
+
+            return False
+
+        ht = load_page(self.home_page)
+        soup = BeautifulSoup(ht, features='lxml', parse_only=SoupStrainer(['img', 'a']))
+
+        a = ['title', 'id', 'class']       # attributes to be checked
+
+        t = None
 
         if t is None:                # link to the home-page heuristic
             t = soup.find(img_to_hpage)
+
+        if t is None:
+            t = soup.find(src_or_alt)       # 'src' and 'alt' are at the highest priority level
+
+        if t is None:
+            for key in a:       # searching for appropriate <img> tag with 'logo' keyword
+                t = soup.find('img', attrs={key : re.compile('logo', re.IGNORECASE)})
+                if t is not None:
+                    break
 
 
         if t is None:           # searching for appropriate <img> tag with 'banner' keyword
@@ -66,10 +83,19 @@ class Data(Crawler):
                 if t is not None:
                     break
 
-        if t is None:
-            print("Logo couldn't be found")
-            return
+        if t is None:           # searching for appropriate <img> tag with 'header' keyword ------>   EXPERIMENTAL
+            for key in a:
+                t = soup.find('img', attrs={key : re.compile('header', re.IGNORECASE)})
+                if t is not None:
+                    break
 
+        # 'image' keyword can also be tried
+
+        if t is None:
+            # print("Logo couldn't be found")
+            return None
+
+        u = None
         if t.name == 'img':
             u = url_normalize(self.home_page, t['src'])
 
@@ -79,12 +105,11 @@ class Data(Crawler):
 
         if u is None:
             u = t['src']
-        print(u)
-        ht = load_page(u)      # to bypass 'forbidden' error
+            u = url_normalize(u, u)    # normalizing 'u' just in case it contains some control characters
 
-        with open("aaa_logo", "wb") as file:     # name kept as such so that it is the first file in the folder
-            file.write(ht.read())
-        print("logo downloaded")
+        # print(u)
+        # print("Logo Found")
+        return load_page(u)      # to bypass 'forbidden' error
 
 
 
@@ -203,12 +228,12 @@ if __name__ == '__main__':
 
     web = Data(a)
 
-    fi = open("/home/saumya/Desktop/single_log", "w")
-    sys.stderr = fi
+    # fi = open("/home/saumya/Desktop/single_log", "w")
+    # sys.stderr = fi
 
-    # web.get_logo()
+    # image = web.get_logo()
+    # print(image)
     web.crawl(b, 100000)
-
 
 
     print("\nNo. of URLs =", len(web.urls))
@@ -221,6 +246,6 @@ if __name__ == '__main__':
     for i in web.tsites:
         print(i)
 
-    fi.close()
+    # fi.close()
 
 

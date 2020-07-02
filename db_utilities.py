@@ -36,6 +36,32 @@ def institution_type(name):
     return res[:-1]
 
 
+def set_type():
+    try:
+        mycon = connect()
+
+    except Exception as e:
+        print("Error connecting to database ->", e)
+
+    else:
+
+        curs = mycon.cursor()
+        curs.execute("SELECT id, name FROM records WHERE type IS NULL")
+
+        for row in curs.fetchall():
+            name = row[1]  # name of the institution
+            res = institution_type(name)
+
+            if res != '':
+                query = "UPDATE records SET type = \"" + res + "\" WHERE id = " + str(row[0])
+                curs.execute(query)
+                mycon.commit()
+                print(query)
+
+        curs.close()
+        mycon.close()
+
+
 def home_page_normalizer():
     try:
         mycon = connect()
@@ -46,8 +72,7 @@ def home_page_normalizer():
     else:
         curs = mycon.cursor()
 
-        query = '''    SELECT id, home_page from records     ''';
-
+        query = "SELECT id, home_page FROM records";
         curs.execute(query)
 
         for row in curs.fetchall():
@@ -64,14 +89,18 @@ def home_page_normalizer():
 
             else:
                 new_link = ht.geturl()
-
                 if link == new_link:
                     continue
 
-                query = " UPDATE records SET home_page = " + "\'" + new_link + "\'" + " WHERE id = " + str(id) ;
-                print(query)
-                curs.execute(query)
-                mycon.commit()
+                try:
+                    query = "UPDATE records SET home_page = " + "\'" + new_link + "\'" + " WHERE id = " + str(id) ;
+                    print(query)
+                    curs.execute(query)
+                    mycon.commit()
+                except Exception as e:
+                    print(id, link)
+                    print(e)
+                    print()
 
 
         curs.close()
@@ -134,40 +163,79 @@ def logo_field_checker():           # checks if the entry in database in consist
 
     else:
         curs = mycon.cursor()
-        query = ''' SELECT id, name FROM records  '''
+        query = ''' SELECT id FROM records  '''
         curs.execute(query)
 
-        for row in curs.fetchall():
+        data = curs.fetchall()
+
+        for row in data:
             id = row[0]
-            name = row[1]
             res = 'y'    # keeping default as 'y'
 
             store = "/home/saumya/Desktop/DATA/"
 
-            if os.path.isdir(store+name) == False:
+            if os.path.isfile(store+str(id)) == False:
                 res = 'n'
-
-            if res == 'y':
-                os.chdir(store+name)
-                if os.path.isfile("./aaa_logo") == False:        # aaa_logo not present
-                    res = 'n'
-                os.chdir("./../")
-
 
             query = " UPDATE records SET logo_found = \'" + res + "\' " + "WHERE id = " + str(id)
             curs.execute(query)
             mycon.commit()
             # print(query)
 
+        curs.close()
+        mycon.close()
+
+    # reverse check also required -> id not in the database but associated logo file still present -> delete such file
+    files = os.listdir(store)
+    for a in files:
+        flag = 0
+        for row in data:
+            if a == str(row[0]):
+                flag = 1
+                break
+
+        if flag == 0:     # id not in database
+            os.remove(store+a)
+            print(a, "deleted")
+
+
+def table_transfer():
+    try:
+        mycon = connect()
+
+    except Exception as e:
+        print(e)
+
+    else:
+        curs = mycon.cursor()
+
+        query = "SELECT name, home FROM temp"
+        curs.execute(query)
+
+        data = curs.fetchall()
+
+        for row in data:
+            name = row[0]
+            home = row[1]
+
+            query = "INSERT INTO records(name, home_page) VALUES ('%s', '%s')" % (name, home)
+            try:
+                curs.execute(query)
+                mycon.commit()
+            except Exception as e:
+                print(e)
+                print(query)
+                print()
 
         curs.close()
         mycon.close()
 
 
 
-
 if __name__ == '__main__':
     # home_page_normalizer()
     # protocol_resolver()
-    logo_field_checker()
+    # logo_field_checker()
+    table_transfer()
+    set_type()
     print()
