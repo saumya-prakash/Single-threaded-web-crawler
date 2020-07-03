@@ -1,3 +1,775 @@
-28 http://www.igims.org
-1062 (23000): Duplicate entry 'http://www.igims.org/Opportunitieslist.aspx?type=ac' for key 'sites.link'
-1062 (23000): Duplicate entry 'http://www.igims.org/OpportunitiesList.aspx?type=pt' for key 'sites.link'
+200 http://biharcollegeofpharmacy.com/
+201 http://www.patnalawcollege.ac.in/
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = http://www.patnalawcollege.ac.in/admission_procedure.php
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = http://www.patnalawcollege.ac.in/activites.php
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = http://www.patnalawcollege.ac.in/examination.php
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = http://www.patnalawcollege.ac.in/facilities.php
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = http://www.patnalawcollege.ac.in/regulation.php
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = http://www.patnalawcollege.ac.in/honsllb.php
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = http://www.patnalawcollege.ac.in/270919_plc_naac_peer_team.php
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = http://www.patnalawcollege.ac.in/190919_plc_naac_gallery.php
+202 http://www.devpvtitc.com/
+***From Crawler() -> Error in setting home page Remote end closed connection without response
+203 http://gdmm.co.in/
+***From Crawler.crawl_page() -> HTTP Error 500: Internal Server Error
+url = http://gdmm.co.in/Home/MastCont?Page=MATH
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = http://gdmm.co.in/zoology
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = http://gdmm.co.in/Home/Home/MastCont?Page=Botany
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = http://gdmm.co.in/Home/zoology
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = http://gdmm.co.in/Home/Home/MastCont?Page=IQAC
+204 http://www.chanakayafoundation.com/
+205 http://www.shekhartelesystems.co.in/
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = http://www.shekhartelesystems.co.in/index-2.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = http://www.shekhartelesystems.co.in/service-details.html
+206 http://www.ismpatna.ac.in/
+***From Crawler.crawl_page() -> HTTP Error 400: Bad Request
+url = http://www.ismpatna.ac.in/tel:4155551234
+***From Crawler.crawl_page() -> HTTP Error 500: Internal Server Error
+url = http://www.ismpatna.ac.in/Nmsrc_2019_ISM_2019.aspx
+***From Crawler.crawl_page() -> HTTP Error 400: Bad Request
+url = http://www.ismpatna.ac.in/PGDM.aspx"
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = http://www.ismpatna.ac.in/RepuBLogicic_Day_ISM_Patna.aspx
+207 https://business.google.com/website/counselling-guidance
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://business.google.com/website/counselling-guidance/about
+208 http://batchplusclasses.com/
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = http://batchplusclasses.com/tel:7654760900
+***From Crawler.crawl_page() -> HTTP Error 403: Forbidden
+url = http://batchplusclasses.com/online-video-classes/?preview_id=259&preview_nonce=60cd3f8e60&_thumbnail_id=-1&preview=true
+***From Crawler.crawl_page() -> HTTP Error 403: Forbidden
+url = http://batchplusclasses.com/postal-courses/?preview_id=1886&preview_nonce=895ce51b52&_thumbnail_id=-1&preview=true
+***From Crawler.crawl_page() -> HTTP Error 403: Forbidden
+url = http://batchplusclasses.com/smart-classes/?preview_id=1887&preview_nonce=b94c57eafc&_thumbnail_id=-1&preview=true
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = http://batchplusclasses.com/nid-mock-test-papers/
+209 https://www.tihspatna.com/index.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.tihspatna.com/FAQ.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.tihspatna.com/Magazine1/files/mobile/index.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.tihspatna.com/email_form.php
+210 https://www.ibcpatna.in/
+212 https://www.niemindia.com/
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.niemindia.com/tel:912226716676
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.niemindia.com/tel:912226282928
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.niemindia.com/tel:917940307200
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.niemindia.com/kolhapur.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.niemindia.com/tel:09828641188
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.niemindia.com/tel:08560997671
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.niemindia.com/tel:08385830693
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.niemindia.com/tel:07714000080
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.niemindia.com/tel:07291001996
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.niemindia.com/tel:09548918304
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.niemindia.com/tel:9068543906
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.niemindia.com/tel:06122269981
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.niemindia.com/tel:8797961534
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.niemindia.com/tel:9199800999
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.niemindia.com/tel:9300009992
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.niemindia.com/tel:07314000104
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.niemindia.com/tel:7088013406
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.niemindia.com/tel:9548918304
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.niemindia.com/tel:919891159943
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.niemindia.com/tel:919439199555
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.niemindia.com/tel:919860825425
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.niemindia.com/tel:919960362307
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.niemindia.com/tel:919300050061
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.niemindia.com/tel:02912638821
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.niemindia.com/tel:919828641188
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.niemindia.com/tel:918560997671
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.niemindia.com/tel:918385830693
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.niemindia.com/tel:917291001996
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.niemindia.com/tel:919548918304
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.niemindia.com/tel:918797961534
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.niemindia.com/tel:919199800999
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.niemindia.com/tel:919830131100
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.niemindia.com/tel:919748330060
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.niemindia.com/tel:01414030129
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.niemindia.com/tel:919300585875
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.niemindia.com/tel:919300009992
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.niemindia.com/tel:917314000104
+213 http://www.admerit.org/
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = http://www.admerit.org/upload/job-notice_param-foundation
+214 http://ppup.ac.in/
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = http://ppup.ac.in/_edetails.php?id=1
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = http://ppup.ac.in/_edetails.php?id=6
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = http://ppup.ac.in/_edetails.php?id=10
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = http://ppup.ac.in/_edetails.php?id=12
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = http://ppup.ac.in/_edetails.php?id=13
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = http://ppup.ac.in/_edetails.php?id=27
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = http://ppup.ac.in/_edetails.php?id=29
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = http://ppup.ac.in/_edetails.php?id=30
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = http://ppup.ac.in/_edetails.php?id=31
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = http://ppup.ac.in/_edetails.php?id=32
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = http://ppup.ac.in/_edetails.php?id=33
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = http://ppup.ac.in/_edetails.php?id=34
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = http://ppup.ac.in/_edetails.php?id=35
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = http://ppup.ac.in/_edetails.php?id=36
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = http://ppup.ac.in/_edetails.php?id=37
+215 https://www.nift.ac.in/
+***From Crawler.crawl_page() -> HTTP Error 403: Forbidden
+url = https://www.nift.ac.in/bogmembers
+***From Crawler.crawl_page() -> HTTP Error 403: Forbidden
+url = https://www.nift.ac.in/admissions
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.nift.ac.in/cmslogin
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.nift.ac.in/e-books-detail
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.nift.ac.in/online-databases-detail
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.nift.ac.in/electronic-journal-detail
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.nift.ac.in/open-access-detail
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.nift.ac.in/book-collection-detail
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.nift.ac.in/periodicals-collection-detail
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.nift.ac.in/thesis-collection-detail
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.nift.ac.in/faculty-publications-collection-detail
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.nift.ac.in/fashion-trends-collection-detail
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.nift.ac.in/nift-fashion-show-detail
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.nift.ac.in/other-video-detail
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.nift.ac.in/photo-archive-detail
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.nift.ac.in/regional-costume-detail
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.nift.ac.in/graduation-collection-detail
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.nift.ac.in/designer-collection-detail
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.nift.ac.in/textiles-detail
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.nift.ac.in/fashion-accessories-detail
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.nift.ac.in/kannur/student-affairs
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.nift.ac.in/kannur/icc
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.nift.ac.in/ug-programmes
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.nift.ac.in/pg-programmes
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.nift.ac.in/continuing-education
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.nift.ac.in/campus-infrastructure
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.nift.ac.in/hostels
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.nift.ac.in/resource_centre1
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.nift.ac.in/spectrum
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.nift.ac.in/global_connect
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.nift.ac.in/projectslinkages
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.nift.ac.in/bengaluru/academic--calender
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.nift.ac.in/campusinfrastructure
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.nift.ac.in/hostel
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.nift.ac.in/resourcecenter
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.nift.ac.in/Industry
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.nift.ac.in/illustrious-alumini
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.nift.ac.in/projects1
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.nift.ac.in/bhopal/academic-calender
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.nift.ac.in/campus-infrastructure1
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.nift.ac.in/campus-infrastructure2
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.nift.ac.in/campus-infrastructure3
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.nift.ac.in/graduation
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.nift.ac.in/work-in-progress
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.nift.ac.in/student-projects
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.nift.ac.in/recognition-awards
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.nift.ac.in/Global%20Connect1
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.nift.ac.in/Projects1
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.nift.ac.in/bhubaneswar/academic-calender
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.nift.ac.in/bhubaneswar/icc
+216 http://www.cimp.ac.in/
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = http://www.cimp.ac.in/forgetpassword.php
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = http://www.cimp.ac.in/registrationinstruction.php
+219 http://www.gtch.ac.in/
+220 http://www.bhikharithakur.com/
+221 https://www.magadhuniversity.ac.in/
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/research-activities
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/"../download//About
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/"../download/About%20Magadh
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/college-details/
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/college-details/.
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/college-details/MU-%20110
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/college-details/MU-%20302
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/college-details/MU-%20494
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/college-details/MU-%20544
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/college-details/MU-%20538
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/college-details/MU-%20489
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/college-details/MU-%20376
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/college-details/MU-%20490
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/college-details/MU-%20452
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/college-details/MU-%20539
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/college-details/MU-%20493
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/college-details/MU-%20318
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/college-details/MU-%20541
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/college-details/MU-%20480
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/college-details/MU-%20377
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/college-details/MU-%20536
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/college-details/MU-%20521
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/college-details/MU-%20312
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/college-details/MU-%20351
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/college-details/MU-%20342
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/college-details/MU-%20320
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/college-details/MU-%20353
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/college-details/MU-%20111
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/college-details/MU-%20354
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/college-details/MU-%20487
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/college-details/ERCAPP2452
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/college-details/MU-%20454
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/college-details/MU-%20449
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/college-details/MU-%20532
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/college-details/MU-%20537
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/college-details/MU-%20322
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/college-details/MU-%20447
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/college-details/MU-%20303
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/_edetails.php?id=2
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/_edetails.php?id=7
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/_edetails.php?id=9
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/_edetails.php?id=11
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/_edetails.php?id=14
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/_edetails.php?id=15
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/_edetails.php?id=16
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/_edetails.php?id=17
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/_edetails.php?id=18
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/_edetails.php?id=19
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/_edetails.php?id=20
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/_edetails.php?id=21
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/_edetails.php?id=22
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/_edetails.php?id=23
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/_edetails.php?id=24
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.magadhuniversity.ac.in/e-Content/index.html
+224 http://www.vidyacops.com/
+226 http://www.rscpatna.in/
+228 http://way2ship.in/
+229 http://nmchpatna.org/
+230 http://www.bcebakhtiyarpur.org/
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = http://www.bcebakhtiyarpur.org/manual
+231 http://www.aihe.in/
+232 https://jdinstitute.co/
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://jdinstitute.co/{{postss.post_permalink}}
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://jdinstitute.co/tel:0116960821
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://jdinstitute.co/tel:0116528404
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://jdinstitute.co/state/tel:0116960821
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://jdinstitute.co/state/tel:0116528404
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://jdinstitute.co/course/tel:0116960821
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://jdinstitute.co/course/tel:0116528404
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://jdinstitute.co/life-at-jd/page/tel:0116960821
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://jdinstitute.co/life-at-jd/page/tel:0116528404
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://jdinstitute.co/blog/page/tel:0116960821
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://jdinstitute.co/blog/page/tel:0116528404
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://jdinstitute.co/humans-of-jd/page/tel:0116960821
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://jdinstitute.co/humans-of-jd/page/tel:0116528404
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://jdinstitute.co/jd-global/tel:0116960821
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://jdinstitute.co/jd-global/tel:0116528404
+234 http://www.maltidharicollege.org/
+235 http://www.niher.org/
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = http://www.niher.org/course.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = http://www.niher.org/info@niher.org
+236 http://www.bilpatna.in/
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = http://www.bilpatna.in/syllabus.aspx
+237 http://www.satyaminternational.com/
+238 http://www.prenprimary.com/
+239 https://rfsedu.com/
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://rfsedu.com/b-arch-nata-syllabus
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://rfsedu.com/faculty-and-students
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://rfsedu.com/contact
+240 http://phmchpatna.com/
+241 https://www.hihtworld.com/agra/
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/news-and-events.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/registration-form.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/alumni.php
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/login.php
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/download.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/about.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/why-hiht.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/our-objectives.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/our-vision.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/mission.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/achievements.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/founders-message.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/courses.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/curriculum.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/additional-emphasis.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/mode-of-selection.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/special-programs.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/agra-campus.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/life-hiht.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/classrooms.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/various-labs.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/library.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/hostels.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/medical-center.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/cafeteria.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/affiliation.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/placement.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/training-and-placements.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/job.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/blog
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/gallery.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/picture-gallery.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/press-releases.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/voice-of-youth.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/expert-view.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/parents-view.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/expert-comments.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/innovative-ads.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/wallpapers.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/power-point-presentations.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/ringtones.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/articles.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/campus.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/overview.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/print-admit-card.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/telto:18005323000
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/feedback.php
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/career.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/news.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/select-course.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/director-message.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/training-&-placements.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/farewell-party.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.hihtworld.com/hotels.html
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/blog/
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/registration-form.html
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/searchcongratulationletter.html
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/alumni.php
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/login.php
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/download.html
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/about.html
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/why-hiht.html
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/our-objectives.html
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/our-vision.html
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/mission.html
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/achievements.html
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/our-toppers.html
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/courses.html
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/curriculum.html
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/additional-emphasis.html
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/mode-of-selection.html
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/special-programs.html
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/agra-campus.html
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/life-hiht.html
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/classrooms.html
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/various-labs.html
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/library.html
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/hostels.html
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/faculty-profile.html
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/medical-center.html
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/cafeteria.html
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comshimla-campus.html
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/affiliation.html
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/placement.html
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/training-and-placements.html
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/job.html
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/blog
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/gallery.html
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/picture-gallery.html
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/video-gallery.html
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/press-releases.html
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/voice-of-youth.html
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/expert-view.html
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/parents-view.html
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/expert-comments.html
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/innovative-ads.html
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/wallpapers.html
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/power-point-presentations.html
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/ringtones.html
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/articles.html
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/contact-us.php
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/blog/careers-in-hotel-management-a-challenging-and-rewarding-future/
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/blog/hiht-alumnus-talk-show/
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/blog/hospitality-a-philosophy-not-just-profession/
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/blog/page/2/
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/blog/page/3/
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/blog/climb-a-career-ladder-in-hotel-management/
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/blog/hospitality-industry-an-opportunity-for-global-career/
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/blog/category/agra-campus/
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/blog/category/alumnus-talk-show/
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/blog/category/career-in-hotel-management/
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/blog/category/hotel-management-course/
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/blog/category/online-registration-form/
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/blog/category/placement/
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/blog/category/shimla-campus/
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/blog/category/students/
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/blog/category/various-labs-of-hiht/
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/blog/category/virtual-classes/
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/career.html
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comagra/news.html
+***From Crawler.crawl_page() -> <urlopen error [Errno 111] Connection refused>
+url = https://www.hihtworld.comsitemap.html
+242 http://dstbihar.gov.in/
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = http://dstbihar.gov.in/G.P.%20Buxar
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = http://dstbihar.gov.in/Govt.%20Poly.%20Muzaffarpur
+243 http://www.patnadentalcollege.in/
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = http://www.patnadentalcollege.in/index.html
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = http://www.patnadentalcollege.in/event-gallery.html
+244 http://nbcpatna.com/
+245 http://www.nsit.ac.in/
+***From Crawler.crawl_page() -> HTTP Error 404: NOT FOUND
+url = http://www.nsit.ac.in/divisions/'
+***From Crawler.crawl_page() -> HTTP Error 404: NOT FOUND
+url = http://www.nsit.ac.in/nsit-faculty.php
+***From Crawler.crawl_page() -> HTTP Error 404: NOT FOUND
+url = http://www.nsit.ac.in/courses.php
+***From Crawler.crawl_page() -> HTTP Error 404: NOT FOUND
+url = http://www.nsit.ac.in/recruitment.php
+***From Crawler.crawl_page() -> HTTP Error 404: NOT FOUND
+url = http://www.nsit.ac.in/research-scholars.php
+***From Crawler.crawl_page() -> HTTP Error 404: NOT FOUND
+url = http://www.nsit.ac.in/index.html
+***From Crawler.crawl_page() -> HTTP Error 308: PERMANENT REDIRECT
+url = http://www.nsit.ac.in/faculty/rs
+***From Crawler.crawl_page() -> HTTP Error 500: INTERNAL SERVER ERROR
+url = http://www.nsit.ac.in/list-of-chairmen/
+***From Crawler.crawl_page() -> HTTP Error 404: NOT FOUND
+url = http://www.nsit.ac.in/student-facilities/societies/crosslinks.nsitonline.in
+***From Crawler.crawl_page() -> HTTP Error 308: PERMANENT REDIRECT
+url = http://www.nsit.ac.in/faculty/faculty.php
+246 http://degreecollege.in/
+247 http://dhanaruanursing.co.in/
+248 http://gach.co.in/
+249 https://www.mahilacollegekhagaul.com/
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.mahilacollegekhagaul.com/wp-content/uploads/2020/05/Bihari-Gagar-me-Sagar.pdf210
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = https://www.mahilacollegekhagaul.com/wp-content/uploads/2020/04/Descartes-Sceptic-method.p
+353 http://www.mgttc.com/
+389 http://mmhapu.bih.nic.in/index.htm
+***From Crawler.crawl_page() -> HTTP Error 404: Not Found
+url = http://mmhapu.bih.nic.in/Admin/LoginMMHAPU.aspx
+***From Crawler.crawl_page() -> HTTP Error 403: Forbidden
+url = http://mmhapu.bih.nic.in/doc/
+398 http://patnadps.com/
+1062 (23000): Duplicate entry 'http://www.ismpatna.ac.in/Career_ISM_Patna.aspx' for key 'sites.link'
+1062 (23000): Duplicate entry 'http://www.cimp.ac.in/home/job' for key 'sites.link'
+1062 (23000): Duplicate entry 'http://www.cimp.ac.in/home/job/2019' for key 'sites.link'
+1062 (23000): Duplicate entry 'http://www.cimp.ac.in/home/jobdetails/advertisement-for-the-posi' for key 'sites.link'
+1062 (23000): Duplicate entry 'http://www.cimp.ac.in/home/jobdetails/advertisement-for-the-posi' for key 'sites.link'
+1062 (23000): Duplicate entry 'http://nmchpatna.org/recruitment/' for key 'sites.link'
+1062 (23000): Duplicate entry 'http://nmchpatna.org/career/' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.hihtworld.com/job.html' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.hihtworld.com/career.html' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.hihtworld.com/agra/job.html' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.hihtworld.com/agra/career.html' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.hihtworld.com/agra/career-hotel-management.html' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.hihtworld.com/agra/blog/category/career-in-hotel-man' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.hihtworld.com/agra/blog/category/career-in-hotel-man' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.hihtworld.com/agra/blog/hospitality-industry-an-oppo' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.hihtworld.com/agra/blog/to-make-your-career-in-hospi' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.hihtworld.com/agra/blog/well-guided-by-hiht-on-your-' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.hihtworld.comagra/job.html' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.hihtworld.comagra/blog/careers-in-hotel-management-a' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.hihtworld.comagra/blog/climb-a-career-ladder-in-hote' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.hihtworld.comagra/blog/hospitality-industry-an-oppor' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.hihtworld.comagra/blog/category/career-in-hotel-mana' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.hihtworld.comagra/career.html' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.hihtworld.com/agra/blog/careers-in-hotel-management-' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.hihtworld.com/agra/blog/climb-a-career-ladder-in-hot' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.hihtworld.com/agra/blog/category/career-in-hotel-man' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.hihtworld.com/agra/blog/career-in-hotel-management/' for key 'sites.link'
+1062 (23000): Duplicate entry 'https://www.hihtworld.com/agra/blog/well-guided-by-hiht-on-your-' for key 'sites.link'
+1062 (23000): Duplicate entry 'http://www.patnadentalcollege.in/recruitment.aspx' for key 'sites.link'
+1062 (23000): Duplicate entry 'http://www.patnadentalcollege.in/Recruitment.html' for key 'sites.link'
+1062 (23000): Duplicate entry 'http://patnadps.com/career-form.html' for key 'sites.link'

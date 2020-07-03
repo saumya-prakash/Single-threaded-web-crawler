@@ -9,7 +9,7 @@ def connect():
 
 def institution_type(name):
     fields = {
-              "school": "school",
+              "(play)|(pre)":"play", "primary":"primary", "secondary":"secondary", "high":"high", "school":"school",
               "engineer": "engineering", "technolog": "technology", "polytechni": "polytechnic",
               "medical": "medical", "dent":"dental",
               "research": "research", "scien": "science",
@@ -46,7 +46,7 @@ def set_type():
     else:
 
         curs = mycon.cursor()
-        curs.execute("SELECT id, name FROM records WHERE type IS NULL")
+        curs.execute("SELECT id, name FROM records ")
 
         for row in curs.fetchall():
             name = row[1]  # name of the institution
@@ -155,6 +155,8 @@ def protocol_resolver():
 
 
 def logo_field_checker():           # checks if the entry in database in consistent with the actual data
+    print(datetime.now(), "->", logo_field_checker.__name__)
+
     try:
         mycon = connect()
 
@@ -198,6 +200,7 @@ def logo_field_checker():           # checks if the entry in database in consist
             os.remove(store+a)
             print(a, "deleted")
 
+    print()
 
 def table_transfer():
     try:
@@ -227,15 +230,113 @@ def table_transfer():
                 print(query)
                 print()
 
+        query = "TRUNCATE temp"
+        curs.execute(query)
+        mycon.commit()
+
         curs.close()
         mycon.close()
 
 
+def duplicate_name_remover():
+    print(datetime.now(), "->", duplicate_name_remover.__name__)
+
+    mycon = connect()
+    curs = mycon.cursor()
+
+    curs.execute("SELECT id, name from records where name in (select name from records group by name having count(name) > 1 ) order by name, id")
+
+    data = curs.fetchall()
+    i = 0
+    n = len(data)
+
+    if n == 0:        # no duplicate names present
+        return
+
+    row = data[i]
+    i += 1
+    delete = list()
+
+    while i < n:
+        tmp = data[i]
+        if tmp[1].casefold() == row[1].casefold():    # name matchees with the previous row
+            delete.append(tmp[0])
+
+        else:
+            row = tmp
+
+        i += 1
+
+    delete = tuple(delete)
+    print(delete)
+
+    query = "DELETE FROM records where id IN " + str(delete)
+
+    curs.execute(query)
+    mycon.commit()
+    print(query)
+    print()
+
+    curs.close()
+    mycon.close()
+
+
+
+def similar_home_page_remover():
+    print(datetime.now(), "->", similar_home_page_remover.__name__)
+
+    mycon = connect()
+    curs = mycon.cursor()
+
+    curs.execute("SELECT id, home_page FROM records ORDER BY home_page")
+
+    data = curs.fetchall()
+    n = len(data)
+
+    if n == 0:      # Nothing to do
+        return
+
+    delete = list()
+    i = 0
+
+    while i < n-1:
+        row = data[i]
+        hp = row[1]
+
+        next_row = data[i+1]
+        next_hp = next_row[1]
+
+        if hp+'/' == next_hp:
+            delete.append(next_row[0])
+            i += 2
+
+        else:
+            i += 1
+
+    if len(delete) == 0:
+        return
+
+    query = "DELETE FROM records WHERE id IN " + str(tuple(delete))
+    curs.execute(query)
+    mycon.commit()
+    print(query)
+    print()
+
+    curs.close()
+    mycon.close()
+
+
+
 
 if __name__ == '__main__':
+
+    # table_transfer()
+    # set_type()
+
+    duplicate_name_remover()
+    similar_home_page_remover()
+    logo_field_checker()
+    protocol_resolver()
     # home_page_normalizer()
-    # protocol_resolver()
-    # logo_field_checker()
-    table_transfer()
-    set_type()
-    print()
+
+    # print()

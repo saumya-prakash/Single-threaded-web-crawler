@@ -2,9 +2,9 @@ from Data import *
 from db_utilities import *
 
 
-logo_field_checker()
+logo_field_checker()     # to make the data in the folder and the database consistent
 
-mycon = connect()
+mycon = connect()        # connection instance to the database
 curs = mycon.cursor()
 
 query = " SELECT id, home_page FROM records WHERE logo_found = 'n'  "
@@ -19,21 +19,28 @@ for row in curs.fetchall():
 
     try:
         web = Data(hp)
-        image = web.get_logo()
+        u = web.get_logo()     # getting the link to the logo
 
     except Exception as e:
         print(id, hp, e)
         print()
 
     else:
-        if image is not None:
-            with open(str(id), 'wb') as fi:
-                fi.write(image.read())
+        if u is not None and u != '':
+            try:
+                image = load_page(u)
 
-            query = " UPDATE records SET logo_found = \'y\' WHERE ID = " + str(id)
-            curs.execute(query)
-            mycon.commit()
-            # print(query)
+            except Exception as e:
+                print(id, hp, e)
+
+            else:
+                with open(str(id), 'wb') as fi:
+                    fi.write(image.read())
+
+                query = " UPDATE records SET logo_found = \'y\' WHERE ID = " + str(id)
+                curs.execute(query)
+                mycon.commit()
+                # print(query)
 
 
 curs.close()

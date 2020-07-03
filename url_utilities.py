@@ -2,9 +2,9 @@ from modules import *
 
 def load_page(url):         # SSL certificate_verify_failed error to be resolved, happens SOMETIMES only
 
-    headers={'User-Agent':'''Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:77.0) Gecko/20100101 Firefox/77.0''',
-             'Accept':'''text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8''',
-             'Connection':'''keep-alive'''}
+    headers={'User-Agent':"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0",
+             'Accept':"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+             'Connection':"keep-alive"}
 
             # Accept header to be reviewed !!
 

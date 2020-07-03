@@ -24,7 +24,7 @@ class Crawler():
                 self.scheme_dom = up.urlunparse((tmp[0], tmp[1], '', '', '', ''))
 
             except Exception as e:
-                print("Error in setting home page", e, file=sys.stderr)
+                print("***From Crawler() -> Error in setting home page", e, file=sys.stderr)
                 return
 
     def __init__(self, home_page):

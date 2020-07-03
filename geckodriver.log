@@ -1535,3 +1535,142 @@ JavaScript warning: https://www.google.com/maps/search/high+schools+in+patna/@25
 JavaScript warning: https://www.google.com/maps/search/high+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
 JavaScript warning: https://www.google.com/maps/search/high+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
 1593674293142	Marionette	INFO	Stopped listening on port 38027
+1593675620762	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile05EmB7"
+1593675623606	Marionette	INFO	Listening on port 35343
+1593675623687	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/search/secondary+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/secondary+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/secondary+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/secondary+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/secondary+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/secondary+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/secondary+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/secondary+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/secondary+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/secondary+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/secondary+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/secondary+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+1593675666192	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+JavaScript warning: https://www.google.com/maps/search/secondary+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/secondary+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/secondary+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/secondary+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+1593676183739	Marionette	INFO	Stopped listening on port 35343
+1593680576871	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilebkJ44q"
+1593680580853	Marionette	INFO	Listening on port 35957
+1593680580884	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/search/primary+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/primary+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/primary+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/primary+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/primary+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/primary+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/primary+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/primary+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/primary+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/primary+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/primary+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/primary+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+1593680620341	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1593680651266	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1593680682160	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1593680713089	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+JavaScript warning: https://www.google.com/maps/search/primary+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/primary+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+1593680987623	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1593681200789	Marionette	INFO	Stopped listening on port 35957
+1593682519002	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileBgF7xV"
+1593682521829	Marionette	INFO	Listening on port 46151
+1593682521914	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/search/play+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/play+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/play+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/play+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/play+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/play+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/play+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/play+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/play+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/play+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/play+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/play+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+1593682574574	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1593682605470	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1593682636337	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1593682667264	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1593682698157	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1593682729044	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1593682760001	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1593682790668	Marionette	INFO	Stopped listening on port 46151
+1593682900021	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilewKDzLO"
+1593682902957	Marionette	INFO	Listening on port 45415
+1593682903030	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/search/play+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/play+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/play+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/play+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/play+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/play+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/play+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/play+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/play+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/play+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/play+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/play+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/play+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/play+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/play+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/play+schools+in+patna/@25.5574686,84.9633204,12z line 1448 > scriptElement, line 5061: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+1593683697968	Marionette	INFO	Stopped listening on port 45415

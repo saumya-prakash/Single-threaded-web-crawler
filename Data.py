@@ -109,7 +109,7 @@ class Data(Crawler):
 
         # print(u)
         # print("Logo Found")
-        return load_page(u)      # to bypass 'forbidden' error
+        return u
 
 
 
