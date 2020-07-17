@@ -1,12 +1,17 @@
 from selenium import webdriver
-
 import mysql.connector as sqltor
 from url_utilities import *
 
+print(datetime.now(), "->", __file__)      # Some utility function to print data-time of run NEEDED
+
 driver = webdriver.Firefox()
 driver.minimize_window()
-driver.get('https://www.google.com/maps/search/play+schools+in+patna/@25.5574686,84.9633204,12z')
-# search in order - colleges, universities, educational institutions, research institutions, schools, ..., coaching institutions, ..., programming institutes, industrial training institutes,
+driver.get('https://www.google.com/maps/search/training+colleges+in+patna/@25.5574686,84.9633204,12z')
+# search in order - colleges, universities, educational institutions, research institutions, schools, ...,
+# coaching institutions, ..., programming institutes, acting, fine arts, language schools, teacher training
+#
+# industrial training institutes,
+# beauty training, painting, dance, singing, sketching, academy
 
 names = set()
 
@@ -34,7 +39,7 @@ while True:
         print(e)
         break
 
-driver.save_screenshot("./last.png")
+driver.save_screenshot("./last.png")      # saving the screenshot of the last-visited page
 driver.close()
 
 print("Total links found =", len(names))
@@ -53,6 +58,10 @@ for row in names:
         ht = load_page(home)
         home = ht.geturl()
 
+        # ???? Avoiding jusdial based home pages ????
+        # if bool(re.search('justdial', home, re.IGNORECASE)) == True:
+        #     continue
+
     except Exception as e:
         print(e, name, home)
 
@@ -67,3 +76,5 @@ mycon.commit()
 
 curs.close()
 mycon.close()
+
+print()

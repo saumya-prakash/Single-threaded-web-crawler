@@ -1,6 +1,6 @@
 from Crawler import *
 
-class Data(Crawler):
+class Data(Crawler):       # Changing 'show tables;logo' to 'log' ???
 
     def __init__(self, homepage):
         super().__init__(homepage)

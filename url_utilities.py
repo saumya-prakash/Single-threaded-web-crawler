@@ -210,7 +210,7 @@ def get_filters():
     # s.append('announcement')
     s.append('recruit(?!er)')
     s.append('[^a-zA-Z]position')
-    s.append('role')
+    # s.append('role')     # dangerous
     s.append('walk(%20)?(-)?(%20)?in')
     s.append('interview')
 

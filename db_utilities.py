@@ -6,26 +6,32 @@ from url_utilities import load_page
 def connect():
     return sqltor.connect(host='localhost', user='saumya', passwd='2020', database='project')
 
+                # keywords like 'institutiton', 'academy', etc. should be used in name-based search
 
-def institution_type(name):
+
+def institution_type(name):    #  Returns the type of institution based on its name
     fields = {
-              "(play)|(pre)":"play", "primary":"primary", "secondary":"secondary", "high":"high", "school":"school",
-              "engineer": "engineering", "technolog": "technology", "polytechni": "polytechnic",
-              "medical": "medical", "dent":"dental",
-              "research": "research", "scien": "science",
-              "college": "college", "universit": "university",
-              "arts": "arts", "manag": "management", "social": "social", "humanit": "humanities",
-              "train": "training", "(comput)|(program(m)?)|(cod)": "computer",
-              "design": "designing", "(fashion)|(nift)|(n.i.f.t)|(n\.i\.f\.t)": "fashion", "animat":"animation", "graphic":"graphics",
-              "professio":"professional",
-              "journali":"journalism",
-              "law":"law",
-              "meteorolog":"meteorology",
-              "beaut":"beauty",
-              "langua":"language",
-              # "hotel":"hotel"
-               "women|girl|lad(y|i)":"women"
-              }
+            "play|pre|kid|montessori|kindergarten":"play", "primary":"primary", "secondary":"secondary", "high":"high", "school":"school",
+            "engineer": "engineering", "technolog": "technology", "polytechni|iti|i\.t\.i\.": "polytechnic",
+            "medical": "medical", "dent":"dental","pharma":"pharmacy", r'nurs(e|ing)\b':"nurse",
+            "research": "research", "scien": "science",
+            "college": "college", "universit": "university",
+            "art": "arts", "manag": "management", "social": "social", "humanit": "humanities", "market":"marketing",
+            "music":"music", "act":"acting", r'\bsing':"singing", "danc":"dance", "film":"filmography", "television|tv|t\.v\.":"television",
+            "train": "training", "teach":"teacher",
+            "(comput)|(program(m)?)|(cod)|(web)": "computer", "digital":"digital",
+            "design": "designing", "(fashion)|(nift)|(n.i.f.t)|(n\.i\.f\.t)": "fashion", "animat":"animation", "graphic":"graphics",
+            "professio":"professional",
+            "journali":"journalism", r"mass|(\Wmedia\W)":"media",
+            "law":"law",
+            "meteorolog":"meteorology",
+            "beaut":"beauty",
+            "langua":"language",
+            # "hotel":"hotel"
+            "women|girl|lad(y|i)":"women", r"(\Wboy)|(\W(men))":"men",  # Problem here
+            "yoga":"yoga", "fitness":"fitness", "physical":"physical",
+
+            }
 
     res = ''     # result to be returned
 
@@ -37,6 +43,8 @@ def institution_type(name):
 
 
 def set_type():
+    print(datetime.now(), "->", set_type.__name__)
+
     try:
         mycon = connect()
 
@@ -44,7 +52,6 @@ def set_type():
         print("Error connecting to database ->", e)
 
     else:
-
         curs = mycon.cursor()
         curs.execute("SELECT id, name FROM records ")
 
@@ -56,13 +63,15 @@ def set_type():
                 query = "UPDATE records SET type = \"" + res + "\" WHERE id = " + str(row[0])
                 curs.execute(query)
                 mycon.commit()
-                print(query)
+                # print(query)
 
         curs.close()
         mycon.close()
+        print()
 
 
 def home_page_normalizer():
+    print(datetime.now(), "->", home_page_normalizer.__name__)
     try:
         mycon = connect()
 
@@ -202,6 +211,7 @@ def logo_field_checker():           # checks if the entry in database in consist
 
     print()
 
+
 def table_transfer():
     try:
         mycon = connect()
@@ -247,19 +257,19 @@ def duplicate_name_remover():
     curs.execute("SELECT id, name from records where name in (select name from records group by name having count(name) > 1 ) order by name, id")
 
     data = curs.fetchall()
-    i = 0
     n = len(data)
 
     if n == 0:        # no duplicate names present
         return
 
+    i = 0
     row = data[i]
     i += 1
     delete = list()
 
     while i < n:
         tmp = data[i]
-        if tmp[1].casefold() == row[1].casefold():    # name matchees with the previous row
+        if tmp[1].casefold() == row[1].casefold():    # name matches with the previous row
             delete.append(tmp[0])
 
         else:
@@ -267,10 +277,16 @@ def duplicate_name_remover():
 
         i += 1
 
-    delete = tuple(delete)
-    print(delete)
+    num = ''
+    for k in delete:
+        num = str(k) + ","
 
-    query = "DELETE FROM records where id IN " + str(delete)
+    if num == '':
+        return
+
+    num = num[:-1]
+
+    query = "DELETE FROM records where id IN (" + num + ")"
 
     curs.execute(query)
     mycon.commit()
@@ -279,7 +295,6 @@ def duplicate_name_remover():
 
     curs.close()
     mycon.close()
-
 
 
 def similar_home_page_remover():
@@ -313,30 +328,45 @@ def similar_home_page_remover():
         else:
             i += 1
 
-    if len(delete) == 0:
+    num = ''
+    for k in delete:
+        num = str(k) + ","
+
+    if num == '':
         return
 
-    query = "DELETE FROM records WHERE id IN " + str(tuple(delete))
+    num = num[:-1]
+
+    query = "DELETE FROM records WHERE id IN (" + num + ")"
+    print(query)
     curs.execute(query)
     mycon.commit()
-    print(query)
+
     print()
 
     curs.close()
     mycon.close()
 
+def link_found_field_checker():    # Both 'y' and 'n' settter to be made in one query using case statement
+    mycon = connect()
+    curs = mycon.cursor()
 
+    curs.execute("UPDATE records SET link_found = 'n'  where id NOT IN (select distinct(id) from sites) ")
 
 
 if __name__ == '__main__':
 
     # table_transfer()
-    # set_type()
 
-    duplicate_name_remover()
-    similar_home_page_remover()
+    # duplicate_name_remover()
+    # similar_home_page_remover()
+    set_type()
+
     logo_field_checker()
-    protocol_resolver()
+    # protocol_resolver()
+
     # home_page_normalizer()
 
-    # print()
+    print()
+
+# More database cleainng tasks left -> general prefix checking, difference in terms of http and https only

@@ -7,14 +7,14 @@ logo_field_checker()     # to make the data in the folder and the database consi
 mycon = connect()        # connection instance to the database
 curs = mycon.cursor()
 
-query = " SELECT id, home_page FROM records WHERE logo_found = 'n'  "
+query = " SELECT id, home_page FROM records WHERE logo_found = 'n' order by id desc"
 curs.execute(query)
 
 for row in curs.fetchall():
     id = row[0]
     hp = row[1]
 
-    store = "/home/saumya/Desktop/DATA_alt/"
+    store = "/home/saumya/Desktop/DATA/"
     os.chdir(store)
 
     try:

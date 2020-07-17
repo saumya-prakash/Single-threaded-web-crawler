@@ -1,4 +1,4 @@
-from Extra import *
+from url_utilities import *
 
 
 class Crawler():
@@ -76,12 +76,16 @@ class Crawler():
             print("Nothing to CRAWL")
             return
 
+        if bool(re.search("facebook|justdial|suvidhasearch", self.home_page)) == True:
+            print("Not suitable for crawling")
+            return
+
         i = self.index
         n = len(self.scheme_dom)
 
         while i < self.__m and self.counter != limiter:
             try:
-                print(self.scheme_dom + self.urls[i], "->", self.scheme_dom + self.urls[self.__parent[i]], self.__path[i])
+                # print(self.scheme_dom + self.urls[i], "->", self.scheme_dom + self.urls[self.__parent[i]], self.__path[i])
 
                 self.cur_page = self.scheme_dom + self.urls[i]
 
@@ -156,9 +160,11 @@ class Crawler():
 
             tmp = ht.geturl()
 
-
             if tmp != url:       # yield tmp amd insert it in the urls[], if possible
                 yield (tmp, -1)
+
+            if self.url_file_check(tmp) == False:    # Redirected URL not suitable for analysing
+                return None
 
             self.counter += 1           # page will be examined, incrementing the counter by 1
 
@@ -225,6 +231,8 @@ class Crawler():
 if __name__ == '__main__':
 
     a = Crawler('http://imerpatna.com')
+    #
+    # a.crawl()
+    # print(a.urls)
 
-    a.crawl()
-    print(a.urls)
+    print(a.url_file_check('http://www.bseidc.in/document/New%20Vacancy%20Advt%20No%20062013.zip'))
