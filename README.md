@@ -1,7 +1,7 @@
 # InnovationLab Project - A Web Crawler
 
 This projects includes a single-threaded web crawler. It is designed to crawl mainly sites written in english or hindi.
-It can handle a variety of MIME types on a website, ignoring pdfs, images, zip, docs, etc.
+It can handle a variety of MIME types on a website, ignoring links to pdfs, images, zip, docs, etc.
 
 It stores the list of urls found in a website in a Python list. 
 
