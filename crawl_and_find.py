@@ -12,14 +12,14 @@ except Exception as e:
 else:
     curs = mycon.cursor()
 
-    query = " SELECT id, home_page, examined_pages, complete_crawl FROM records where examined_pages = 0 order by id  desc limit 50 "   # not in (28, 1, 3, 4, 6, 9, 21, 32, 56) "
+    query = " SELECT id, home_page, examined_pages, complete_crawl FROM records where link_found = 'n' order by id  desc limit 150"   # not in (28, 1, 3, 4, 6, 9, 21, 32, 56) "
     curs.execute(query)
 
     a = curs.fetchall()
     curs.close()
     mycon.close()
 
-    fi = open("LOG", "w")
+    fi = open("./LOG2", "w")
     sys.stderr = fi
 
     stats = []
@@ -33,7 +33,7 @@ else:
 
         try:
             web = Data(link)
-            web.crawl(0.0, 3*epages + 50)     # Setting limit as a function of number of pages crawled previously
+            web.crawl(0.0, 3*epages+50)     # Setting limit as a function of number of pages crawled previously
 
         except Exception as e:
             print("**** From TESTER ->", e, file=sys.stderr)

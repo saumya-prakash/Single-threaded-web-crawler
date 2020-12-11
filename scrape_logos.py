@@ -14,7 +14,7 @@ for row in curs.fetchall():
     id = row[0]
     hp = row[1]
 
-    store = "/home/saumya/Desktop/DATA/"
+    store = "/home/saumya/Desktop/logos/"
     os.chdir(store)
 
     try:

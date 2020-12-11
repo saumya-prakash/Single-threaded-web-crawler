@@ -183,7 +183,7 @@ def logo_field_checker():           # checks if the entry in database in consist
             id = row[0]
             res = 'y'    # keeping default as 'y'
 
-            store = "/home/saumya/Desktop/DATA/"
+            store = "/home/saumya/Desktop/logos/"
 
             if os.path.isfile(store+str(id)) == False:
                 res = 'n'
@@ -352,6 +352,12 @@ def link_found_field_checker():    # Both 'y' and 'n' settter to be made in one 
     curs = mycon.cursor()
 
     curs.execute("UPDATE records SET link_found = 'n'  where id NOT IN (select distinct(id) from sites) ")
+    curs.execute("UPDATE records SET link_found = 'y'  where id IN (select distinct(id) from sites) ")
+    mycon.commit()
+
+    curs.close()
+    mycon.close()
+
 
 
 if __name__ == '__main__':
@@ -361,7 +367,6 @@ if __name__ == '__main__':
     # duplicate_name_remover()
     # similar_home_page_remover()
     set_type()
-
     logo_field_checker()
     # protocol_resolver()
 

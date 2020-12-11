@@ -163,7 +163,7 @@ class Crawler():
             if tmp != url:       # yield tmp amd insert it in the urls[], if possible
                 yield (tmp, -1)
 
-            if self.url_file_check(tmp) == False:    # Redirected URL not suitable for analysing
+            if self.url_file_check(tmp) == False:    # Redirected URL is not suitable for analysing
                 return None
 
             self.counter += 1           # page will be examined, incrementing the counter by 1

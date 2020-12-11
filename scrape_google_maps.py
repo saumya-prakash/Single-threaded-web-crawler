@@ -16,7 +16,7 @@ driver.get('https://www.google.com/maps/search/training+colleges+in+patna/@25.55
 names = set()
 
 while True:
-    time.sleep(60)       # explicit wait, so that everything gets loaded
+    time.sleep(60)       # explicit wait of 1 minute to ensure that everything gets loaded
     try:
         soup = BeautifulSoup(driver.page_source, 'lxml')
 
@@ -64,15 +64,17 @@ for row in names:
 
     except Exception as e:
         print(e, name, home)
+        print()
 
     query = "insert into temp (name, home) values ('%s', '%s')" %(name, home)
     try:
         curs.execute(query)
+        mycon.commit()
     except Exception as e:
         # print(e)
         pass
 
-mycon.commit()
+
 
 curs.close()
 mycon.close()
