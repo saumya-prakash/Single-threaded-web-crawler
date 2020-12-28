@@ -15,14 +15,14 @@ def institution_type(name):    #  Returns the type of institution based on its n
     # cue-word to type of institution mapping
     fields = {
             "play|pre|kid|montessori|kindergarten":"play", "primary":"primary", "secondary":"secondary", "high":"high", "school":"school",
-            "engineer": "engineering", "technolog": "technology", "polytechni|iti|i\.t\.i\.": "polytechnic",
+            "engineer": "engineering", "tech": "technology", "polytechni|iti|i\.t\.i\.": "polytechnic",
             "medical": "medical", "dent":"dental","pharma":"pharmacy", r'nurs(e|ing)\b':"nurse",
             "research": "research", "scien": "science",
             "college": "college", "universit": "university",
             "art": "arts", "manag": "management", "social": "social", "humanit": "humanities", "market":"marketing",
             "music":"music", "act":"acting", r'\bsing':"singing", "danc":"dance", "film":"filmography", "television|tv|t\.v\.":"television",
             "train": "training", "teach":"teacher",
-            "(comput)|(program(m)?)|(cod)|(web)": "computer", "digital":"digital",
+            r"comput|program(m)?|cod|web|cyb": "computer", "digital":"digital",
             "design": "designing", "(fashion)|(nift)|(n.i.f.t)|(n\.i\.f\.t)": "fashion", "animat":"animation", "graphic":"graphics",
             "professio":"professional",
             "journali":"journalism", r"mass|(\bmedia\b)":"media",
@@ -31,7 +31,9 @@ def institution_type(name):    #  Returns the type of institution based on its n
             "beaut":"beauty",
             "langua":"language",
             # "hotel":"hotel"
-            "women|girl|lad(y|i)":"women", r"(\bboy)|(\bmen)":"men",  # Problem here
+
+            "women|girl|lad(y|i)|mahila":"women", r"(\bboy)|(\bmen)":"men",  # Problem here
+
             "yoga":"yoga", "fitness":"fitness", "physical":"physical",
 
             }

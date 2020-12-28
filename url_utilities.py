@@ -1,10 +1,19 @@
+''' containf=s various utility functions related to URL parsing and processing '''
+
+
 from modules import *
 
-def load_page(url):         # SSL certificate_verify_failed error to be resolved, happens SOMETIMES only
+# load the URL and return the opened page
+def load_page(url, ref='https://www.google.com/'):
 
+    # SSL certificate_verify_failed error to be resolved, happens SOMETIMES only
+
+    # artificial header to look humanly
     headers={'User-Agent':"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0",
              'Accept':"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
-             'Connection':"keep-alive"}
+             'Connection':"keep-alive",
+             'Referer': ref
+             }
 
             # Accept header to be reviewed !!
 
@@ -13,22 +22,33 @@ def load_page(url):         # SSL certificate_verify_failed error to be resolved
 
     req = ur.Request(url=url, headers=headers)
 
+    # tries to open a page for at max 1 minute
     return ur.urlopen(req, timeout=60)
 
 
+
+# function that normalizes a given URL and a given path
 def url_normalize(cur_page, path):
 
     #cur_page=cur_page.strip() #may have spaces at the end, but not necessary now
-    path=path.strip()   #necessary
 
-    path=encode_url(path)
+    # remove trailing and leading spaces
+    path = path.strip()   #necessary
 
-    b=list(up.urlparse(path))    # 'b' parsed into components
+    # encode the path
+    path = encode_url(path)
 
-    if b[0] not in ['', 'http', 'https']:          # Some other scheme present, like, mailto, javascript, etc.
+    # path argument parsed into components
+    b = list(up.urlparse(path))
+
+
+    if b[0] not in ['', 'http', 'https']:
+        # some other scheme, like, mailto, javascript, etc., present
         return None
 
-    a = list(up.urlparse(cur_page))  # 'a' parsed into components
+    # cur_page argument parsed into components
+    a = list(up.urlparse(cur_page))
+
 
     if b[2] == '' and b[3] == '' and b[4] == '':      # b[1] to be checked???
         # if b[5]=='':    # Everything is empty; probably an internal link to the same page
@@ -52,6 +72,7 @@ def url_normalize(cur_page, path):
         # else:        #external site
         #     return None
         return None
+
 
     else:      # b[1]=='' or b[1]==a[1]:  #link belonging to the same domain
 
@@ -118,22 +139,25 @@ def url_normalize(cur_page, path):
 
 
 
+# function to extract domain part
 def extract_domain(s):
-    i=len(s)-1
 
-    while i>=0 and s[i]!='.':
-        i-=1
+    i = len(s)-1
 
-    j=0
+    while i >= 0 and s[i] != '.':
+        i -= 1
 
-    while j<i and s[j]!='.':
-        j+=1
+    j = 0
 
-    if j==i or i==-1:
+    while j < i and s[j] != '.':
+        j += 1
+
+    if j == i or i == -1:
         return s
 
     else:
         return s[j+1:]
+
 
 
 def remove_fname(s):
@@ -150,6 +174,7 @@ def remove_fname(s):
 
     else:
         return s[:i]
+
 
 
 def encode_url(s):
@@ -173,8 +198,8 @@ def encode_url(s):
 
     res = up.quote(res, safe='`~!@#$%^&*()-_=+[]{};:\'\"\\|,./<>?*')
 
-
     return res
+
 
 
 def cmp_date(l_modified, days_passed=-1):
@@ -198,9 +223,11 @@ def cmp_date(l_modified, days_passed=-1):
     return False
 
 
+
+# function to return the filters required to get the target URLs
 def get_filters():
-    s = []
-    p = []
+    s = []      # positive filter
+    p = []      # negative filter
 
     s.append('vacanc')
     s.append('job')

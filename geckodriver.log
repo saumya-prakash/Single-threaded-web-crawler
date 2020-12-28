@@ -323,3 +323,566 @@ JavaScript error: https://www.stmichaelspatna.edu.in/Staff.aspx, line 701: TypeE
 
 ###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
+1609138671647	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileuTSzY8"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1609138675040	Marionette	INFO	Listening on port 42143
+1609138675089	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/search/schooles+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/schooles+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1609138783820	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileb7RL0N"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1609138787567	Marionette	INFO	Listening on port 38641
+1609138787651	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchTelemetry: "Expected to report URI for" "https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z" "with ads but couldn't find the information"
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1609138840056	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileGW0t2S"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1609138843729	Marionette	INFO	Listening on port 37683
+1609138843788	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 1162: WebGL warning: drawArraysInstanced: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+1609138924952	Marionette	INFO	Stopped listening on port 37683
+1609140359175	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile2vJwkP"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1609140362522	Marionette	INFO	Listening on port 33213
+1609140362604	Marionette	WARN	TLS certificate errors will be ignored for this session
+Marionette threw an error: TypeError: this.curBrowser.contentBrowser is null
+GeckoDriver.prototype.navigateTo@chrome://marionette/content/driver.js:1207:3
+
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+1609140414992	Marionette	INFO	Stopped listening on port 33213
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1609142874765	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile2GqSSn"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1609142878100	Marionette	INFO	Listening on port 41733
+1609142878212	Marionette	WARN	TLS certificate errors will be ignored for this session
+1609142878235	Marionette	INFO	Stopped listening on port 41733
+JavaScript error: resource://activity-stream/lib/ActivityStreamPrefs.jsm, line 27: NS_ERROR_ILLEGAL_VALUE: Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIPrefBranch.removeObserver]
+JavaScript error: resource://activity-stream/lib/ASRouter.jsm, line 968: TypeError: this._storage is null
+console.error: services.settings: 
+  main/fxmonitor-breaches Signature failed  TypeError: NetworkError when attempting to fetch resource.
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 376))
+JavaScript error: resource://gre/modules/NewTabUtils.jsm, line 686: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavHistoryService.asyncExecuteLegacyQuery]
+console.log: "RemoteSettingsWorker error: Error: Can't import when we've started shutting down."
+JavaScript error: resource://gre/modules/ExtensionSettingsStore.jsm, line 122: Error: The ExtensionSettingsStore was accessed before the initialize promise resolved.
+console.log: "RemoteSettingsWorker error: Error: Can't import when we've started shutting down."
+console.log: "RemoteSettingsWorker error: Error: Can't import when we've started shutting down."
+console.log: "RemoteSettingsWorker error: Error: Can't import when we've started shutting down."
+console.error: "Could not load engine google@search.mozilla.org: [Exception... \"AddonManager is not initialized\"  nsresult: \"0xc1f30001 (NS_ERROR_NOT_INITIALIZED)\"  location: \"JS frame :: resource://gre/modules/AddonManager.jsm :: installBuiltinAddon :: line 2550\"  data: no]"
+console.error: "Could not load engine amazondotcom@search.mozilla.org: [Exception... \"AddonManager is not initialized\"  nsresult: \"0xc1f30001 (NS_ERROR_NOT_INITIALIZED)\"  location: \"JS frame :: resource://gre/modules/AddonManager.jsm :: installBuiltinAddon :: line 2550\"  data: no]"
+console.error: "Could not load engine wikipedia@search.mozilla.org: [Exception... \"AddonManager is not initialized\"  nsresult: \"0xc1f30001 (NS_ERROR_NOT_INITIALIZED)\"  location: \"JS frame :: resource://gre/modules/AddonManager.jsm :: installBuiltinAddon :: line 2550\"  data: no]"
+console.error: "Could not load engine bing@search.mozilla.org: [Exception... \"AddonManager is not initialized\"  nsresult: \"0xc1f30001 (NS_ERROR_NOT_INITIALIZED)\"  location: \"JS frame :: resource://gre/modules/AddonManager.jsm :: installBuiltinAddon :: line 2550\"  data: no]"
+console.error: "Could not load engine ddg@search.mozilla.org: [Exception... \"AddonManager is not initialized\"  nsresult: \"0xc1f30001 (NS_ERROR_NOT_INITIALIZED)\"  location: \"JS frame :: resource://gre/modules/AddonManager.jsm :: installBuiltinAddon :: line 2550\"  data: no]"
+console.warn: SearchService: "_init: abandoning init due to shutting down"
+JavaScript error: , line 0: uncaught exception: 2147500036
+JavaScript error: , line 0: uncaught exception: 2147500036
+JavaScript error: , line 0: uncaught exception: 2147500036
+JavaScript error: , line 0: uncaught exception: 2147500036
+JavaScript error: , line 0: uncaught exception: 2147500036
+JavaScript error: , line 0: AbortError: A request was aborted, for example through a call to IDBTransaction.abort.
+JavaScript error: , line 0: AbortError: A request was aborted, for example through a call to IDBTransaction.abort.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1609147287388	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile74FYxP"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1609147291377	Marionette	INFO	Listening on port 35841
+1609147291454	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://stalbertspatna.com/asset/boxy/script.js, line 603: TypeError: $(...).boxy is not a function
+JavaScript error: http://stalbertspatna.com/asset/boxy/script.js, line 603: TypeError: $(...).boxy is not a function
+JavaScript error: http://stalbertspatna.com/about.html, line 106: TypeError: $(...).lightBox is not a function
+JavaScript error: http://stalbertspatna.com/achievements.html, line 47: TypeError: $(...).lightBox is not a function
+JavaScript error: http://stalbertspatna.com/asset/boxy/script.js, line 603: TypeError: $(...).boxy is not a function
+JavaScript error: http://stalbertspatna.com/asset/boxy/script.js, line 603: TypeError: $(...).boxy is not a function
+JavaScript error: http://stalbertspatna.com/asset/boxy/script.js, line 603: TypeError: $(...).boxy is not a function
+JavaScript error: http://stalbertspatna.com/contact.html, line 48: TypeError: $(...).lightBox is not a function
+JavaScript error: http://stalbertspatna.com/Outcome.html, line 47: TypeError: $(...).lightBox is not a function
+JavaScript error: http://stalbertspatna.com/outcome.html, line 47: TypeError: $(...).lightBox is not a function
+1609147373743	Marionette	INFO	Stopped listening on port 35841
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1609147449162	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileoaOALK"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1609147452599	Marionette	INFO	Listening on port 40819
+1609147452706	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchTelemetry: "Expected to report URI for" "https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z" "with ads but couldn't find the information"
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+1609147470469	Marionette	INFO	Stopped listening on port 40819
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1609147610576	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileKFUaY8"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1609147614093	Marionette	INFO	Listening on port 35193
+1609147614209	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1609147665319	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileHDthAr"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1609147669215	Marionette	INFO	Listening on port 42199
+1609147669260	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+1609147739692	Marionette	INFO	Stopped listening on port 42199
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1609147884040	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilecO5tFA"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1609147887399	Marionette	INFO	Listening on port 42309
+1609147887471	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+1609147955841	Marionette	INFO	Stopped listening on port 42309
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1609148170499	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilecNghtA"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1609148173989	Marionette	INFO	Listening on port 40371
+1609148174037	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+console.warn: SearchTelemetry: "Expected to report URI for" "https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z" "with ads but couldn't find the information"
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+1609148194071	Marionette	INFO	Stopped listening on port 40371
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1609148216655	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilervluj7"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1609148220778	Marionette	INFO	Listening on port 36149
+1609148220893	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+1609148256514	Marionette	INFO	Stopped listening on port 36149
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1609148356432	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileoLlhA2"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1609148360006	Marionette	INFO	Listening on port 39463
+1609148360073	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+1609148400013	Marionette	INFO	Stopped listening on port 39463
+1609148432450	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile3WmBgz"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1609148436304	Marionette	INFO	Listening on port 44855
+1609148436409	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchTelemetry: "Expected to report URI for" "https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z" "with ads but couldn't find the information"
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+Handler function _httpStopRequest threw an exception: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsITraceableChannel.setNewListener]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://devtools/server/actors/network-monitor/network-observer.js :: _setupResponseListener :: line 1086"  data: no]
+Stack: _setupResponseListener@resource://devtools/server/actors/network-monitor/network-observer.js:1086:38
+_createNetworkEvent@resource://devtools/server/actors/network-monitor/network-observer.js:912:12
+_httpStopRequest@resource://devtools/server/actors/network-monitor/network-observer.js:409:14
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 1086, column: 0
+console.error: ({})
+Handler function _httpStopRequest threw an exception: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsITraceableChannel.setNewListener]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://devtools/server/actors/network-monitor/network-observer.js :: _setupResponseListener :: line 1086"  data: no]
+Stack: _setupResponseListener@resource://devtools/server/actors/network-monitor/network-observer.js:1086:38
+_createNetworkEvent@resource://devtools/server/actors/network-monitor/network-observer.js:912:12
+_httpStopRequest@resource://devtools/server/actors/network-monitor/network-observer.js:409:14
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 1086, column: 0
+console.error: ({})
+Handler function _httpStopRequest threw an exception: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsITraceableChannel.setNewListener]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://devtools/server/actors/network-monitor/network-observer.js :: _setupResponseListener :: line 1086"  data: no]
+Stack: _setupResponseListener@resource://devtools/server/actors/network-monitor/network-observer.js:1086:38
+_createNetworkEvent@resource://devtools/server/actors/network-monitor/network-observer.js:912:12
+_httpStopRequest@resource://devtools/server/actors/network-monitor/network-observer.js:409:14
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 1086, column: 0
+console.error: ({})
+Handler function _httpStopRequest threw an exception: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsITraceableChannel.setNewListener]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://devtools/server/actors/network-monitor/network-observer.js :: _setupResponseListener :: line 1086"  data: no]
+Stack: _setupResponseListener@resource://devtools/server/actors/network-monitor/network-observer.js:1086:38
+_createNetworkEvent@resource://devtools/server/actors/network-monitor/network-observer.js:912:12
+_httpStopRequest@resource://devtools/server/actors/network-monitor/network-observer.js:409:14
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 1086, column: 0
+console.error: ({})
+Handler function _httpStopRequest threw an exception: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsITraceableChannel.setNewListener]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://devtools/server/actors/network-monitor/network-observer.js :: _setupResponseListener :: line 1086"  data: no]
+Stack: _setupResponseListener@resource://devtools/server/actors/network-monitor/network-observer.js:1086:38
+_createNetworkEvent@resource://devtools/server/actors/network-monitor/network-observer.js:912:12
+_httpStopRequest@resource://devtools/server/actors/network-monitor/network-observer.js:409:14
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 1086, column: 0
+console.error: ({})
+1609148475792	Marionette	INFO	Stopped listening on port 44855
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1609148494774	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileHwfg9M"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1609148498507	Marionette	INFO	Listening on port 42797
+1609148498608	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/nursing%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+1609148562897	Marionette	INFO	Stopped listening on port 42797
+JavaScript error: resource://activity-stream/lib/ASRouter.jsm, line 987: NS_ERROR_ILLEGAL_VALUE: Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIObserverService.removeObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1609148616231	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileRbvhtA"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1609148619633	Marionette	INFO	Listening on port 32877
+1609148619669	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/search/martial%20arts%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/martial%20arts%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/martial%20arts%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/martial%20arts%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/martial%20arts%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/martial%20arts%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/martial%20arts%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/martial%20arts%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/martial%20arts%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/martial%20arts%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/martial%20arts%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/martial%20arts%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1609148648831	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileMSMatO"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1609148652660	Marionette	INFO	Listening on port 40025
+1609148652768	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/search/programming+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/programming+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/programming+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/programming+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/programming+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/programming+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/programming+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/programming+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/programming+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/programming+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/programming+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/programming+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/programming+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/programming+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1609148869074	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilebcV5wk"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1609148872515	Marionette	INFO	Listening on port 42485
+1609148872629	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1609149081830	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilegi026h"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1609149085657	Marionette	INFO	Listening on port 35703
+1609149085774	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/search/school+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/school+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/school+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/school+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/school+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/school+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/school+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/school+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/school+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/school+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/school+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/school+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1609149177613	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilePrzFO4"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1609149185329	Marionette	INFO	Listening on port 42413
+1609149185417	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1609149227631	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileRMF1y0"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1609149231325	Marionette	INFO	Listening on port 32969
+1609149231415	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1609149283318	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilecVzdNA"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1609149287072	Marionette	INFO	Listening on port 42539
+1609149287156	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1609149397113	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileb8S311"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1609149400725	Marionette	INFO	Listening on port 37857
+1609149400851	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+1609149416589	Marionette	INFO	Stopped listening on port 37857
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1609149510803	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileUzaJ7b"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1609149514532	Marionette	INFO	Listening on port 44027
+1609149514653	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1609149996389	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileB1JlLH"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1609150000438	Marionette	INFO	Listening on port 45375
+1609150000542	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/search/architecture%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/architecture%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/architecture%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/architecture%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/architecture%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/architecture%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/architecture%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/architecture%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/architecture%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/architecture%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/architecture%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/architecture%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1609150023947	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileIsxx38"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1609150027621	Marionette	INFO	Listening on port 39795
+1609150027716	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/search/architecture%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/architecture%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/architecture%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/architecture%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/architecture%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/architecture%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/architecture%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/architecture%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/architecture%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/architecture%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/architecture%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/architecture%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/architecture%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/architecture%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/architecture%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/architecture%20institute+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+1609150456652	Marionette	INFO	Stopped listening on port 39795
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1609150632315	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile6xme73"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1609150636266	Marionette	INFO	Listening on port 42781
+1609150636351	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+1609150705642	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z line 1555 > injectedScript, line 5347: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.

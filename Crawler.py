@@ -58,11 +58,13 @@ class Crawler():
     def crawl(self, delay=0.0, limiter=-1):     # CALENDAR to be avoided (found in cimp site)
                         # what if a 'half-link' contains only digits, may belong to some special category, like albums (e.g. https://www.sgei.org/2019/03/ )
 
-        if self.home_page == '':    # home-page not set, so nothing to crawl
+        if self.home_page == '':
+            # home-page not set, so nothing to crawl
             print("Nothing to CRAWL")
             return
 
-        if bool(re.search("facebook|justdial|suvidhasearch", self.home_page)) == True:      # some domains that are not to be crawled
+        # some domains that are not to be crawled
+        if bool(re.search("facebook|justdial|suvidhasearch", self.home_page)) == True:
             print("Not suitable for crawling")
             return
 
@@ -166,8 +168,10 @@ class Crawler():
             time.sleep(delay)
 
 
+
     # utility function to get the parent page of a URL
     def get_root(self, u):
+
         i = 0
         for i in range(self.urls):
             if self.urls[i] == u:
