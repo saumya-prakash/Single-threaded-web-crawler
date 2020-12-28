@@ -1,18 +1,23 @@
-import mysql.connector as sqltor
+from db_utilities import *
 
 # NULL in field value is returned as None
 
 # CHAR field is retrieved without the 'padded' characcters, i.e., data is not returned with 'fixed-length'
 
-try:
-	mycon = sqltor.connect(host="localhost", user="saumya", passwd="2020", database="project")
 
+# connect to the database
+try:
+	mycon = connect()
+
+
+# catch all the exceptions
 except Exception as e:
 	print(e)
 
+
 else:
 	print("Connected to the database")
-	curs=mycon.cursor()
+	curs = mycon.cursor()
 
 	with open("Institutes_Added_to_Check_via_Program (copy)", "r") as fi:
 		for s in fi.readlines():

@@ -220,6 +220,8 @@ def get_filters():
 
     return (s, p)
 
+
+
 if __name__=='__main__':
 
     print(url_normalize('http://nitp.ac.in/home', '/home#respond'))

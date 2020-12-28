@@ -1,17 +1,35 @@
-from selenium import webdriver
-import mysql.connector as sqltor
-from url_utilities import *
-
-print(datetime.now(), "->", __file__)      # Some utility function to print data-time of run NEEDED
-
-driver = webdriver.Firefox()
-driver.minimize_window()
-driver.get('https://www.google.com/maps/search/training+colleges+in+patna/@25.5574686,84.9633204,12z')
 # search in order - colleges, universities, educational institutions, research institutions, schools, ...,
 # coaching institutions, ..., programming institutes, acting, fine arts, language schools, teacher training
 #
 # industrial training institutes,
 # beauty training, painting, dance, singing, sketching, academy
+
+from selenium import webdriver
+import mysql.connector as sqltor
+from url_utilities import *
+
+
+print(datetime.now(), "->", __file__)      # Some utility function to print data-time of run NEEDED
+
+query = input("Enter keyword: ")
+# clean 'query' if required
+dis = int(input("Enter range (1 - near, 2 - medium, 3 - far): "))
+
+range = '12z'   # default
+
+if dis == 2:
+    range = '11z'
+
+elif dis == 3:
+    range = '10z'
+
+
+target = 'https://www.google.com/maps/search/' + query + '+in+patna/@25.5574686,84.9633204,' + range
+
+driver = webdriver.Firefox()
+# driver.minimize_window()
+driver.get(target)
+
 
 names = set()
 

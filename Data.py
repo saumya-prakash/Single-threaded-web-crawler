@@ -1,10 +1,20 @@
 from Crawler import *
 
+
+
+# 'Data' class inherits from 'Crawler' class
+
 class Data(Crawler):       # Changing 'show tables;logo' to 'log' ???
 
+    # constructor function
     def __init__(self, homepage):
+
+        # initialize the base part
         super().__init__(homepage)
+
+        # initialize the derived part
         self.tsites=list()
+
 
     def get_tsites(self, a, b=[]):
 

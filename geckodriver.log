@@ -7,3 +7,319 @@ JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.en.TDVmkNlejyE.es5
 Exiting due to channel error.
 Exiting due to channel error.
 Exiting due to channel error.
+1607674745980	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileWTuILn"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1607674748547	Marionette	INFO	Listening on port 41663
+1607674748622	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.en.TDVmkNlejyE.es5.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,plm,log,b/am=biAD/rt=j/d=1/rs=ACT90oFpA3tXGV7I5V4_0F_qDjS8LBvOeQ, line 4096: Failed to create WebGL context: failIfMajorPerformanceCaveat: Compositor is not hardware-accelerated.
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.en.TDVmkNlejyE.es5.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,plm,log,b/am=biAD/rt=j/d=1/rs=ACT90oFpA3tXGV7I5V4_0F_qDjS8LBvOeQ, line 4096: Failed to create WebGL context: failIfMajorPerformanceCaveat: Compositor is not hardware-accelerated.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1607675018887	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile6jgyra"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1607675021457	Marionette	INFO	Listening on port 34233
+1607675021576	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.en.TDVmkNlejyE.es5.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,plm,log,b/am=biAD/rt=j/d=1/rs=ACT90oFpA3tXGV7I5V4_0F_qDjS8LBvOeQ, line 4096: Failed to create WebGL context: failIfMajorPerformanceCaveat: Compositor is not hardware-accelerated.
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.en.TDVmkNlejyE.es5.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,plm,log,b/am=biAD/rt=j/d=1/rs=ACT90oFpA3tXGV7I5V4_0F_qDjS8LBvOeQ, line 4096: Failed to create WebGL context: failIfMajorPerformanceCaveat: Compositor is not hardware-accelerated.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1607675084684	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileVt7Zyb"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1607675087453	Marionette	INFO	Listening on port 43131
+1607675087516	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.en.qg_Yr-Uebl4.es5.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,plm,log,b/am=biAD/rt=j/d=1/rs=ACT90oFZLUv64FP9K3wZ-buclT2dTLxjVA, line 4101: Failed to create WebGL context: failIfMajorPerformanceCaveat: Compositor is not hardware-accelerated.
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.en.qg_Yr-Uebl4.es5.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,plm,log,b/am=biAD/rt=j/d=1/rs=ACT90oFZLUv64FP9K3wZ-buclT2dTLxjVA, line 4101: Failed to create WebGL context: failIfMajorPerformanceCaveat: Compositor is not hardware-accelerated.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1607675112790	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiledVYlit"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1607675115497	Marionette	INFO	Listening on port 34203
+1607675115632	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.en.TDVmkNlejyE.es5.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,plm,log,b/am=biAD/rt=j/d=1/rs=ACT90oFpA3tXGV7I5V4_0F_qDjS8LBvOeQ, line 4096: Failed to create WebGL context: failIfMajorPerformanceCaveat: Compositor is not hardware-accelerated.
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.en.TDVmkNlejyE.es5.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,plm,log,b/am=biAD/rt=j/d=1/rs=ACT90oFpA3tXGV7I5V4_0F_qDjS8LBvOeQ, line 4096: Failed to create WebGL context: failIfMajorPerformanceCaveat: Compositor is not hardware-accelerated.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1607675158546	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiles4x662"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1607675161219	Marionette	INFO	Listening on port 39215
+1607675161278	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.en.TDVmkNlejyE.es5.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,plm,log,b/am=biAD/rt=j/d=1/rs=ACT90oFpA3tXGV7I5V4_0F_qDjS8LBvOeQ, line 4096: Failed to create WebGL context: failIfMajorPerformanceCaveat: Compositor is not hardware-accelerated.
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.en.TDVmkNlejyE.es5.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,plm,log,b/am=biAD/rt=j/d=1/rs=ACT90oFpA3tXGV7I5V4_0F_qDjS8LBvOeQ, line 4096: Failed to create WebGL context: failIfMajorPerformanceCaveat: Compositor is not hardware-accelerated.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+1607675195696	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilea0S48M"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1607675198381	Marionette	INFO	Listening on port 45705
+1607675198442	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.en.TDVmkNlejyE.es5.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,plm,log,b/am=biAD/rt=j/d=1/rs=ACT90oFpA3tXGV7I5V4_0F_qDjS8LBvOeQ, line 4096: Failed to create WebGL context: failIfMajorPerformanceCaveat: Compositor is not hardware-accelerated.
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.en.TDVmkNlejyE.es5.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,plm,log,b/am=biAD/rt=j/d=1/rs=ACT90oFpA3tXGV7I5V4_0F_qDjS8LBvOeQ, line 4096: Failed to create WebGL context: failIfMajorPerformanceCaveat: Compositor is not hardware-accelerated.
+1607675202632	Marionette	INFO	Stopped listening on port 45705
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1607675305281	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileFtaYU0"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1607675308762	Marionette	INFO	Listening on port 34113
+1607675308898	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1607675315481	Marionette	INFO	Stopped listening on port 34113
+1607675343277	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileLcj7D4"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1607675345853	Marionette	INFO	Listening on port 38191
+1607675345910	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.en.TDVmkNlejyE.es5.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,plm,log,b/am=biAD/rt=j/d=1/rs=ACT90oFpA3tXGV7I5V4_0F_qDjS8LBvOeQ, line 4096: Failed to create WebGL context: failIfMajorPerformanceCaveat: Compositor is not hardware-accelerated.
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.en.TDVmkNlejyE.es5.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,plm,log,b/am=biAD/rt=j/d=1/rs=ACT90oFpA3tXGV7I5V4_0F_qDjS8LBvOeQ, line 4096: Failed to create WebGL context: failIfMajorPerformanceCaveat: Compositor is not hardware-accelerated.
+console.warn: SearchTelemetry: "Expected to report URI for" "https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,4z" "with ads but couldn't find the information"
+1607675417120	Marionette	INFO	Stopped listening on port 38191
+1609127710378	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileu3gwpz"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1609127724603	Marionette	INFO	Listening on port 42423
+1609127725112	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.jdwcpatna.com/, line 38: TypeError: $(...).jCarouselLite is not a function
+1609127741254	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilea859Pg"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1609127746040	Marionette	INFO	Listening on port 34939
+1609127746112	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.jdwcpatna.com/index.php, line 38: TypeError: $(...).jCarouselLite is not a function
+Marionette threw an error: TypeError: this.curBrowser.contentBrowser is null
+GeckoDriver.prototype.navigateTo@chrome://marionette/content/driver.js:1207:3
+
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+1609127753348	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile1HWggX"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1609127835175	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiletcetGG"
+1609127849345	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileB3kSBD"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1609127854409	Marionette	INFO	Listening on port 41787
+1609127854492	Marionette	WARN	TLS certificate errors will be ignored for this session
+1609127893798	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile3hQfvI"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1609127898007	Marionette	INFO	Listening on port 44667
+1609127898048	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.jdwcpatna.com/, line 38: TypeError: $(...).jCarouselLite is not a function
+JavaScript error: http://www.jdwcpatna.com/index.php, line 38: TypeError: $(...).jCarouselLite is not a function
+1609127926557	Marionette	INFO	Stopped listening on port 41787
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1609127952988	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileXLFJTO"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1609127956913	Marionette	INFO	Listening on port 32871
+1609127957034	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.jdwcpatna.com/, line 38: TypeError: $(...).jCarouselLite is not a function
+JavaScript error: http://www.jdwcpatna.com/index.php, line 38: TypeError: $(...).jCarouselLite is not a function
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1609128286893	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilejprH93"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1609128290992	Marionette	INFO	Listening on port 43447
+1609128291048	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.jdwcpatna.com/, line 38: TypeError: $(...).jCarouselLite is not a function
+JavaScript error: http://www.jdwcpatna.com/index.php, line 38: TypeError: $(...).jCarouselLite is not a function
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1609128385576	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilewwP0oW"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1609128389562	Marionette	INFO	Listening on port 33239
+1609128389623	Marionette	WARN	TLS certificate errors will be ignored for this session
+1609128395853	Marionette	INFO	Stopped listening on port 33239
+1609128505508	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileqKgwUO"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1609128509433	Marionette	INFO	Listening on port 46827
+1609128509562	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.iitp.ac.in/templates/iitpatna/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.iitp.ac.in/templates/iitpatna/js/md_stylechanger.js, line 8: ReferenceError: Browser is not defined
+JavaScript warning: https://www.iitp.ac.in/templates/iitpatna/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.iitp.ac.in/templates/iitpatna/js/md_stylechanger.js, line 8: ReferenceError: Browser is not defined
+JavaScript warning: https://www.iitp.ac.in/templates/iitpatna/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.iitp.ac.in/templates/iitpatna/js/md_stylechanger.js, line 8: ReferenceError: Browser is not defined
+JavaScript warning: https://www.iitp.ac.in/templates/iitpatna/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.iitp.ac.in/templates/iitpatna/js/md_stylechanger.js, line 8: ReferenceError: Browser is not defined
+JavaScript error: https://www.iitp.ac.in/templates/iitpatna/js/md_stylechanger.js, line 8: ReferenceError: Browser is not defined
+JavaScript error: https://www.iitp.ac.in/templates/iitpatna/js/md_stylechanger.js, line 8: ReferenceError: Browser is not defined
+JavaScript error: https://www.iitp.ac.in/templates/iitpatna/js/md_stylechanger.js, line 8: ReferenceError: Browser is not defined
+JavaScript error: https://www.iitp.ac.in/templates/iitpatna/js/md_stylechanger.js, line 8: ReferenceError: Browser is not defined
+JavaScript error: https://www.iitp.ac.in/templates/iitpatna/js/md_stylechanger.js, line 8: ReferenceError: Browser is not defined
+JavaScript error: https://www.iitp.ac.in/templates/iitpatna/js/md_stylechanger.js, line 8: ReferenceError: Browser is not defined
+JavaScript error: https://www.iitp.ac.in/templates/iitpatna/js/md_stylechanger.js, line 8: ReferenceError: Browser is not defined
+JavaScript error: https://www.iitp.ac.in/templates/iitpatna/js/md_stylechanger.js, line 8: ReferenceError: Browser is not defined
+JavaScript error: https://www.iitp.ac.in/templates/iitpatna/js/md_stylechanger.js, line 8: ReferenceError: Browser is not defined
+JavaScript error: https://www.iitp.ac.in/templates/iitpatna/js/md_stylechanger.js, line 8: ReferenceError: Browser is not defined
+JavaScript error: https://www.iitp.ac.in/templates/iitpatna/js/md_stylechanger.js, line 8: ReferenceError: Browser is not defined
+JavaScript error: https://www.iitp.ac.in/templates/iitpatna/js/md_stylechanger.js, line 8: ReferenceError: Browser is not defined
+JavaScript error: https://www.iitp.ac.in/templates/iitpatna/js/md_stylechanger.js, line 8: ReferenceError: Browser is not defined
+JavaScript error: https://www.iitp.ac.in/templates/iitpatna/js/md_stylechanger.js, line 8: ReferenceError: Browser is not defined
+JavaScript error: https://www.iitp.ac.in/templates/iitpatna/js/md_stylechanger.js, line 8: ReferenceError: Browser is not defined
+JavaScript error: https://www.iitp.ac.in/templates/iitpatna/js/md_stylechanger.js, line 8: ReferenceError: Browser is not defined
+JavaScript error: https://www.iitp.ac.in/templates/iitpatna/js/md_stylechanger.js, line 8: ReferenceError: Browser is not defined
+JavaScript error: https://www.iitp.ac.in/templates/iitpatna/js/md_stylechanger.js, line 8: ReferenceError: Browser is not defined
+JavaScript error: https://www.iitp.ac.in/templates/iitpatna/js/md_stylechanger.js, line 8: ReferenceError: Browser is not defined
+JavaScript error: https://www.iitp.ac.in/templates/iitpatna/js/md_stylechanger.js, line 8: ReferenceError: Browser is not defined
+JavaScript error: https://www.iitp.ac.in/templates/iitpatna/js/md_stylechanger.js, line 8: ReferenceError: Browser is not defined
+JavaScript warning: https://www.iitp.ac.in/acad/jquery.js, line 2425: unreachable code after return statement
+JavaScript warning: https://www.iitp.ac.in/acad/jquery.js, line 2425: unreachable code after return statement
+JavaScript warning: https://www.iitp.ac.in/acad/jquery.js, line 2425: unreachable code after return statement
+JavaScript warning: https://www.iitp.ac.in/acad/jquery.js, line 2425: unreachable code after return statement
+JavaScript error: https://www.iitp.ac.in/templates/iitpatna/js/md_stylechanger.js, line 8: ReferenceError: Browser is not defined
+JavaScript error: https://www.iitp.ac.in/templates/iitpatna/js/md_stylechanger.js, line 8: ReferenceError: Browser is not defined
+JavaScript error: https://www.iitp.ac.in/templates/iitpatna/js/md_stylechanger.js, line 8: ReferenceError: Browser is not defined
+JavaScript error: https://www.iitp.ac.in/templates/iitpatna/js/md_stylechanger.js, line 8: ReferenceError: Browser is not defined
+JavaScript error: https://www.iitp.ac.in/templates/iitpatna/js/md_stylechanger.js, line 8: ReferenceError: Browser is not defined
+JavaScript error: https://www.iitp.ac.in/templates/iitpatna/js/md_stylechanger.js, line 8: ReferenceError: Browser is not defined
+JavaScript error: https://www.iitp.ac.in/templates/iitpatna/js/md_stylechanger.js, line 8: ReferenceError: Browser is not defined
+JavaScript error: https://www.iitp.ac.in/templates/iitpatna/js/md_stylechanger.js, line 8: ReferenceError: Browser is not defined
+JavaScript error: https://www.iitp.ac.in/templates/iitpatna/js/md_stylechanger.js, line 8: ReferenceError: Browser is not defined
+JavaScript error: https://www.iitp.ac.in/templates/iitpatna/js/md_stylechanger.js, line 8: ReferenceError: Browser is not defined
+JavaScript error: https://www.iitp.ac.in/templates/iitpatna/js/md_stylechanger.js, line 8: ReferenceError: Browser is not defined
+JavaScript error: https://www.iitp.ac.in/templates/iitpatna/js/md_stylechanger.js, line 8: ReferenceError: Browser is not defined
+JavaScript error: https://www.iitp.ac.in/templates/iitpatna/js/md_stylechanger.js, line 8: ReferenceError: Browser is not defined
+JavaScript error: https://www.iitp.ac.in/templates/iitpatna/js/md_stylechanger.js, line 8: ReferenceError: Browser is not defined
+JavaScript error: https://www.iitp.ac.in/templates/iitpatna/js/md_stylechanger.js, line 8: ReferenceError: Browser is not defined
+JavaScript error: https://www.iitp.ac.in/templates/iitpatna/js/md_stylechanger.js, line 8: ReferenceError: Browser is not defined
+JavaScript error: https://www.iitp.ac.in/templates/iitpatna/js/md_stylechanger.js, line 8: ReferenceError: Browser is not defined
+JavaScript error: https://www.iitp.ac.in/templates/iitpatna/js/md_stylechanger.js, line 8: ReferenceError: Browser is not defined
+JavaScript error: https://www.iitp.ac.in/templates/iitpatna/js/md_stylechanger.js, line 8: ReferenceError: Browser is not defined
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1609128668792	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileZrVVVP"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1609128672426	Marionette	INFO	Listening on port 33629
+1609128672525	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://maps.googleapis.com/maps-api-v3/api/js/43/3/common.js, line 89: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://maps.googleapis.com/maps-api-v3/api/js/43/3/common.js, line 89: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://maps.googleapis.com/maps-api-v3/api/js/43/3/common.js, line 89: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://nta.ac.in/assets/lib/bootstrap/dist/js/bootstrap.min.js, line 6: Error: Bootstrap's JavaScript requires jQuery
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1609128760367	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileQpfNzi"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1609128763872	Marionette	INFO	Listening on port 43661
+1609128763902	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 568: TypeError: this.contentWindow is null
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 225: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 568: TypeError: this.contentWindow is null
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 568: TypeError: this.contentWindow is null
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 225: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 568: TypeError: this.contentWindow is null
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 225: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 568: TypeError: this.contentWindow is null
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 452: TypeError: this.contentWindow is null
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 568: TypeError: this.contentWindow is null
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 568: TypeError: this.contentWindow is null
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 568: TypeError: this.contentWindow is null
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 225: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+JavaScript error: resource:///actors/ContentMetaChild.jsm, line 179: InvalidStateError: JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 452: TypeError: this.contentWindow is null
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 568: TypeError: this.contentWindow is null
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 225: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 568: TypeError: this.contentWindow is null
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 225: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1609128987049	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilepM9aPm"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1609128991002	Marionette	INFO	Listening on port 34431
+1609128991082	Marionette	WARN	TLS certificate errors will be ignored for this session
+1609129003146	Marionette	INFO	Stopped listening on port 34431
+JavaScript error: resource://activity-stream/lib/ASRouter.jsm, line 987: NS_ERROR_ILLEGAL_VALUE: Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIObserverService.removeObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1609132998799	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileuZqB20"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1609133002085	Marionette	INFO	Listening on port 34843
+1609133002141	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.jdwcpatna.com/, line 38: TypeError: $(...).jCarouselLite is not a function
+JavaScript error: http://www.jdwcpatna.com/index.php, line 38: TypeError: $(...).jCarouselLite is not a function
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1609133113280	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilezPINes"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1609133116859	Marionette	INFO	Listening on port 44597
+1609133116938	Marionette	WARN	TLS certificate errors will be ignored for this session
+1609133128972	Marionette	INFO	Stopped listening on port 44597
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1609133353704	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileWeNkBZ"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1609133357153	Marionette	INFO	Listening on port 42611
+1609133357266	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.jdwcpatna.com/, line 38: TypeError: $(...).jCarouselLite is not a function
+JavaScript error: http://www.jdwcpatna.com/index.php, line 38: TypeError: $(...).jCarouselLite is not a function
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1609133408179	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileiYlS8H"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1609133411612	Marionette	INFO	Listening on port 39819
+1609133411740	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1609133576727	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilevSNM5l"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1609133580036	Marionette	INFO	Listening on port 35231
+1609133580095	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1609133619941	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileRoNyPg"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1609133623401	Marionette	INFO	Listening on port 46007
+1609133623488	Marionette	WARN	TLS certificate errors will be ignored for this session
+1609133764038	Marionette	INFO	Stopped listening on port 46007
+1609134336353	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileeYL25y"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1609134340450	Marionette	INFO	Listening on port 37549
+1609134340495	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.stmichaelspatna.edu.in/, line 829: ReferenceError: Swiper is not defined
+JavaScript error: https://www.stmichaelspatna.edu.in/Default.aspx, line 829: ReferenceError: Swiper is not defined
+JavaScript error: https://www.stmichaelspatna.edu.in/Staff.aspx?Type=1, line 701: TypeError: $(...).marquee is not a function
+JavaScript error: https://www.stmichaelspatna.edu.in/Staff.aspx?Type=2, line 701: TypeError: $(...).marquee is not a function
+JavaScript error: https://www.stmichaelspatna.edu.in/Staff.aspx?Type=3, line 701: TypeError: $(...).marquee is not a function
+JavaScript error: https://www.stmichaelspatna.edu.in/Staff.aspx?Type=4, line 701: TypeError: $(...).marquee is not a function
+JavaScript error: https://www.stmichaelspatna.edu.in/Result.aspx, line 741: TypeError: $(...).marquee is not a function
+JavaScript error: https://www.stmichaelspatna.edu.in/DailyNotice.aspx, line 831: TypeError: $(...).marquee is not a function
+JavaScript error: https://www.stmichaelspatna.edu.in/SchoolSyllabus.aspx, line 832: TypeError: $(...).marquee is not a function
+JavaScript error: https://www.stmichaelspatna.edu.in/HomeWork.aspx, line 831: TypeError: $(...).marquee is not a function
+JavaScript error: https://www.stmichaelspatna.edu.in/Staff.aspx, line 701: TypeError: $(...).marquee is not a function
+1609134602394	Marionette	INFO	Stopped listening on port 37549
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
