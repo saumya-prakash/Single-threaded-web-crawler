@@ -9,7 +9,6 @@ from db_utilities import *
 try:
 	mycon = connect()
 
-
 # catch all the exceptions
 except Exception as e:
 	print(e)

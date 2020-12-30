@@ -70,13 +70,13 @@ class Crawler():
 
         i = self.index
         n = len(self.scheme_dom)
-        self.driver = webdriver.Firefox()
+        # self.driver = webdriver.Firefox()
 
         while i < len(self.urls) and self.counter != limiter:
             try:
                 # print URL that will be crawled
                 self.cur_page = self.scheme_dom + self.urls[i]
-                print(self.cur_page, "->", self.scheme_dom + self.urls[self.__parent[i]], self.__path[i])
+                # print(self.cur_page, "->", self.scheme_dom + self.urls[self.__parent[i]], self.__path[i])
 
 
                 for a in self.crawl_page(self.cur_page, delay):
@@ -107,7 +107,7 @@ class Crawler():
 
 
         self.index = i               # End of function crawl()
-        self.driver.close()
+        # self.driver.close()
 
 
 
@@ -121,7 +121,7 @@ class Crawler():
                 return None
 
             # for illustrative purposes only
-            self.driver.get(url)
+            # self.driver.get(url)
             # time.sleep(5)
 
             ht = load_page(url)             # referrer header can also be set -> no need till now

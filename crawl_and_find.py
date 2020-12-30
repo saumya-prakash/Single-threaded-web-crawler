@@ -23,7 +23,7 @@ else:
     curs.close()
     mycon.close()   # close the connection for now
 
-    timestamped_log = datetime.now.strftime("%Y-%m-%d__%H:%M:%S.log")
+    timestamped_log = datetime.now().strftime("%Y-%m-%d__%H:%M:%S.log")
 
     fi = open(timestamped_log, "w")    # open a log file
     # set the error stream to the log file

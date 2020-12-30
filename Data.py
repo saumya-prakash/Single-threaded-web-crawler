@@ -57,8 +57,8 @@ class Data(Crawler):       # Changing 'show tables;logo' to 'log' ???
 
             p = tag['href']     # href attribute of the tag
 
-            if bool(re.search(r'index', p, re.IGNORECASE)) == True:
-                # 'index' keyword there in the href attribute - very likely that it is link to the home-page
+            if bool(re.search(r'index|default', p, re.IGNORECASE)) == True:
+                # 'index', 'default' keywords there in the href attribute - very likely that it is link to the home-page
                 return True
 
             q = url_normalize(self.home_page, p)
@@ -107,6 +107,7 @@ class Data(Crawler):       # Changing 'show tables;logo' to 'log' ???
             t = soup.find(src_or_alt)
 
 
+
         if t is None:
             # searching for appropriate <img> tag with 'logo' keyword
             for key in a:
@@ -114,7 +115,6 @@ class Data(Crawler):       # Changing 'show tables;logo' to 'log' ???
                 if t is not None:
                     # appropriate <img> tag found
                     break
-
 
         if t is None:
             # searching for appropriate <img> tag with 'banner' keyword
@@ -138,12 +138,16 @@ class Data(Crawler):       # Changing 'show tables;logo' to 'log' ???
             # URL of the logo couldn't be found
             return None
 
-
         # else, URL of the logo found
         u = None
 
         if t.name == 'img':
             u = url_normalize(self.home_page, t['src'])
+            if u is None:   # still None, some heuristics to be tried
+
+                # some sites have 'data-src' attribute present instead
+                if t.has_attr('data-src'):
+                    u = url_normalize(self.home_page, t['data-src'])
 
         else:
             t = t.find('img')
@@ -270,11 +274,12 @@ class Data(Crawler):       # Changing 'show tables;logo' to 'log' ???
 
 if __name__ == '__main__':
 
-    a = input("Enter URL address: ")
-    b = float(input("Input delay: "))
+    # a = input("Enter URL address: ")
+    # b = float(input("Input delay: "))
+    url = 'http://www.macet.net.in/'
 
-    web = Data(a)
-    # web.crawl(b)
+    web = Data(url)
+
 
     print(web.get_logo())
 

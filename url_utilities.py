@@ -41,10 +41,11 @@ def url_normalize(cur_page, path):
     # path argument parsed into components
     b = list(up.urlparse(path))
 
-
     if b[0] not in ['', 'http', 'https']:
         # some other scheme, like, mailto, javascript, etc., present
         return None
+
+
 
     # cur_page argument parsed into components
     a = list(up.urlparse(cur_page))
@@ -57,7 +58,6 @@ def url_normalize(cur_page, path):
         #     a[5]=b[5]
         #     return up.urlunparse(a)
         return None           # internal link with complete path name (to the same page) to be excluded
-
 
 
     if b[1] != '' and b[1] != a[1]:   # sub-domain or external site
@@ -83,6 +83,8 @@ def url_normalize(cur_page, path):
             if a[2] == b[2] and a[3] == b[3] and a[4] == b[4]:      # all components same except possibly the last one
                 return None                                              # internal link to the same page -> excluded
             return encode_url(up.urlunparse(b).strip())
+
+
 
         b[0] = a[0]
         b[1] = a[1]
@@ -251,5 +253,6 @@ def get_filters():
 
 if __name__=='__main__':
 
-    print(url_normalize('http://nitp.ac.in/home', '/home#respond'))
+    print(url_normalize('http://www.marywardkinder.in/', 'http://marywardkinder.in/wp-content/uploads/2014/12/new-logo.png'))
     print()
+

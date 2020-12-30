@@ -16,11 +16,10 @@ from url_utilities import *
 
 print(datetime.now(), "->", __file__)      # Some utility function to print data-time of run NEEDED
 
-
-query = input("Enter keyword: ")
+# query = input("Enter keyword: ")
 # clean 'query' if required
 
-target = 'https://www.google.com/maps/search/' + query + '+in+patna/@25.5574686,84.9633204,12z'
+target = 'https://www.google.com/maps/search/schools+in+patna/@25.5574686,84.9633204,12z'
 
 driver = webdriver.Firefox()
 # driver.minimize_window()
@@ -46,6 +45,8 @@ while True:
                 title = tag.find('h3', attrs={'class': 'section-result-title'}).find('span').text
                 website = tag.find('a', attrs={'class': 'section-result-action section-result-action-wide'})
 
+                print(title, website)
+
                 if website is not None:     # if it has a website
                     website = website['href']
                     # add to result set
@@ -60,6 +61,8 @@ while True:
         a = driver.find_element_by_id('n7lv7yjyC35__section-pagination-button-next')
         # click it
         a.click()
+
+        break
 
 
     # catch all exceprtions

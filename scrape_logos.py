@@ -26,7 +26,7 @@ for row in curs.fetchall():
     print(id, hp)
 
     # address of the folder where images qill be saved
-    store = "/home/saumya/Desktop/DATA_alt/"
+    store = "/home/saumya/Desktop/logos/"
     # change current working directory to that location
     os.chdir(store)
 
@@ -55,7 +55,7 @@ for row in curs.fetchall():
                 # save the image
                 print("Logo found and saved.")
                 print(u)
-                with open(str(id), 'wb') as fi:
+                with open('x'+str(id), 'wb') as fi:
                     fi.write(image.read())
 
                 # update query

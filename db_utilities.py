@@ -19,7 +19,7 @@ def institution_type(name):    #  Returns the type of institution based on its n
             "medical": "medical", "dent":"dental","pharma":"pharmacy", r'nurs(e|ing)\b':"nurse",
             "research": "research", "scien": "science",
             "college": "college", "universit": "university",
-            "art": "arts", "manag": "management", "social": "social", "humanit": "humanities", "market":"marketing",
+            r"\bart": "arts", "manag": "management", "social": "social", "humanit": "humanities", "market":"marketing",
             "music":"music", "act":"acting", r'\bsing':"singing", "danc":"dance", "film":"filmography", "television|tv|t\.v\.":"television",
             "train": "training", "teach":"teacher",
             r"comput|program(m)?|cod|web|cyb": "computer", "digital":"digital",
@@ -247,7 +247,7 @@ def logo_field_checker():
             store = "/home/saumya/Desktop/logos/"
 
 
-            if os.path.isfile(store+str(id)) == False:
+            if os.path.isfile(store+'x'+str(id)) == False:
                 # image not found in the folder
                 res = 'n'
 
@@ -269,7 +269,7 @@ def logo_field_checker():
     for a in files:
         flag = 0
         for row in data:
-            if a == str(row[0]):
+            if a[1:] == str(row[0]):
                 flag = 1
                 break
 
@@ -444,7 +444,7 @@ if __name__ == '__main__':
     # duplicate_name_remover()
     # similar_home_page_remover()
     set_type()
-    logo_field_checker()
+    # logo_field_checker()
     # protocol_resolver()
 
     # home_page_normalizer()
