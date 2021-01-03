@@ -16,7 +16,7 @@ else:
     curs = mycon.cursor()
 
     # basic selection query
-    query = " SELECT id, home_page, examined_pages, complete_crawl FROM records where link_found = 'n' and id between 1200 and 1300 "
+    query = " SELECT id, home_page, examined_pages, complete_crawl FROM records where link_found = 'n' and id between 900 and 1000 "
     curs.execute(query)
 
     a = curs.fetchall()

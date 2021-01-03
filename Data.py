@@ -75,6 +75,7 @@ class Data(Crawler):       # Changing 'show tables;logo' to 'log' ???
                 # not an <img> tag
                 return False
 
+            # some sites have 'logs' and similar keywords
             if tag.has_attr('src'):
                 if bool(re.search(r'logo', tag['src'], re.IGNORECASE)) == True:
                     return True

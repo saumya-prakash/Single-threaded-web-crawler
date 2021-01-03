@@ -277,26 +277,27 @@ def logo_field_checker():
         # get cursor instance
         curs = mycon.cursor()
         # basic query
-        query = ''' SELECT id, logo_found FROM records  '''
+        query = " SELECT id, logo_found FROM records "
+        # execute query
         curs.execute(query)
 
         data = curs.fetchall()
 
         # process row by row
         for row in data:
-            id = row[0]         # 'id' to be processed ahead
+            id = row[0]     # 'id' to be processed ahead
             logo_found = row[1]
-            res = 'y'       # keeping default as 'y'
 
             # address of folder where images are stored
             store = "/home/saumya/Desktop/logos/"
 
-
             if os.path.isfile(store+'x'+str(id)) == False:
                 # image not found in the folder
                 res = 'n'
+            else:
+                res = 'y'
 
-            if logo_found != res:
+            if logo_found != res:   # if records are not consistent, then update
                 # update query
                 query = " UPDATE records SET logo_found = \'" + res + "\' " + "WHERE id = " + str(id)
                 # execute query and commit
@@ -318,7 +319,8 @@ def logo_field_checker():
                 flag = 1
                 break
 
-        if flag == 0:     # id not in database
+        if flag == 0:
+            # id not in database
             os.remove(store+a)
             print(a, "deleted")
 
@@ -490,7 +492,7 @@ if __name__ == '__main__':
     # duplicate_name_remover()
     # similar_home_page_remover()
     set_type()
-    # logo_field_checker()
+    logo_field_checker()
     # protocol_resolver()
 
     # home_page_normalizer()
