@@ -3,3 +3,5 @@ __pycache__
 geckodriver.log
 last.png
 .idea
+
+db_utilities.py
