@@ -5,24 +5,42 @@ import json
 
 def generate_JSON(about, links, errors):
 
-    # name of the JSON file = id_timestamp.json
-    name = str(about['ID']) + '_' + datetime.now().strftime("%Y-%m-%d__%H:%M:%S") + '.json'
+    # name = str(about['ID']) + '_' + datetime.now().strftime("%Y-%m-%d__%H:%M:%S") + '.json'
 
-    with open(name, 'w') as fi:
-        info = {"about": about, "links": links, "errors": errors}
-        json.dump(info, fi)
+    name = 'sample.json'
+
+    # with open(name, 'w') as fi:
+    #     info = {"about": about, "links": links, "errors": errors}
+    #     json.dump(info, fi)
 
 
 
 if __name__=='__main__':
 
-    # enter id of the Institute to be crawled
-    institute_id = int(input())
-
     # will be written to a JSON file
     about = dict()
     links = list()
     errors = list()
+
+    # enter id of the Institute to be crawled
+    # institute_id = int(input())
+
+    n = len(sys.argv)
+
+    if n < 2:
+        print('No argument provided')
+        errors.append('No argument provided')
+        generate_JSON(about, links, errors)
+        exit()
+
+    try:
+        institute_id = int(sys.argv[1])
+
+    except Exception as e:
+        errors.append(e)
+        generate_JSON(about, links, errors)
+        exit()
+
 
     about['ID'] = institute_id
 
@@ -72,6 +90,9 @@ if __name__=='__main__':
             # filter out job-related sites
             web.get_tsites(s, p)
 
+            for li in web.tsites:
+                print(web.scheme_dom+li, end='#')
+
             # put the result in 'links' list
             links = [ web.scheme_dom + li for li in web.tsites ]
 
@@ -109,6 +130,9 @@ if __name__=='__main__':
 
         curs.close()
         mycon.close()
+
+
+
 
 
 

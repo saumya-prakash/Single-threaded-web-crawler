@@ -3,7 +3,7 @@ from selenium import webdriver
 
 
 # Crawler class
-class Crawler():
+class Crawler:
 
     # some more file extensions to be ignored
     __ignored1 = {'.sh'}
@@ -14,7 +14,6 @@ class Crawler():
     __ignored.union(__ignored1)
     __ignored.union(__ignored2)
     __ignored.union(__ignored3)
-
 
     # open the home-page and set attributes accordingly
     def __set_hp(self, hp):
@@ -32,17 +31,20 @@ class Crawler():
                 return
 
     # constructor function
-    def __init__(self, home_page):
+    def __init__(self, home_page, verbose=False, browser=False):
         self.scheme_dom = ''    # scheme-domain of the url
         self.home_page = ''     # home-page URL
         self.cur_page = ''      # URL of page currently being crawled
         self.urls = list()      # a different, 'parallel' sorted list for fast searching ??
         self.__pos = list()
-        self.__m = 0                # for size of self.urls anbd self.__pos
         self.index = -1
         self.counter = 0        # for counting number of pages examined
+        self.driver = None      # for illustrative purposes only
         self.__parent = list()  # for tracing back
         self.__path = list()
+
+        self.__verbose = verbose
+        self.__browser = browser
 
         self.__set_hp(home_page)    # set the home-page
 
@@ -52,11 +54,11 @@ class Crawler():
             self.__parent.append(0)
             self.index = 0
 
-        self.driver = None    # for illustratice purposes only
+
 
     # main crawler function
     def crawl(self, delay=0.0, limiter=-1):     # CALENDAR to be avoided (found in cimp site)
-                        # what if a 'half-link' contains only digits, may belong to some special category, like albums (e.g. https://www.sgei.org/2019/03/ )
+        # what if a 'half-link' contains only digits, may belong to some special category, like albums (e.g. https://www.sgei.org/2019/03/ )
 
         if self.home_page == '':
             # home-page not set, so nothing to crawl
@@ -70,13 +72,16 @@ class Crawler():
 
         i = self.index
         n = len(self.scheme_dom)
-        # self.driver = webdriver.Firefox()
+
+        if self.__browser==True:
+            self.driver = webdriver.Firefox()
 
         while i < len(self.urls) and self.counter != limiter:
             try:
                 # print URL that will be crawled
                 self.cur_page = self.scheme_dom + self.urls[i]
-                # print(self.cur_page, "->", self.scheme_dom + self.urls[self.__parent[i]], self.__path[i])
+                if self.__verbose==True:
+                    print(self.cur_page, "->", self.scheme_dom + self.urls[self.__parent[i]], self.__path[i])
 
 
                 for a in self.crawl_page(self.cur_page, delay):
@@ -120,41 +125,48 @@ class Crawler():
                 # not suitable for crawling
                 return None
 
-            # for illustrative purposes only
-            # self.driver.get(url)
-            # time.sleep(5)
+            if self.__browser == True:
+                # for illustrative purposes
+                self.driver.get(url)
 
-            ht = load_page(url)             # referrer header can also be set -> no need till now
+            ht = load_page(url)
 
-            response_info = ht.info()           # using 'content-type' response header
+            response_info = ht.info()
+            # using 'content-type' response header
             cont_type = response_info.get_content_maintype()
             if cont_type == 'image' or cont_type == 'application' or cont_type == 'video' or cont_type == 'audio':
                 return None
 
         except Exception as e:
-            print("***From Crawler.crawl_page() ->", e, file=sys.stderr)
-            print("url =", url, file=sys.stderr)
+            print('***From Crawler.crawl_page() ->', e, file=sys.stderr)
+            print('url =', url, file=sys.stderr)
 
         else:
-            if up.urlparse(ht.geturl())[1] != up.urlparse(self.home_page)[1]:
+            # get the loaded URL (may change due to redirection)
+            tmp = ht.geturl()
+
+            if up.urlparse(tmp)[1] != up.urlparse(self.home_page)[1]:
                 # redirect to an external link
                 return None
 
-            soup = BeautifulSoup(ht, features='lxml', parse_only=SoupStrainer('a', attrs={'href':True}))
-
-            tmp = ht.geturl()   # get the loaded URL (may change due to redirection)
+            # get the loaded URL (may change due to redirection)
+            tmp = ht.geturl()
 
             if tmp != url:       # yield tmp amd insert it in the urls[], if possible
                 yield (tmp, -1)
 
-            if self.url_file_check(tmp) == False:    # Redirected URL is not suitable for analysing
+            # redirected URL is not suitable for analysing
+            if self.url_file_check(tmp) == False:
                 return None
 
-            self.counter += 1           # page will be examined - increment counter by 1
+            # page will be examined - increment the counter by 1
+            self.counter += 1
+
+            # get soup object containing only <a> tags that have 'href' attribute
+            soup = BeautifulSoup(ht, features='lxml', parse_only=SoupStrainer('a', attrs={'href': True}))
 
             for t in soup.find_all('a'):
                 path = t['href']
-
                 try:
                     u = url_normalize(tmp, path)
 
@@ -173,7 +185,7 @@ class Crawler():
     def get_root(self, u):
 
         i = 0
-        for i in range(self.urls):
+        for i in range(len(self.urls)):
             if self.urls[i] == u:
                 return (self.urls[self.__parent[i]], self.__path[i])
 
@@ -225,7 +237,7 @@ class Crawler():
 if __name__ == '__main__':
 
     url = input("Enter URL: ")
-    a = Crawler(url)
+    a = Crawler(url, True, True)
     a.crawl()
 
     # print(a.url_file_check('http://www.bseidc.in/document/New%20Vacancy%20Advt%20No%20062013.zip'))

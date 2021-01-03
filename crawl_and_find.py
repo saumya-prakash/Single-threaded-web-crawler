@@ -16,7 +16,7 @@ else:
     curs = mycon.cursor()
 
     # basic selection query
-    query = " SELECT id, home_page, examined_pages, complete_crawl FROM records where link_found = 'n' order by id  desc limit 150"   # not in (28, 1, 3, 4, 6, 9, 21, 32, 56) "
+    query = " SELECT id, home_page, examined_pages, complete_crawl FROM records where link_found = 'n' and id > 1400"
     curs.execute(query)
 
     a = curs.fetchall()
@@ -45,7 +45,8 @@ else:
         # crawl the site
         try:
             web = Data(link)
-            web.crawl(0.0, 3*epages+50)     # Setting limit as a function of number of pages crawled previously
+            # setting limit as a function of number of pages crawled previously
+            web.crawl(0.0, 3*epages+100)
 
         # catch all the exceptions
         except Exception as e:

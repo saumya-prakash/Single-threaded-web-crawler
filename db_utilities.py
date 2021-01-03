@@ -7,36 +7,81 @@ def connect():
     return sqltor.connect(host='localhost', user='saumya', passwd='2020', database='project')
 
 
-            # keywords like 'institutiton', 'academy', etc. should be used in name-based search
+# keywords like 'institutiton', 'academy', etc. should be used in name-based search
 
-def institution_type(name):    #  Returns the type of institution based on its name
-
+# returns the type of institution based on its name
+def institution_type(name):
 
     # cue-word to type of institution mapping
     fields = {
-            "play|pre|kid|montessori|kindergarten":"play", "primary":"primary", "secondary":"secondary", "high":"high", "school":"school",
-            "engineer": "engineering", "tech": "technology", "polytechni|iti|i\.t\.i\.": "polytechnic",
-            "medical": "medical", "dent":"dental","pharma":"pharmacy", r'nurs(e|ing)\b':"nurse",
-            "research": "research", "scien": "science",
-            "college": "college", "universit": "university",
-            r"\bart": "arts", "manag": "management", "social": "social", "humanit": "humanities", "market":"marketing",
-            "music":"music", "act":"acting", r'\bsing':"singing", "danc":"dance", "film":"filmography", "television|tv|t\.v\.":"television",
-            "train": "training", "teach":"teacher",
-            r"comput|program(m)?|cod|web|cyb": "computer", "digital":"digital",
-            "design": "designing", "(fashion)|(nift)|(n.i.f.t)|(n\.i\.f\.t)": "fashion", "animat":"animation", "graphic":"graphics",
-            "professio":"professional",
-            "journali":"journalism", r"mass|(\bmedia\b)":"media",
-            "law":"law",
-            "meteorolog":"meteorology",
-            "beaut":"beauty",
-            "langua":"language",
-            # "hotel":"hotel"
+        "play|pre|kid|montessori|kindergarten":"play",
+        "primary":"primary",
+        "secondary":"secondary",
+        "high":"high",
+        "school":"school",
+        "convent": "convent",
 
-            "women|girl|lad(y|i)|mahila":"women", r"(\bboy)|(\bmen)":"men",  # Problem here
+        "coach|class|tutor|tuition": "coaching",
 
-            "yoga":"yoga", "fitness":"fitness", "physical":"physical",
+        "engineer": "engineering",
+        "tech": "technology",
+        "polytechni|iti|i\.t\.i\.": "polytechnic",
 
-            }
+        "medical": "medical",
+        "dent":"dental",
+        "pharma":"pharmacy",
+        r'nurs(e|ing)\b':"nurse",
+
+        "research": "research",
+        "scien": "science",
+        "college": "college",
+        "universit": "university",
+
+        r"\bart": "arts",
+        "manag": "management",
+        "social": "social",
+        "humanit": "humanities",
+        "market":"marketing",
+
+        "music": "music",
+        "act": "acting",
+        r'\bsing': "singing",
+        "danc": "dance",
+        "film": "filmography",
+        "television|tv|t\.v\.": "television",
+        "theatr|drama": "dramatics",
+
+        "train": "training",
+        "teach":"teacher",
+
+        r"comput|program(m)?|cod|web|cyb": "computer",
+        "digital":"digital",
+        "design": "designing",
+
+        "(fashion)|(nift)|(n.i.f.t)|(n\.i\.f\.t)": "fashion",
+        "animat":"animation",
+        "graphic":"graphics",
+
+        "professio":"professional",
+        "journali":"journalism",
+        r"mass|(\bmedia\b)":"media",
+
+        "law":"law",
+        "arm(y|ed)":"army",
+
+        "meteorolog":"meteorology",
+
+        "beaut":"beauty",
+        "langua":"language",
+        # "hotel":"hotel"
+
+        "women|girl|lad(y|i)|mahila":"women",
+        r"(\bboy)|(\bmen)":"men",  # Problem here
+
+        "yoga":"yoga",
+        "fitness":"fitness",
+        "physical":"physical",
+    }
 
     res = ''    # result to be returned
 
@@ -301,8 +346,9 @@ def table_transfer():
         for row in data:
             name = row[0]
             home = row[1]
+            inst_type = institution_type(name)
 
-            query = "INSERT INTO records(name, home_page) VALUES ('%s', '%s')" % (name, home)
+            query = "INSERT INTO records(name, home_page, type) VALUES ('%s', '%s', '%s')" % (name, home, inst_type)
             try:
                 curs.execute(query)
                 mycon.commit()

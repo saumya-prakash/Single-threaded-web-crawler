@@ -7,10 +7,10 @@ from Crawler import *
 class Data(Crawler):       # Changing 'show tables;logo' to 'log' ???
 
     # constructor function
-    def __init__(self, homepage):
+    def __init__(self, homepage, verbose=False, browser=False):
 
         # initialize the base part
-        super().__init__(homepage)
+        super().__init__(homepage, verbose, browser)
 
         # initialize the derived part
         self.tsites=list()

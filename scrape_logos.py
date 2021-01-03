@@ -50,7 +50,6 @@ for row in curs.fetchall():
                 print(e)
                 print("Error in opening logo's URL - ",u)
 
-
             else:
                 # save the image
                 print("Logo found and saved.")
