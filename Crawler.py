@@ -62,7 +62,7 @@ class Crawler:
 
         if self.home_page == '':
             # home-page not set, so nothing to crawl
-            print("Nothing to CRAWL")
+            print("cannot crawl")
             return
 
         # some domains that are not to be crawled

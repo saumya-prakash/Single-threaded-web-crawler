@@ -83,7 +83,31 @@ def url_normalize(cur_page, path):
             if a[2] == b[2] and a[3] == b[3] and a[4] == b[4]:
                 # all components same except possibly the last one -> internal link to the same page-IGNORE
                 return None
+            # a = up.urlunparse(a)
+            # b = up.urlunparse(b)
+            #
+            # i, j = 0, 0
+            # while i < len(a) and j < len(b):
+            #     if a[i] == b[j]:
+            #         i += 1
+            #         j += 1
+            #     else:
+            #         break
+            #
+            # if j == len(b):
+            #     return None
+            # if b[j] == '#':
+            #     return None
+            # if j+1 == len(a):
+            #     return None
+            # if b[j+1] == '#':
+            #     return None
+            #
+            # b = up.urlparse(b)
+
             return encode_url(up.urlunparse(b).strip())
+
+
 
         b[1] = a[1]
 
@@ -96,6 +120,7 @@ def url_normalize(cur_page, path):
             if a[2] == b[2] and a[3] == b[3] and a[4] == b[4]:
                 # all components same except possibly the last one
                 return None
+
             return up.urlunparse(b)
 
         if a[2] != '' and a[2][-1] == '/':
@@ -258,6 +283,6 @@ def get_filters():
 
 if __name__ == '__main__':
 
-    print(url_normalize('http://www.marywardkinder.in/', 'http://marywardkinder.in/wp-content/uploads/2014/12/new-logo.png'))
+    print(url_normalize('http://www.marywardkinder.in/path', 'http://www.marywardkinder.in/path/#comment'))
     print()
 

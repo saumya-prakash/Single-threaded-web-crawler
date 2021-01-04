@@ -1,6 +1,6 @@
-# InnovationLab Project - A Web Crawler
+# Single-threaded Web Crawler
 
-This projects includes a single-threaded web crawler. It is designed to crawl mainly sites written in english or hindi.
+This projects includes a single-threaded web crawler. It is designed to crawl sites mainly with content in English or Hindi.
 It can handle a variety of MIME types on a website, ignoring links to pdfs, images, zip, docs, etc.
 
 It stores the list of urls found in a website in a Python list. 

@@ -80,6 +80,7 @@ if __name__=='__main__':
             clock_start = time.time()
             web.crawl(0, pages_to_crawl)
             clock_end = time.time()
+
             # calculate time taken for crawling
             time_taken = clock_end - clock_start
 
@@ -106,7 +107,7 @@ if __name__=='__main__':
                 comp_crawl = 'n'
 
             # update query
-            query = "UPDATE records SET examined_pages = " + str(web.index) + ", complete_crawl = '" + comp_crawl + "' WHERE id = " + str(institute_id)
+            query = "UPDATE records SET examined_pages = " + str(web.counter) + ", complete_crawl = '" + comp_crawl + "' WHERE id = " + str(institute_id)
             curs.execute(query)
 
         else:
