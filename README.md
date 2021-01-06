@@ -12,3 +12,6 @@ All the sites extracted are stored in MySQL tables.
 Additional functionalities include -> (i) logo extractor - to download logo of the organisation whose website is being crawled  
                                       (ii) counter variable - number of pages of a website crawled till now (till KeyboardInterupt)
                                       (iii) a Selenium based web scraper to scrape institutions and their websites
+
+# Front-end part
+A compatible Android app is available at https://github.com/Aarya03/Career_Crawler
