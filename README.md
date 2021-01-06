@@ -17,4 +17,10 @@ Additional functionalities include -> (i) logo extractor - to download logo of t
                                       (iii) a Selenium based web scraper to scrape institutions and their websites
 
 
-<h1>Salient Points :-</h1>
+<h3>CRAWLER's Features</h3>
+<ul><li>Single-threaded
+<li>Follows breadth-first strategy
+<li>Can overcome anti-crawling traps deployed by web administrators - looks humaly
+<li>Can crawl sites that are in UTF-8 format, particularly in English and Hindi languages
+<li>Can normalise relative paths written in different styles
+<li>Detects broken/missing links and handles a variety of HTTP errors</ul>
