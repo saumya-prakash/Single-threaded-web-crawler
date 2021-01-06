@@ -17,3 +17,4 @@ Additional functionalities include -> (i) logo extractor - to download logo of t
                                       (iii) a Selenium based web scraper to scrape institutions and their websites
 
 
+<h1>Salient Points :-</h1>
