@@ -1,5 +1,8 @@
 # Single-threaded Web Crawler
 
+<b>(Front-end part -</b> A compatible Android app is available at https://github.com/Aarya03/Career_Crawler )
+
+
 This projects includes a single-threaded web crawler. It is designed to crawl sites mainly with content in English or Hindi.
 It can handle a variety of MIME types on a website, ignoring links to pdfs, images, zip, docs, etc.
 
@@ -13,5 +16,4 @@ Additional functionalities include -> (i) logo extractor - to download logo of t
                                       (ii) counter variable - number of pages of a website crawled till now (till KeyboardInterupt)
                                       (iii) a Selenium based web scraper to scrape institutions and their websites
 
-# Front-end part
-A compatible Android app is available at https://github.com/Aarya03/Career_Crawler
+
