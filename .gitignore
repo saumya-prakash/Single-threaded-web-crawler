@@ -1,6 +1,7 @@
 __pycache__
 *.log
 geckodriver.log
+ghostdriver.log
 last.png
 .idea
 

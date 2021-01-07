@@ -15,7 +15,7 @@ from url_utilities import *
 # query = input("Enter keyword: ")
 # clean 'query' if required
 
-target = 'https://www.google.com/maps/search/hotel+management+institutes+in+patna/@25.5574686,84.9633204,12z'
+target = 'https://www.google.com/maps/search/school+institutes+in+patna/@25.5574686,84.9633204,12z'
 
 driver = webdriver.Firefox()
 # driver.minimize_window()
@@ -27,7 +27,7 @@ names = set()
 # process page by page
 while True:
     # explicit wait of 1 minute to ensure that everything gets loaded
-    time.sleep(60)
+    time.sleep(20)
 
     try:
         soup = BeautifulSoup(driver.page_source, 'lxml')
@@ -54,8 +54,6 @@ while True:
         a = driver.find_element_by_id('n7lv7yjyC35__section-pagination-button-next')
         # click it
         a.click()
-
-        break
 
 
     # catch all exceprtions
