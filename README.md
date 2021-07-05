@@ -15,7 +15,7 @@ This projects includes a single-threaded web crawler. It is designed to crawl si
 * Can normalise relative paths written in different styles
 * Detects broken/missing links and handles a variety of HTTP errors
 * Logo extractor to download logos of institutions
-* Can easily be integrated with Selenium to see the live crawling!!
+* Can be easily integrated with [Selenium](https://pypi.org/project/selenium/) to see the live crawling!!
 
 ## Sample results
 We crawled educational sites situated near-by. Some of them have been plotted on the map:
